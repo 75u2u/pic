@@ -1,0 +1,416 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"8 C:\pic program\1827_gourobo\adc.c
+[v _adc_init adc_init `(v  1 e 0 0 ]
+"13
+[v _read_adc read_adc `(v  1 e 0 0 ]
+"73 C:\pic program\1827_gourobo\main.c
+[v _main main `(v  1 e 0 0 ]
+"105
+[v _emergency emergency `(v  1 e 0 0 ]
+"115
+[v _rotation rotation `(v  1 e 0 0 ]
+"160
+[v _loading loading `(v  1 e 0 0 ]
+"205
+[v _shooting shooting `(v  1 e 0 0 ]
+"211
+[v _movetire1 movetire1 `(v  1 e 0 0 ]
+"258
+[v _movetire2 movetire2 `(v  1 e 0 0 ]
+"305
+[v _init init `(v  1 e 0 0 ]
+"323
+[v _putch putch `(v  1 e 0 0 ]
+"342
+[v _getch getch `(uc  1 e 1 0 ]
+"356
+[v _getche getche `(uc  1 e 1 0 ]
+"364
+[v _inRxData inRxData `(uc  1 e 1 0 ]
+"394
+[v _get_usart get_usart `(uc  1 e 1 0 ]
+"4 C:\pic program\1827_gourobo\pwm.c
+[v _init_pwm init_pwm `(v  1 e 0 0 ]
+"35
+[v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
+"41
+[v _OpenPWM2 OpenPWM2 `(v  1 e 0 0 ]
+"47
+[v _OpenPWM3 OpenPWM3 `(v  1 e 0 0 ]
+"53
+[v _OpenPWM4 OpenPWM4 `(v  1 e 0 0 ]
+"59
+[v _SetPWM1 SetPWM1 `(v  1 e 0 0 ]
+"66
+[v _SetPWM2 SetPWM2 `(v  1 e 0 0 ]
+"73
+[v _SetPWM3 SetPWM3 `(v  1 e 0 0 ]
+"80
+[v _SetPWM4 SetPWM4 `(v  1 e 0 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"6 C:\pic program\1827_gourobo\adc.c
+[v _addata addata `i  1 e 2 0 ]
+"54 C:\pic program\1827_gourobo\main.c
+[v _pwmr pwmr `i  1 e 2 0 ]
+"55
+[v _pwml pwml `i  1 e 2 0 ]
+"56
+[v _PWMR1 PWMR1 `i  1 e 2 0 ]
+[v _PWMR2 PWMR2 `i  1 e 2 0 ]
+"57
+[v _PWML1 PWML1 `i  1 e 2 0 ]
+[v _PWML2 PWML2 `i  1 e 2 0 ]
+"58
+[v _pwmpwl pwmpwl `i  1 e 2 0 ]
+"59
+[v _pwmload pwmload `i  1 e 2 0 ]
+"60
+[v _PWMpwl1 PWMpwl1 `i  1 e 2 0 ]
+"61
+[v _PWMpwl2 PWMpwl2 `i  1 e 2 0 ]
+"62
+[v _PWMload1 PWMload1 `i  1 e 2 0 ]
+"63
+[v _PWMload2 PWMload2 `i  1 e 2 0 ]
+"64
+[v _data data `[6]uc  1 s 6 data ]
+"69
+[v _contORE contORE `uc  1 e 1 0 ]
+"335 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f1827.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"931
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"950
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1118
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1179
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1662
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1800
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1819
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1838
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+"1917
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2795
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2846
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2910
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"2965
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"3016
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"3077
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"3096
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3115
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3145
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"3230
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"3291
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"4492
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4530
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"4890
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @664 ]
+"4928
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @666 ]
+"5461
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5499
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"5568
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"5606
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+"6642
+[v _ADGO ADGO `VEb  1 e 0 @1257 ]
+"6650
+[v _ADON ADON `VEb  1 e 0 @1256 ]
+"6720
+[v _C1ON C1ON `VEb  1 e 0 @2191 ]
+"6780
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"6898
+[v _CREN CREN `VEb  1 e 0 @3308 ]
+"6960
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7038
+[v _LATA0 LATA0 `VEb  1 e 0 @2144 ]
+"7040
+[v _LATA1 LATA1 `VEb  1 e 0 @2145 ]
+"7048
+[v _LATA6 LATA6 `VEb  1 e 0 @2150 ]
+"7050
+[v _LATA7 LATA7 `VEb  1 e 0 @2151 ]
+"7066
+[v _LATB7 LATB7 `VEb  1 e 0 @2159 ]
+"7128
+[v _OERR OERR `VEb  1 e 0 @3305 ]
+"7246
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"7248
+[v _RD RD `VEb  1 e 0 @3240 ]
+"7254
+[v _RXDTSEL RXDTSEL `VEb  1 e 0 @2287 ]
+"7474
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1130 ]
+"7480
+[v _TRISB5 TRISB5 `VEb  1 e 0 @1133 ]
+"7508
+[v _TXCKSEL TXCKSEL `VEb  1 e 0 @2288 ]
+"7514
+[v _TXIF TXIF `VEb  1 e 0 @140 ]
+"7544
+[v _WR WR `VEb  1 e 0 @3241 ]
+"7546
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"73 C:\pic program\1827_gourobo\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"77
+[v main@cntError cntError `ui  1 a 2 8 ]
+"102
+} 0
+"205
+[v _shooting shooting `(v  1 e 0 0 ]
+{
+"208
+} 0
+"115
+[v _rotation rotation `(v  1 e 0 0 ]
+{
+"157
+} 0
+"258
+[v _movetire2 movetire2 `(v  1 e 0 0 ]
+{
+"302
+} 0
+"211
+[v _movetire1 movetire1 `(v  1 e 0 0 ]
+{
+"255
+} 0
+"160
+[v _loading loading `(v  1 e 0 0 ]
+{
+"203
+} 0
+"4 C:\pic program\1827_gourobo\pwm.c
+[v _init_pwm init_pwm `(v  1 e 0 0 ]
+{
+"33
+} 0
+"53
+[v _OpenPWM4 OpenPWM4 `(v  1 e 0 0 ]
+{
+[v OpenPWM4@period period `uc  1 a 1 wreg ]
+[v OpenPWM4@period period `uc  1 a 1 wreg ]
+"55
+[v OpenPWM4@period period `uc  1 a 1 1 ]
+"58
+} 0
+"47
+[v _OpenPWM3 OpenPWM3 `(v  1 e 0 0 ]
+{
+[v OpenPWM3@period period `uc  1 a 1 wreg ]
+[v OpenPWM3@period period `uc  1 a 1 wreg ]
+"49
+[v OpenPWM3@period period `uc  1 a 1 1 ]
+"52
+} 0
+"41
+[v _OpenPWM2 OpenPWM2 `(v  1 e 0 0 ]
+{
+[v OpenPWM2@period period `uc  1 a 1 wreg ]
+[v OpenPWM2@period period `uc  1 a 1 wreg ]
+"43
+[v OpenPWM2@period period `uc  1 a 1 1 ]
+"46
+} 0
+"35
+[v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
+{
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+"37
+[v OpenPWM1@period period `uc  1 a 1 1 ]
+"40
+} 0
+"305 C:\pic program\1827_gourobo\main.c
+[v _init init `(v  1 e 0 0 ]
+{
+"320
+} 0
+"394
+[v _get_usart get_usart `(uc  1 e 1 0 ]
+{
+"415
+[v get_usart@i i `ui  1 a 2 6 ]
+"435
+} 0
+"364
+[v _inRxData inRxData `(uc  1 e 1 0 ]
+{
+[v inRxData@rxData rxData `uc  1 a 1 wreg ]
+"367
+[v inRxData@cnt2 cnt2 `ui  1 a 2 3 ]
+"366
+[v inRxData@cnt1 cnt1 `ui  1 a 2 1 ]
+"364
+[v inRxData@rxData rxData `uc  1 a 1 wreg ]
+"366
+[v inRxData@rxData rxData `uc  1 a 1 0 ]
+"391
+} 0
+"342
+[v _getch getch `(uc  1 e 1 0 ]
+{
+"343
+[v getch@cnt cnt `ui  1 a 2 0 ]
+"353
+} 0
+"105
+[v _emergency emergency `(v  1 e 0 0 ]
+{
+"112
+} 0
+"80 C:\pic program\1827_gourobo\pwm.c
+[v _SetPWM4 SetPWM4 `(v  1 e 0 0 ]
+{
+[v SetPWM4@dutycycle dutycycle `ui  1 p 2 0 ]
+"86
+} 0
+"73
+[v _SetPWM3 SetPWM3 `(v  1 e 0 0 ]
+{
+[v SetPWM3@dutycycle dutycycle `ui  1 p 2 0 ]
+"79
+} 0
+"66
+[v _SetPWM2 SetPWM2 `(v  1 e 0 0 ]
+{
+[v SetPWM2@dutycycle dutycycle `ui  1 p 2 0 ]
+"72
+} 0
+"59
+[v _SetPWM1 SetPWM1 `(v  1 e 0 0 ]
+{
+[v SetPWM1@dutycycle dutycycle `ui  1 p 2 0 ]
+"65
+} 0

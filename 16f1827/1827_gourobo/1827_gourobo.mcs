@@ -1,0 +1,848 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\adc.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\main.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\pwm.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\adc.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File004]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\main.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File005]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\pwm.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File006]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\adc.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File007]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\pwm.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File008]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\main.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File009]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\exchange.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c|exchange.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File010]
+Location=C:\pic program\1827_gourobo\adc.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rêhˆïh¸Ç¹˜É¹xË¹XÍ¹d&nr
+TraceCmdString=
+DebugOptions=
+[File011]
+Location=C:\pic program\1827_gourobo\pwm.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rk¹Hk¹¨l¹—
+TraceCmdString=
+DebugOptions=
+[File012]
+Location=C:\pic program\1827_gourobo\main.p1
+Folder=Intermediary
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=R.obj;*.p1;*.hex
+TraceCmdString=
+DebugOptions=
+[File013]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.cof
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File014]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.hex
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File015]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.sym
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File016]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.map
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File017]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.hxl
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File018]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\startup.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File019]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\startup.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File020]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\doprnt.p1
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File021]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\doprnt.pre
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File022]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.obj
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File023]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File024]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File025]
+Location=C:\Users\yuya\Documents\ROBOCON\pic program\1827_gourobo\1827_gourobo.sdb
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File026]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.cof
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File027]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.hex
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File028]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.sym
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File029]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.map
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File030]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.hxl
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File031]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\startup.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File032]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\startup.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File033]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\doprnt.p1
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File034]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\doprnt.pre
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File035]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.obj
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File036]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File037]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File038]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\1827_gourobo\1827_gourobo.sdb
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|main.c|pwm.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File039]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.cof
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File040]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.hex
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File041]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.sym
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File042]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.map
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File043]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.hxl
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File044]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\startup.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File045]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\startup.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File046]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\doprnt.p1
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File047]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\doprnt.pre
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File048]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.obj
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File049]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File050]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File051]
+Location=C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_gourobo\1827_gourobo.sdb
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.00\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C9=2,1
+TraceCmdString=
+DebugOptions=
+[File052]
+Location=C:\pic program\1827_gourobo\1827_gourobo.cof
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rk¹Hk¹¨l¹—
+TraceCmdString=
+DebugOptions=
+[File053]
+Location=C:\pic program\1827_gourobo\1827_gourobo.hex
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rêhˆïh¸Ç¹˜É¹xË¹XÍ¹d&nr
+TraceCmdString=
+DebugOptions=
+[File054]
+Location=C:\pic program\1827_gourobo\1827_gourobo.sym
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rêhˆïh¸Ç¹˜É¹xË¹XÍ¹d&nr
+TraceCmdString=
+DebugOptions=
+[File055]
+Location=C:\pic program\1827_gourobo\1827_gourobo.map
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rk¹Hk¹hk¹‰
+TraceCmdString=
+DebugOptions=
+[File056]
+Location=C:\pic program\1827_gourobo\1827_gourobo.hxl
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rêhˆïh¸Ç¹˜É¹xË¹XÍ¹d&nr
+TraceCmdString=
+DebugOptions=
+[File057]
+Location=C:\pic program\1827_gourobo\startup.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rk¹(m¹hk¹–
+TraceCmdString=
+DebugOptions=
+[File058]
+Location=C:\pic program\1827_gourobo\startup.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=R.obj;*.p1;*.hex
+TraceCmdString=
+DebugOptions=
+[File059]
+Location=C:\pic program\1827_gourobo\doprnt.p1
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=R.obj;*.p1;*.hex
+TraceCmdString=
+DebugOptions=
+[File060]
+Location=C:\pic program\1827_gourobo\doprnt.pre
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rêhˆïh¸Ç¹˜É¹xË¹XÍ¹d&nr
+TraceCmdString=
+DebugOptions=
+[File061]
+Location=C:\pic program\1827_gourobo\1827_gourobo.obj
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=RNSTRUMENTED_TRACE
+TraceCmdString=
+DebugOptions=
+[File062]
+Location=C:\pic program\1827_gourobo\1827_gourobo.lst
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=RNSTRUMENTED_TRACE
+TraceCmdString=
+DebugOptions=
+[File063]
+Location=C:\pic program\1827_gourobo\1827_gourobo.rlf
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rêhˆïh¸Ç¹˜É¹xË¹XÍ¹d&nr
+TraceCmdString=
+DebugOptions=
+[File064]
+Location=C:\pic program\1827_gourobo\1827_gourobo.sdb
+Folder=Output
+DeviceName=PIC16F1827
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\xc8\v1.33\bin\xc8.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|pwm.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=Rêhˆïh¸Ç¹˜É¹xË¹XÍ¹d&nr
+TraceCmdString=
+DebugOptions=

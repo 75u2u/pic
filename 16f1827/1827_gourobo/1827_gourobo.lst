@@ -1,0 +1,3873 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.33 build 59893 
+                                                                                               Sat Mar 12 16:51:34 2016
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 59893
+     1                           	processor	16F1827
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	text0,local,class=CODE,merge=1,delta=2
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	bssCOMMON,global,class=COMMON,space=1,delta=1
+     7                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1
+     8                           	psect	clrtext,global,class=CODE,delta=2
+     9                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+    10                           	psect	maintext,global,class=CODE,merge=1,split=1,delta=2
+    11                           	psect	text1,local,class=CODE,merge=1,delta=2
+    12                           	psect	text2,local,class=CODE,merge=1,delta=2
+    13                           	psect	text3,local,class=CODE,merge=1,delta=2
+    14                           	psect	text4,local,class=CODE,merge=1,delta=2
+    15                           	psect	text5,local,class=CODE,merge=1,delta=2
+    16                           	psect	text6,local,class=CODE,merge=1,delta=2
+    17                           	psect	text7,local,class=CODE,merge=1,delta=2
+    18                           	psect	text8,local,class=CODE,merge=1,delta=2
+    19                           	psect	text9,local,class=CODE,merge=1,delta=2
+    20                           	psect	text10,local,class=CODE,merge=1,delta=2
+    21                           	psect	text11,local,class=CODE,merge=1,delta=2
+    22                           	psect	text12,local,class=CODE,merge=1,delta=2
+    23                           	psect	text13,local,class=CODE,merge=1,delta=2
+    24                           	psect	text14,local,class=CODE,merge=1,delta=2
+    25                           	psect	text15,local,class=CODE,merge=1,delta=2
+    26                           	psect	text16,local,class=CODE,merge=1,delta=2
+    27                           	psect	text17,local,class=CODE,merge=1,delta=2
+    28                           	psect	text18,local,class=CODE,merge=1,delta=2
+    29                           	psect	text19,local,class=CODE,merge=1,delta=2
+    30                           	dabs	1,0x7E,2
+    31  0000                     	;# 
+    32  0001                     	;# 
+    33  0002                     	;# 
+    34  0003                     	;# 
+    35  0004                     	;# 
+    36  0005                     	;# 
+    37  0006                     	;# 
+    38  0007                     	;# 
+    39  0008                     	;# 
+    40  0009                     	;# 
+    41  000A                     	;# 
+    42  000B                     	;# 
+    43  000C                     	;# 
+    44  000D                     	;# 
+    45  0011                     	;# 
+    46  0012                     	;# 
+    47  0013                     	;# 
+    48  0014                     	;# 
+    49  0015                     	;# 
+    50  0016                     	;# 
+    51  0016                     	;# 
+    52  0017                     	;# 
+    53  0018                     	;# 
+    54  0019                     	;# 
+    55  001A                     	;# 
+    56  001B                     	;# 
+    57  001C                     	;# 
+    58  001E                     	;# 
+    59  001F                     	;# 
+    60  008C                     	;# 
+    61  008D                     	;# 
+    62  0091                     	;# 
+    63  0092                     	;# 
+    64  0093                     	;# 
+    65  0094                     	;# 
+    66  0095                     	;# 
+    67  0096                     	;# 
+    68  0097                     	;# 
+    69  0098                     	;# 
+    70  0099                     	;# 
+    71  009A                     	;# 
+    72  009B                     	;# 
+    73  009B                     	;# 
+    74  009C                     	;# 
+    75  009D                     	;# 
+    76  009E                     	;# 
+    77  010C                     	;# 
+    78  010D                     	;# 
+    79  0111                     	;# 
+    80  0112                     	;# 
+    81  0113                     	;# 
+    82  0114                     	;# 
+    83  0115                     	;# 
+    84  0116                     	;# 
+    85  0117                     	;# 
+    86  0118                     	;# 
+    87  0119                     	;# 
+    88  011A                     	;# 
+    89  011B                     	;# 
+    90  011D                     	;# 
+    91  011E                     	;# 
+    92  018C                     	;# 
+    93  018D                     	;# 
+    94  0191                     	;# 
+    95  0191                     	;# 
+    96  0192                     	;# 
+    97  0193                     	;# 
+    98  0193                     	;# 
+    99  0193                     	;# 
+   100  0194                     	;# 
+   101  0195                     	;# 
+   102  0196                     	;# 
+   103  0199                     	;# 
+   104  019A                     	;# 
+   105  019B                     	;# 
+   106  019B                     	;# 
+   107  019B                     	;# 
+   108  019B                     	;# 
+   109  019C                     	;# 
+   110  019C                     	;# 
+   111  019D                     	;# 
+   112  019E                     	;# 
+   113  019F                     	;# 
+   114  020C                     	;# 
+   115  020D                     	;# 
+   116  0211                     	;# 
+   117  0211                     	;# 
+   118  0212                     	;# 
+   119  0212                     	;# 
+   120  0213                     	;# 
+   121  0213                     	;# 
+   122  0214                     	;# 
+   123  0214                     	;# 
+   124  0215                     	;# 
+   125  0215                     	;# 
+   126  0215                     	;# 
+   127  0216                     	;# 
+   128  0216                     	;# 
+   129  0217                     	;# 
+   130  0217                     	;# 
+   131  0219                     	;# 
+   132  021A                     	;# 
+   133  021B                     	;# 
+   134  021C                     	;# 
+   135  021D                     	;# 
+   136  021E                     	;# 
+   137  021F                     	;# 
+   138  0291                     	;# 
+   139  0291                     	;# 
+   140  0292                     	;# 
+   141  0293                     	;# 
+   142  0294                     	;# 
+   143  0295                     	;# 
+   144  0295                     	;# 
+   145  0296                     	;# 
+   146  0298                     	;# 
+   147  0298                     	;# 
+   148  0299                     	;# 
+   149  029A                     	;# 
+   150  029B                     	;# 
+   151  029C                     	;# 
+   152  029C                     	;# 
+   153  029D                     	;# 
+   154  029E                     	;# 
+   155  029E                     	;# 
+   156  0311                     	;# 
+   157  0311                     	;# 
+   158  0312                     	;# 
+   159  0313                     	;# 
+   160  0318                     	;# 
+   161  0318                     	;# 
+   162  0319                     	;# 
+   163  031A                     	;# 
+   164  0394                     	;# 
+   165  0395                     	;# 
+   166  0396                     	;# 
+   167  039A                     	;# 
+   168  039C                     	;# 
+   169  039D                     	;# 
+   170  039E                     	;# 
+   171  039F                     	;# 
+   172  0415                     	;# 
+   173  0416                     	;# 
+   174  0417                     	;# 
+   175  041C                     	;# 
+   176  041D                     	;# 
+   177  041E                     	;# 
+   178  0FE4                     	;# 
+   179  0FE5                     	;# 
+   180  0FE6                     	;# 
+   181  0FE7                     	;# 
+   182  0FE8                     	;# 
+   183  0FE9                     	;# 
+   184  0FEA                     	;# 
+   185  0FEB                     	;# 
+   186  0FED                     	;# 
+   187  0FEE                     	;# 
+   188  0FEF                     	;# 
+   189  0000                     	;# 
+   190  0001                     	;# 
+   191  0002                     	;# 
+   192  0003                     	;# 
+   193  0004                     	;# 
+   194  0005                     	;# 
+   195  0006                     	;# 
+   196  0007                     	;# 
+   197  0008                     	;# 
+   198  0009                     	;# 
+   199  000A                     	;# 
+   200  000B                     	;# 
+   201  000C                     	;# 
+   202  000D                     	;# 
+   203  0011                     	;# 
+   204  0012                     	;# 
+   205  0013                     	;# 
+   206  0014                     	;# 
+   207  0015                     	;# 
+   208  0016                     	;# 
+   209  0016                     	;# 
+   210  0017                     	;# 
+   211  0018                     	;# 
+   212  0019                     	;# 
+   213  001A                     	;# 
+   214  001B                     	;# 
+   215  001C                     	;# 
+   216  001E                     	;# 
+   217  001F                     	;# 
+   218  008C                     	;# 
+   219  008D                     	;# 
+   220  0091                     	;# 
+   221  0092                     	;# 
+   222  0093                     	;# 
+   223  0094                     	;# 
+   224  0095                     	;# 
+   225  0096                     	;# 
+   226  0097                     	;# 
+   227  0098                     	;# 
+   228  0099                     	;# 
+   229  009A                     	;# 
+   230  009B                     	;# 
+   231  009B                     	;# 
+   232  009C                     	;# 
+   233  009D                     	;# 
+   234  009E                     	;# 
+   235  010C                     	;# 
+   236  010D                     	;# 
+   237  0111                     	;# 
+   238  0112                     	;# 
+   239  0113                     	;# 
+   240  0114                     	;# 
+   241  0115                     	;# 
+   242  0116                     	;# 
+   243  0117                     	;# 
+   244  0118                     	;# 
+   245  0119                     	;# 
+   246  011A                     	;# 
+   247  011B                     	;# 
+   248  011D                     	;# 
+   249  011E                     	;# 
+   250  018C                     	;# 
+   251  018D                     	;# 
+   252  0191                     	;# 
+   253  0191                     	;# 
+   254  0192                     	;# 
+   255  0193                     	;# 
+   256  0193                     	;# 
+   257  0193                     	;# 
+   258  0194                     	;# 
+   259  0195                     	;# 
+   260  0196                     	;# 
+   261  0199                     	;# 
+   262  019A                     	;# 
+   263  019B                     	;# 
+   264  019B                     	;# 
+   265  019B                     	;# 
+   266  019B                     	;# 
+   267  019C                     	;# 
+   268  019C                     	;# 
+   269  019D                     	;# 
+   270  019E                     	;# 
+   271  019F                     	;# 
+   272  020C                     	;# 
+   273  020D                     	;# 
+   274  0211                     	;# 
+   275  0211                     	;# 
+   276  0212                     	;# 
+   277  0212                     	;# 
+   278  0213                     	;# 
+   279  0213                     	;# 
+   280  0214                     	;# 
+   281  0214                     	;# 
+   282  0215                     	;# 
+   283  0215                     	;# 
+   284  0215                     	;# 
+   285  0216                     	;# 
+   286  0216                     	;# 
+   287  0217                     	;# 
+   288  0217                     	;# 
+   289  0219                     	;# 
+   290  021A                     	;# 
+   291  021B                     	;# 
+   292  021C                     	;# 
+   293  021D                     	;# 
+   294  021E                     	;# 
+   295  021F                     	;# 
+   296  0291                     	;# 
+   297  0291                     	;# 
+   298  0292                     	;# 
+   299  0293                     	;# 
+   300  0294                     	;# 
+   301  0295                     	;# 
+   302  0295                     	;# 
+   303  0296                     	;# 
+   304  0298                     	;# 
+   305  0298                     	;# 
+   306  0299                     	;# 
+   307  029A                     	;# 
+   308  029B                     	;# 
+   309  029C                     	;# 
+   310  029C                     	;# 
+   311  029D                     	;# 
+   312  029E                     	;# 
+   313  029E                     	;# 
+   314  0311                     	;# 
+   315  0311                     	;# 
+   316  0312                     	;# 
+   317  0313                     	;# 
+   318  0318                     	;# 
+   319  0318                     	;# 
+   320  0319                     	;# 
+   321  031A                     	;# 
+   322  0394                     	;# 
+   323  0395                     	;# 
+   324  0396                     	;# 
+   325  039A                     	;# 
+   326  039C                     	;# 
+   327  039D                     	;# 
+   328  039E                     	;# 
+   329  039F                     	;# 
+   330  0415                     	;# 
+   331  0416                     	;# 
+   332  0417                     	;# 
+   333  041C                     	;# 
+   334  041D                     	;# 
+   335  041E                     	;# 
+   336  0FE4                     	;# 
+   337  0FE5                     	;# 
+   338  0FE6                     	;# 
+   339  0FE7                     	;# 
+   340  0FE8                     	;# 
+   341  0FE9                     	;# 
+   342  0FEA                     	;# 
+   343  0FEB                     	;# 
+   344  0FED                     	;# 
+   345  0FEE                     	;# 
+   346  0FEF                     	;# 
+   347  0000                     	;# 
+   348  0001                     	;# 
+   349  0002                     	;# 
+   350  0003                     	;# 
+   351  0004                     	;# 
+   352  0005                     	;# 
+   353  0006                     	;# 
+   354  0007                     	;# 
+   355  0008                     	;# 
+   356  0009                     	;# 
+   357  000A                     	;# 
+   358  000B                     	;# 
+   359  000C                     	;# 
+   360  000D                     	;# 
+   361  0011                     	;# 
+   362  0012                     	;# 
+   363  0013                     	;# 
+   364  0014                     	;# 
+   365  0015                     	;# 
+   366  0016                     	;# 
+   367  0016                     	;# 
+   368  0017                     	;# 
+   369  0018                     	;# 
+   370  0019                     	;# 
+   371  001A                     	;# 
+   372  001B                     	;# 
+   373  001C                     	;# 
+   374  001E                     	;# 
+   375  001F                     	;# 
+   376  008C                     	;# 
+   377  008D                     	;# 
+   378  0091                     	;# 
+   379  0092                     	;# 
+   380  0093                     	;# 
+   381  0094                     	;# 
+   382  0095                     	;# 
+   383  0096                     	;# 
+   384  0097                     	;# 
+   385  0098                     	;# 
+   386  0099                     	;# 
+   387  009A                     	;# 
+   388  009B                     	;# 
+   389  009B                     	;# 
+   390  009C                     	;# 
+   391  009D                     	;# 
+   392  009E                     	;# 
+   393  010C                     	;# 
+   394  010D                     	;# 
+   395  0111                     	;# 
+   396  0112                     	;# 
+   397  0113                     	;# 
+   398  0114                     	;# 
+   399  0115                     	;# 
+   400  0116                     	;# 
+   401  0117                     	;# 
+   402  0118                     	;# 
+   403  0119                     	;# 
+   404  011A                     	;# 
+   405  011B                     	;# 
+   406  011D                     	;# 
+   407  011E                     	;# 
+   408  018C                     	;# 
+   409  018D                     	;# 
+   410  0191                     	;# 
+   411  0191                     	;# 
+   412  0192                     	;# 
+   413  0193                     	;# 
+   414  0193                     	;# 
+   415  0193                     	;# 
+   416  0194                     	;# 
+   417  0195                     	;# 
+   418  0196                     	;# 
+   419  0199                     	;# 
+   420  019A                     	;# 
+   421  019B                     	;# 
+   422  019B                     	;# 
+   423  019B                     	;# 
+   424  019B                     	;# 
+   425  019C                     	;# 
+   426  019C                     	;# 
+   427  019D                     	;# 
+   428  019E                     	;# 
+   429  019F                     	;# 
+   430  020C                     	;# 
+   431  020D                     	;# 
+   432  0211                     	;# 
+   433  0211                     	;# 
+   434  0212                     	;# 
+   435  0212                     	;# 
+   436  0213                     	;# 
+   437  0213                     	;# 
+   438  0214                     	;# 
+   439  0214                     	;# 
+   440  0215                     	;# 
+   441  0215                     	;# 
+   442  0215                     	;# 
+   443  0216                     	;# 
+   444  0216                     	;# 
+   445  0217                     	;# 
+   446  0217                     	;# 
+   447  0219                     	;# 
+   448  021A                     	;# 
+   449  021B                     	;# 
+   450  021C                     	;# 
+   451  021D                     	;# 
+   452  021E                     	;# 
+   453  021F                     	;# 
+   454  0291                     	;# 
+   455  0291                     	;# 
+   456  0292                     	;# 
+   457  0293                     	;# 
+   458  0294                     	;# 
+   459  0295                     	;# 
+   460  0295                     	;# 
+   461  0296                     	;# 
+   462  0298                     	;# 
+   463  0298                     	;# 
+   464  0299                     	;# 
+   465  029A                     	;# 
+   466  029B                     	;# 
+   467  029C                     	;# 
+   468  029C                     	;# 
+   469  029D                     	;# 
+   470  029E                     	;# 
+   471  029E                     	;# 
+   472  0311                     	;# 
+   473  0311                     	;# 
+   474  0312                     	;# 
+   475  0313                     	;# 
+   476  0318                     	;# 
+   477  0318                     	;# 
+   478  0319                     	;# 
+   479  031A                     	;# 
+   480  0394                     	;# 
+   481  0395                     	;# 
+   482  0396                     	;# 
+   483  039A                     	;# 
+   484  039C                     	;# 
+   485  039D                     	;# 
+   486  039E                     	;# 
+   487  039F                     	;# 
+   488  0415                     	;# 
+   489  0416                     	;# 
+   490  0417                     	;# 
+   491  041C                     	;# 
+   492  041D                     	;# 
+   493  041E                     	;# 
+   494  0FE4                     	;# 
+   495  0FE5                     	;# 
+   496  0FE6                     	;# 
+   497  0FE7                     	;# 
+   498  0FE8                     	;# 
+   499  0FE9                     	;# 
+   500  0FEA                     	;# 
+   501  0FEB                     	;# 
+   502  0FED                     	;# 
+   503  0FEE                     	;# 
+   504  0FEF                     	;# 
+   505  000B                     _INTCON	set	11
+   506  001B                     _PR2	set	27
+   507  001C                     _T2CON	set	28
+   508  005F                     _GIE	set	95
+   509  008D                     _RCIF	set	141
+   510  008C                     _TXIF	set	140
+   511  009D                     _ADCON0	set	157
+   512  009E                     _ADCON1	set	158
+   513  009C                     _ADRESH	set	156
+   514  009B                     _ADRESL	set	155
+   515  0099                     _OSCCON	set	153
+   516  008C                     _TRISA	set	140
+   517  008D                     _TRISB	set	141
+   518  04E9                     _ADGO	set	1257
+   519  04E8                     _ADON	set	1256
+   520  046A                     _TRISB2	set	1130
+   521  046D                     _TRISB5	set	1133
+   522  088F                     _C1ON	set	2191
+   523  0860                     _LATA0	set	2144
+   524  0861                     _LATA1	set	2145
+   525  0866                     _LATA6	set	2150
+   526  0867                     _LATA7	set	2151
+   527  086F                     _LATB7	set	2159
+   528  08EF                     _RXDTSEL	set	2287
+   529  08F0                     _TXCKSEL	set	2288
+   530  018C                     _ANSELA	set	396
+   531  018D                     _ANSELB	set	397
+   532  0199                     _RCREG	set	409
+   533  019D                     _RCSTA	set	413
+   534  019B                     _SPBRG	set	411
+   535  019A                     _TXREG	set	410
+   536  019E                     _TXSTA	set	414
+   537  0CEC                     _CREN	set	3308
+   538  0CE9                     _OERR	set	3305
+   539  0293                     _CCP1CON	set	659
+   540  029A                     _CCP2CON	set	666
+   541  0291                     _CCPR1L	set	657
+   542  0298                     _CCPR2L	set	664
+   543  0313                     _CCP3CON	set	787
+   544  031A                     _CCP4CON	set	794
+   545  0311                     _CCPR3L	set	785
+   546  0318                     _CCPR4L	set	792
+   547                           
+   548                           	psect	text0
+   549  0000                     __ptext0:	
+   550                           ; #config settings
+   551                           
+   552                           
+   553                           ;psect for function _SetPWM1
+   554  0000                     
+   555                           	psect	cinit
+   556  07F1                     start_initialization:	
+   557  07F1                     __initialization:	
+   558                           
+   559                           ; Clear objects allocated to COMMON
+   560  07F1  01FA               	clrf	__pbssCOMMON& (0+127)
+   561  07F2  01FB               	clrf	(__pbssCOMMON+1)& (0+127)
+   562  07F3  01FC               	clrf	(__pbssCOMMON+2)& (0+127)
+   563  07F4  01FD               	clrf	(__pbssCOMMON+3)& (0+127)
+   564                           
+   565                           ; Clear objects allocated to BANK0
+   566  07F5  3020               	movlw	low __pbssBANK0
+   567  07F6  0084               	movwf	4
+   568  07F7  3000               	movlw	high __pbssBANK0
+   569  07F8  0085               	movwf	5
+   570  07F9  301D               	movlw	29
+   571  07FA  3182  22A9         	fcall	clear_ram0
+   572  07FC                     end_of_initialization:	
+   573                           ;End of C runtime variable initialization code
+   574                           
+   575  07FC                     __end_of__initialization:	
+   576  07FC  107E               	bcf	pic14e$flags,0	;clear compiler interrupt flag
+   577  07FD  0020               	movlb	0
+   578  07FE  3183  2BF5         	ljmp	_main	;jump to C main() function
+   579                           
+   580                           	psect	bssCOMMON
+   581  007A                     __pbssCOMMON:	
+   582  007A                     _pwml:	
+   583  007A                     	ds	2
+   584  007C                     _pwmr:	
+   585  007C                     	ds	2
+   586                           
+   587                           	psect	bssBANK0
+   588  0020                     __pbssBANK0:	
+   589  0020                     _data:	
+   590  0020                     	ds	6
+   591  0026                     _PWML1:	
+   592  0026                     	ds	2
+   593  0028                     _PWML2:	
+   594  0028                     	ds	2
+   595  002A                     _PWMR1:	
+   596  002A                     	ds	2
+   597  002C                     _PWMR2:	
+   598  002C                     	ds	2
+   599  002E                     _PWMload1:	
+   600  002E                     	ds	2
+   601  0030                     _PWMload2:	
+   602  0030                     	ds	2
+   603  0032                     _PWMpwl1:	
+   604  0032                     	ds	2
+   605  0034                     _PWMpwl2:	
+   606  0034                     	ds	2
+   607  0036                     _addata:	
+   608  0036                     	ds	2
+   609  0038                     _pwmload:	
+   610  0038                     	ds	2
+   611  003A                     _pwmpwl:	
+   612  003A                     	ds	2
+   613  003C                     _contORE:	
+   614  003C                     	ds	1
+   615                           
+   616                           	psect	clrtext
+   617  02A9                     clear_ram0:	
+   618                           ;	Called with FSR0 containing the base address, and
+   619                           ;	WREG with the size to clear
+   620                           
+   621  02A9  0064               	clrwdt	;clear the watchdog before getting into this loop
+   622  02AA                     clrloop0:	
+   623  02AA  0180               	clrf	0	;clear RAM location pointed to by FSR
+   624  02AB  3101               	addfsr 0,1
+   625  02AC  0B89               	decfsz	9,f	;Have we reached the end of clearing yet?
+   626  02AD  2AAA               	goto	clrloop0	;have we reached the end yet?
+   627  02AE  3400               	retlw	0	;all done for this memory range, return
+   628                           
+   629                           	psect	cstackCOMMON
+   630  0070                     __pcstackCOMMON:	
+   631  0070                     ?_OpenPWM1:	
+   632  0070                     ??_OpenPWM1:	
+   633                           ; 0 bytes @ 0x0
+   634                           
+   635  0070                     ?_OpenPWM2:	
+   636                           ; 0 bytes @ 0x0
+   637                           
+   638  0070                     ??_OpenPWM2:	
+   639                           ; 0 bytes @ 0x0
+   640                           
+   641  0070                     ?_OpenPWM3:	
+   642                           ; 0 bytes @ 0x0
+   643                           
+   644  0070                     ??_OpenPWM3:	
+   645                           ; 0 bytes @ 0x0
+   646                           
+   647  0070                     ?_OpenPWM4:	
+   648                           ; 0 bytes @ 0x0
+   649                           
+   650  0070                     ??_OpenPWM4:	
+   651                           ; 0 bytes @ 0x0
+   652                           
+   653  0070                     ?_SetPWM1:	
+   654                           ; 0 bytes @ 0x0
+   655                           
+   656  0070                     ?_SetPWM2:	
+   657                           ; 0 bytes @ 0x0
+   658                           
+   659  0070                     ?_SetPWM3:	
+   660                           ; 0 bytes @ 0x0
+   661                           
+   662  0070                     ?_SetPWM4:	
+   663                           ; 0 bytes @ 0x0
+   664                           
+   665  0070                     ?_init:	
+   666                           ; 0 bytes @ 0x0
+   667                           
+   668  0070                     ??_init:	
+   669                           ; 0 bytes @ 0x0
+   670                           
+   671  0070                     ?_emergency:	
+   672                           ; 0 bytes @ 0x0
+   673                           
+   674  0070                     ?_rotation:	
+   675                           ; 0 bytes @ 0x0
+   676                           
+   677  0070                     ?_loading:	
+   678                           ; 0 bytes @ 0x0
+   679                           
+   680  0070                     ?_shooting:	
+   681                           ; 0 bytes @ 0x0
+   682                           
+   683  0070                     ??_shooting:	
+   684                           ; 0 bytes @ 0x0
+   685                           
+   686  0070                     ?_movetire1:	
+   687                           ; 0 bytes @ 0x0
+   688                           
+   689  0070                     ?_movetire2:	
+   690                           ; 0 bytes @ 0x0
+   691                           
+   692  0070                     ?_init_pwm:	
+   693                           ; 0 bytes @ 0x0
+   694                           
+   695  0070                     ?_main:	
+   696                           ; 0 bytes @ 0x0
+   697                           
+   698  0070                     ??_getch:	
+   699                           ; 0 bytes @ 0x0
+   700                           
+   701  0070                     ??_inRxData:	
+   702                           ; 0 bytes @ 0x0
+   703                           
+   704  0070                     ?_get_usart:	
+   705                           ; 0 bytes @ 0x0
+   706                           
+   707  0070                     ?_getch:	
+   708                           ; 1 bytes @ 0x0
+   709                           
+   710  0070                     ?_inRxData:	
+   711                           ; 1 bytes @ 0x0
+   712                           
+   713  0070                     inRxData@rxData:	
+   714                           ; 1 bytes @ 0x0
+   715                           
+   716  0070                     SetPWM1@dutycycle:	
+   717                           ; 1 bytes @ 0x0
+   718                           
+   719  0070                     SetPWM2@dutycycle:	
+   720                           ; 2 bytes @ 0x0
+   721                           
+   722  0070                     SetPWM3@dutycycle:	
+   723                           ; 2 bytes @ 0x0
+   724                           
+   725  0070                     SetPWM4@dutycycle:	
+   726                           ; 2 bytes @ 0x0
+   727                           
+   728  0070                     getch@cnt:	
+   729                           ; 2 bytes @ 0x0
+   730                           
+   731                           
+   732                           ; 2 bytes @ 0x0
+   733  0070                     	ds	1
+   734  0071                     OpenPWM1@period:	
+   735  0071                     OpenPWM2@period:	
+   736                           ; 1 bytes @ 0x1
+   737                           
+   738  0071                     OpenPWM3@period:	
+   739                           ; 1 bytes @ 0x1
+   740                           
+   741  0071                     OpenPWM4@period:	
+   742                           ; 1 bytes @ 0x1
+   743                           
+   744  0071                     inRxData@cnt1:	
+   745                           ; 1 bytes @ 0x1
+   746                           
+   747                           
+   748                           ; 2 bytes @ 0x1
+   749  0071                     	ds	1
+   750  0072                     ??_SetPWM1:	
+   751  0072                     ??_SetPWM2:	
+   752                           ; 0 bytes @ 0x2
+   753                           
+   754  0072                     ??_SetPWM3:	
+   755                           ; 0 bytes @ 0x2
+   756                           
+   757  0072                     ??_SetPWM4:	
+   758                           ; 0 bytes @ 0x2
+   759                           
+   760                           
+   761                           ; 0 bytes @ 0x2
+   762  0072                     	ds	1
+   763  0073                     inRxData@cnt2:	
+   764                           
+   765                           ; 2 bytes @ 0x3
+   766  0073                     	ds	1
+   767  0074                     ??_emergency:	
+   768  0074                     ??_rotation:	
+   769                           ; 0 bytes @ 0x4
+   770                           
+   771  0074                     ??_loading:	
+   772                           ; 0 bytes @ 0x4
+   773                           
+   774  0074                     ??_movetire1:	
+   775                           ; 0 bytes @ 0x4
+   776                           
+   777  0074                     ??_movetire2:	
+   778                           ; 0 bytes @ 0x4
+   779                           
+   780  0074                     ??_init_pwm:	
+   781                           ; 0 bytes @ 0x4
+   782                           
+   783                           
+   784                           ; 0 bytes @ 0x4
+   785  0074                     	ds	1
+   786  0075                     ??_get_usart:	
+   787                           
+   788                           ; 0 bytes @ 0x5
+   789  0075                     	ds	1
+   790  0076                     get_usart@i:	
+   791                           
+   792                           ; 2 bytes @ 0x6
+   793  0076                     	ds	2
+   794  0078                     ??_main:	
+   795  0078                     main@cntError:	
+   796                           ; 0 bytes @ 0x8
+   797                           
+   798                           
+   799                           ; 2 bytes @ 0x8
+   800  0078                     	ds	2
+   801                           
+   802                           	psect	maintext
+   803  03F5                     __pmaintext:	
+   804 ;;
+   805 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   806 ;;
+   807 ;; *************** function _main *****************
+   808 ;; Defined at:
+   809 ;;		line 73 in file "C:\pic program\1827_gourobo\main.c"
+   810 ;; Parameters:    Size  Location     Type
+   811 ;;		None
+   812 ;; Auto vars:     Size  Location     Type
+   813 ;;  cntError        2    8[COMMON] unsigned int 
+   814 ;; Return value:  Size  Location     Type
+   815 ;;		None               void
+   816 ;; Registers used:
+   817 ;;		wreg, fsr1l, fsr1h, status,2, status,0, pclath, cstack
+   818 ;; Tracked objects:
+   819 ;;		On entry : 17F/0
+   820 ;;		On exit  : 0/0
+   821 ;;		Unchanged: 0/0
+   822 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   823 ;;      Params:         0       0       0       0       0       0
+   824 ;;      Locals:         2       0       0       0       0       0
+   825 ;;      Temps:          0       0       0       0       0       0
+   826 ;;      Totals:         2       0       0       0       0       0
+   827 ;;Total ram usage:        2 bytes
+   828 ;; Hardware stack levels required when called:    2
+   829 ;; This function calls:
+   830 ;;		_emergency
+   831 ;;		_get_usart
+   832 ;;		_init
+   833 ;;		_init_pwm
+   834 ;;		_loading
+   835 ;;		_movetire1
+   836 ;;		_movetire2
+   837 ;;		_rotation
+   838 ;;		_shooting
+   839 ;; This function is called by:
+   840 ;;		Startup code after reset
+   841 ;; This function uses a non-reentrant model
+   842 ;;
+   843                           
+   844                           
+   845                           ;psect for function _main
+   846  03F5                     _main:	
+   847                           
+   848                           ;main.c: 75: init();
+   849                           
+   850                           ;incstack = 0
+   851                           ; Regs used in _main: [wreg+fsr1l+fsr1h+status,2+status,0+pclath+cstack]
+   852  03F5  3183  2378  3183   	fcall	_init
+   853                           
+   854                           ;main.c: 76: init_pwm();
+   855  03F8  3183  2398  3183   	fcall	_init_pwm
+   856  03FB  2C21               	goto	l1573
+   857  03FC                     l1557:	
+   858                           ;main.c: 77: unsigned int cntError = 0;
+   859                           
+   860                           
+   861                           ;main.c: 83: cntError = 0;
+   862  03FC  01F8               	clrf	main@cntError
+   863  03FD  01F9               	clrf	main@cntError+1
+   864                           
+   865                           ;main.c: 85: emergency();
+   866  03FE  3183  2359  3183   	fcall	_emergency
+   867                           
+   868                           ;main.c: 86: rotation();
+   869  0401  3185  253B  3183   	fcall	_rotation
+   870                           
+   871                           ;main.c: 87: loading();
+   872  0404  3184  245D  3183   	fcall	_loading
+   873                           
+   874                           ;main.c: 88: shooting();
+   875  0407  3182  22DB  3183   	fcall	_shooting
+   876                           
+   877                           ;main.c: 89: movetire1();
+   878  040A  3186  2619  3183   	fcall	_movetire1
+   879                           
+   880                           ;main.c: 90: movetire2();
+   881  040D  3187  2705  3183   	fcall	_movetire2
+   882  0410                     l1555:	
+   883                           ;main.c: 78: while(1)
+   884                           
+   885                           ;main.c: 92: }
+   886                           
+   887                           
+   888                           ;main.c: 79: {
+   889                           ;main.c: 81: if(get_usart()==0x01){
+   890  0410  3184  2424  3183   	fcall	_get_usart
+   891  0413  3A01               	xorlw	1
+   892  0414  1903               	btfsc	3,2
+   893  0415  2BFC               	goto	l1557
+   894                           
+   895                           ;main.c: 93: else{
+   896                           ;main.c: 95: cntError++;
+   897  0416  3001               	movlw	1
+   898  0417  07F8               	addwf	main@cntError,f
+   899  0418  3000               	movlw	0
+   900  0419  3DF9               	addwfc	main@cntError+1,f
+   901                           
+   902                           ;main.c: 96: if(cntError>=10)
+   903  041A  3000               	movlw	0
+   904  041B  0279               	subwf	main@cntError+1,w
+   905  041C  300A               	movlw	10
+   906  041D  1903               	skipnz
+   907  041E  0278               	subwf	main@cntError,w
+   908  041F  1C03               	skipc
+   909  0420  2C10               	goto	l1555
+   910  0421                     l1573:	
+   911                           
+   912                           ;main.c: 97: {
+   913                           ;main.c: 98: cntError=0;
+   914  0421  01F8               	clrf	main@cntError
+   915  0422  01F9               	clrf	main@cntError+1
+   916  0423  2C10               	goto	l1555
+   917  0424                     __end_of_main:	
+   918                           
+   919                           	psect	text1
+   920  02DB                     __ptext1:	
+   921 ;; *************** function _shooting *****************
+   922 ;; Defined at:
+   923 ;;		line 205 in file "C:\pic program\1827_gourobo\main.c"
+   924 ;; Parameters:    Size  Location     Type
+   925 ;;		None
+   926 ;; Auto vars:     Size  Location     Type
+   927 ;;		None
+   928 ;; Return value:  Size  Location     Type
+   929 ;;		None               void
+   930 ;; Registers used:
+   931 ;;		None
+   932 ;; Tracked objects:
+   933 ;;		On entry : 0/0
+   934 ;;		On exit  : 0/0
+   935 ;;		Unchanged: 0/0
+   936 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   937 ;;      Params:         0       0       0       0       0       0
+   938 ;;      Locals:         0       0       0       0       0       0
+   939 ;;      Temps:          0       0       0       0       0       0
+   940 ;;      Totals:         0       0       0       0       0       0
+   941 ;;Total ram usage:        0 bytes
+   942 ;; Hardware stack levels used:    1
+   943 ;; This function calls:
+   944 ;;		Nothing
+   945 ;; This function is called by:
+   946 ;;		_main
+   947 ;; This function uses a non-reentrant model
+   948 ;;
+   949                           
+   950                           
+   951                           ;psect for function _shooting
+   952  02DB                     _shooting:	
+   953                           
+   954                           ;main.c: 206: if((data[1]&0x40)!=0) LATB7=1;
+   955                           
+   956                           ;incstack = 0
+   957                           ; Regs used in _shooting: []
+   958  02DB  0020               	movlb	0	; select bank0
+   959  02DC  1F21               	btfss	_data+1,6
+   960  02DD  2AE0               	goto	l252
+   961  02DE  0022               	movlb	2	; select bank2
+   962  02DF  178D               	bsf	13,7	;volatile
+   963  02E0                     l252:	
+   964                           
+   965                           ;main.c: 207: if((data[1]&0x10)!=0) LATB7=0;
+   966  02E0  0020               	movlb	0	; select bank0
+   967  02E1  1E21               	btfss	_data+1,4
+   968  02E2  0008               	return
+   969  02E3  0022               	movlb	2	; select bank2
+   970  02E4  138D               	bcf	13,7	;volatile
+   971  02E5  0008               	return
+   972  02E6                     __end_of_shooting:	
+   973                           
+   974                           	psect	text2
+   975  053B                     __ptext2:	
+   976 ;; *************** function _rotation *****************
+   977 ;; Defined at:
+   978 ;;		line 115 in file "C:\pic program\1827_gourobo\main.c"
+   979 ;; Parameters:    Size  Location     Type
+   980 ;;		None
+   981 ;; Auto vars:     Size  Location     Type
+   982 ;;		None
+   983 ;; Return value:  Size  Location     Type
+   984 ;;		None               void
+   985 ;; Registers used:
+   986 ;;		wreg, status,2, status,0, pclath, cstack
+   987 ;; Tracked objects:
+   988 ;;		On entry : 0/0
+   989 ;;		On exit  : 0/0
+   990 ;;		Unchanged: 0/0
+   991 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   992 ;;      Params:         0       0       0       0       0       0
+   993 ;;      Locals:         0       0       0       0       0       0
+   994 ;;      Temps:          1       0       0       0       0       0
+   995 ;;      Totals:         1       0       0       0       0       0
+   996 ;;Total ram usage:        1 bytes
+   997 ;; Hardware stack levels used:    1
+   998 ;; Hardware stack levels required when called:    1
+   999 ;; This function calls:
+  1000 ;;		_SetPWM3
+  1001 ;; This function is called by:
+  1002 ;;		_main
+  1003 ;; This function uses a non-reentrant model
+  1004 ;;
+  1005                           
+  1006                           
+  1007                           ;psect for function _rotation
+  1008  053B                     _rotation:	
+  1009                           
+  1010                           ;main.c: 116: if((data[0]&0x08)!=0){
+  1011                           
+  1012                           ;incstack = 0
+  1013                           ; Regs used in _rotation: [wreg+status,2+status,0+pclath+cstack]
+  1014  053B  0020               	movlb	0	; select bank0
+  1015  053C  1DA0               	btfss	_data,3
+  1016  053D  2D9E               	goto	l212
+  1017                           
+  1018                           ;main.c: 117: if(pwmpwl==PWMpwl1){
+  1019  053E  0833               	movf	_PWMpwl1+1,w
+  1020  053F  063B               	xorwf	_pwmpwl+1,w
+  1021  0540  1D03               	skipz
+  1022  0541  2D44               	goto	u1025
+  1023  0542  0832               	movf	_PWMpwl1,w
+  1024  0543  063A               	xorwf	_pwmpwl,w
+  1025  0544                     u1025:	
+  1026  0544  1D03               	skipz
+  1027  0545  2D73               	goto	l1311
+  1028                           
+  1029                           ;main.c: 118: if(pwmpwl<960){
+  1030  0546  083B               	movf	_pwmpwl+1,w
+  1031  0547  3A80               	xorlw	128
+  1032  0548  00F4               	movwf	??_rotation
+  1033  0549  3083               	movlw	131
+  1034  054A  0274               	subwf	??_rotation,w
+  1035  054B  1D03               	skipz
+  1036  054C  2D4F               	goto	u1035
+  1037  054D  30C0               	movlw	192
+  1038  054E  023A               	subwf	_pwmpwl,w
+  1039  054F                     u1035:	
+  1040  054F  1803               	skipnc
+  1041  0550  2D61               	goto	l1307
+  1042                           
+  1043                           ;main.c: 119: pwmpwl+=48;
+  1044  0551  3030               	movlw	48
+  1045  0552  0020               	movlb	0	; select bank0
+  1046  0553  07BA               	addwf	_pwmpwl,f
+  1047  0554  3000               	movlw	0
+  1048  0555  3DBB               	addwfc	_pwmpwl+1,f
+  1049                           
+  1050                           ;main.c: 120: SetPWM3(pwmpwl);
+  1051  0556  083B               	movf	_pwmpwl+1,w
+  1052  0557  01F1               	clrf	SetPWM3@dutycycle+1
+  1053  0558  07F1               	addwf	SetPWM3@dutycycle+1,f
+  1054  0559  083A               	movf	_pwmpwl,w
+  1055  055A  01F0               	clrf	SetPWM3@dutycycle
+  1056  055B  07F0               	addwf	SetPWM3@dutycycle,f
+  1057  055C  3183  2329  3185   	fcall	_SetPWM3
+  1058                           
+  1059                           ;main.c: 121: LATA7=1;
+  1060  055F  0022               	movlb	2	; select bank2
+  1061  0560  178C               	bsf	12,7	;volatile
+  1062  0561                     l1307:	
+  1063                           
+  1064                           ;main.c: 122: }
+  1065                           ;main.c: 123: if(PWMpwl1<960) PWMpwl1+=48;
+  1066  0561  0020               	movlb	0	; select bank0
+  1067  0562  0833               	movf	_PWMpwl1+1,w
+  1068  0563  3A80               	xorlw	128
+  1069  0564  00F4               	movwf	??_rotation
+  1070  0565  3083               	movlw	131
+  1071  0566  0274               	subwf	??_rotation,w
+  1072  0567  1D03               	skipz
+  1073  0568  2D6B               	goto	u1045
+  1074  0569  30C0               	movlw	192
+  1075  056A  0232               	subwf	_PWMpwl1,w
+  1076  056B                     u1045:	
+  1077  056B  1803               	skipnc
+  1078  056C  0008               	return
+  1079  056D  3030               	movlw	48
+  1080  056E  0020               	movlb	0	; select bank0
+  1081  056F  07B2               	addwf	_PWMpwl1,f
+  1082  0570  3000               	movlw	0
+  1083  0571  3DB3               	addwfc	_PWMpwl1+1,f
+  1084                           
+  1085                           ;main.c: 124: }
+  1086  0572  0008               	return
+  1087  0573                     l1311:	
+  1088                           
+  1089                           ;main.c: 125: else{
+  1090                           ;main.c: 126: if(pwmpwl>0){
+  1091  0573  083B               	movf	_pwmpwl+1,w
+  1092  0574  3A80               	xorlw	128
+  1093  0575  00F4               	movwf	??_rotation
+  1094  0576  3080               	movlw	128
+  1095  0577  0274               	subwf	??_rotation,w
+  1096  0578  1D03               	skipz
+  1097  0579  2D7C               	goto	u1055
+  1098  057A  3001               	movlw	1
+  1099  057B  023A               	subwf	_pwmpwl,w
+  1100  057C                     u1055:	
+  1101  057C  1C03               	skipc
+  1102  057D  2D8C               	goto	l1317
+  1103                           
+  1104                           ;main.c: 127: pwmpwl-=48;
+  1105  057E  30D0               	movlw	208
+  1106  057F  0020               	movlb	0	; select bank0
+  1107  0580  07BA               	addwf	_pwmpwl,f
+  1108  0581  30FF               	movlw	255
+  1109  0582  3DBB               	addwfc	_pwmpwl+1,f
+  1110                           
+  1111                           ;main.c: 128: SetPWM3(pwmpwl);
+  1112  0583  083B               	movf	_pwmpwl+1,w
+  1113  0584  01F1               	clrf	SetPWM3@dutycycle+1
+  1114  0585  07F1               	addwf	SetPWM3@dutycycle+1,f
+  1115  0586  083A               	movf	_pwmpwl,w
+  1116  0587  01F0               	clrf	SetPWM3@dutycycle
+  1117  0588  07F0               	addwf	SetPWM3@dutycycle,f
+  1118  0589  3183  2329  3185   	fcall	_SetPWM3
+  1119  058C                     l1317:	
+  1120                           
+  1121                           ;main.c: 129: }
+  1122                           ;main.c: 130: if(PWMpwl1>0) PWMpwl1-=48;
+  1123  058C  0020               	movlb	0	; select bank0
+  1124  058D  0833               	movf	_PWMpwl1+1,w
+  1125  058E  3A80               	xorlw	128
+  1126  058F  00F4               	movwf	??_rotation
+  1127  0590  3080               	movlw	128
+  1128  0591  0274               	subwf	??_rotation,w
+  1129  0592  1D03               	skipz
+  1130  0593  2D96               	goto	u1065
+  1131  0594  3001               	movlw	1
+  1132  0595  0232               	subwf	_PWMpwl1,w
+  1133  0596                     u1065:	
+  1134  0596  1C03               	skipc
+  1135  0597  0008               	return
+  1136  0598  30D0               	movlw	208
+  1137  0599  0020               	movlb	0	; select bank0
+  1138  059A  07B2               	addwf	_PWMpwl1,f
+  1139  059B  30FF               	movlw	255
+  1140  059C  3DB3               	addwfc	_PWMpwl1+1,f
+  1141                           
+  1142                           ;main.c: 131: }
+  1143                           ;main.c: 132: }
+  1144  059D  0008               	return
+  1145  059E                     l212:	
+  1146                           
+  1147                           ;main.c: 133: else if((data[0]&0x10)!=0){
+  1148  059E  1E20               	btfss	_data,4
+  1149  059F  2E00               	goto	l1345
+  1150                           
+  1151                           ;main.c: 134: if(pwmpwl==PWMpwl2){
+  1152  05A0  0835               	movf	_PWMpwl2+1,w
+  1153  05A1  063B               	xorwf	_pwmpwl+1,w
+  1154  05A2  1D03               	skipz
+  1155  05A3  2DA6               	goto	u1085
+  1156  05A4  0834               	movf	_PWMpwl2,w
+  1157  05A5  063A               	xorwf	_pwmpwl,w
+  1158  05A6                     u1085:	
+  1159  05A6  1D03               	skipz
+  1160  05A7  2DD5               	goto	l1335
+  1161                           
+  1162                           ;main.c: 135: if(pwmpwl<960){
+  1163  05A8  083B               	movf	_pwmpwl+1,w
+  1164  05A9  3A80               	xorlw	128
+  1165  05AA  00F4               	movwf	??_rotation
+  1166  05AB  3083               	movlw	131
+  1167  05AC  0274               	subwf	??_rotation,w
+  1168  05AD  1D03               	skipz
+  1169  05AE  2DB1               	goto	u1095
+  1170  05AF  30C0               	movlw	192
+  1171  05B0  023A               	subwf	_pwmpwl,w
+  1172  05B1                     u1095:	
+  1173  05B1  1803               	skipnc
+  1174  05B2  2DC3               	goto	l1331
+  1175                           
+  1176                           ;main.c: 136: pwmpwl+=48;
+  1177  05B3  3030               	movlw	48
+  1178  05B4  0020               	movlb	0	; select bank0
+  1179  05B5  07BA               	addwf	_pwmpwl,f
+  1180  05B6  3000               	movlw	0
+  1181  05B7  3DBB               	addwfc	_pwmpwl+1,f
+  1182                           
+  1183                           ;main.c: 137: SetPWM3(pwmpwl);
+  1184  05B8  083B               	movf	_pwmpwl+1,w
+  1185  05B9  01F1               	clrf	SetPWM3@dutycycle+1
+  1186  05BA  07F1               	addwf	SetPWM3@dutycycle+1,f
+  1187  05BB  083A               	movf	_pwmpwl,w
+  1188  05BC  01F0               	clrf	SetPWM3@dutycycle
+  1189  05BD  07F0               	addwf	SetPWM3@dutycycle,f
+  1190  05BE  3183  2329  3185   	fcall	_SetPWM3
+  1191                           
+  1192                           ;main.c: 138: LATA7=0;
+  1193  05C1  0022               	movlb	2	; select bank2
+  1194  05C2  138C               	bcf	12,7	;volatile
+  1195  05C3                     l1331:	
+  1196                           
+  1197                           ;main.c: 139: }
+  1198                           ;main.c: 140: if(PWMpwl2<960) PWMpwl2+=48;
+  1199  05C3  0020               	movlb	0	; select bank0
+  1200  05C4  0835               	movf	_PWMpwl2+1,w
+  1201  05C5  3A80               	xorlw	128
+  1202  05C6  00F4               	movwf	??_rotation
+  1203  05C7  3083               	movlw	131
+  1204  05C8  0274               	subwf	??_rotation,w
+  1205  05C9  1D03               	skipz
+  1206  05CA  2DCD               	goto	u1105
+  1207  05CB  30C0               	movlw	192
+  1208  05CC  0234               	subwf	_PWMpwl2,w
+  1209  05CD                     u1105:	
+  1210  05CD  1803               	skipnc
+  1211  05CE  0008               	return
+  1212  05CF  3030               	movlw	48
+  1213  05D0  0020               	movlb	0	; select bank0
+  1214  05D1  07B4               	addwf	_PWMpwl2,f
+  1215  05D2  3000               	movlw	0
+  1216  05D3  3DB5               	addwfc	_PWMpwl2+1,f
+  1217                           
+  1218                           ;main.c: 141: }
+  1219  05D4  0008               	return
+  1220  05D5                     l1335:	
+  1221                           
+  1222                           ;main.c: 142: else{
+  1223                           ;main.c: 143: if(pwmpwl>0){
+  1224  05D5  083B               	movf	_pwmpwl+1,w
+  1225  05D6  3A80               	xorlw	128
+  1226  05D7  00F4               	movwf	??_rotation
+  1227  05D8  3080               	movlw	128
+  1228  05D9  0274               	subwf	??_rotation,w
+  1229  05DA  1D03               	skipz
+  1230  05DB  2DDE               	goto	u1115
+  1231  05DC  3001               	movlw	1
+  1232  05DD  023A               	subwf	_pwmpwl,w
+  1233  05DE                     u1115:	
+  1234  05DE  1C03               	skipc
+  1235  05DF  2DEE               	goto	l1341
+  1236                           
+  1237                           ;main.c: 144: pwmpwl-=48;
+  1238  05E0  30D0               	movlw	208
+  1239  05E1  0020               	movlb	0	; select bank0
+  1240  05E2  07BA               	addwf	_pwmpwl,f
+  1241  05E3  30FF               	movlw	255
+  1242  05E4  3DBB               	addwfc	_pwmpwl+1,f
+  1243                           
+  1244                           ;main.c: 145: SetPWM3(pwmpwl);
+  1245  05E5  083B               	movf	_pwmpwl+1,w
+  1246  05E6  01F1               	clrf	SetPWM3@dutycycle+1
+  1247  05E7  07F1               	addwf	SetPWM3@dutycycle+1,f
+  1248  05E8  083A               	movf	_pwmpwl,w
+  1249  05E9  01F0               	clrf	SetPWM3@dutycycle
+  1250  05EA  07F0               	addwf	SetPWM3@dutycycle,f
+  1251  05EB  3183  2329  3185   	fcall	_SetPWM3
+  1252  05EE                     l1341:	
+  1253                           
+  1254                           ;main.c: 146: }
+  1255                           ;main.c: 147: if(PWMpwl2>0) PWMpwl2-=48;
+  1256  05EE  0020               	movlb	0	; select bank0
+  1257  05EF  0835               	movf	_PWMpwl2+1,w
+  1258  05F0  3A80               	xorlw	128
+  1259  05F1  00F4               	movwf	??_rotation
+  1260  05F2  3080               	movlw	128
+  1261  05F3  0274               	subwf	??_rotation,w
+  1262  05F4  1D03               	skipz
+  1263  05F5  2DF8               	goto	u1125
+  1264  05F6  3001               	movlw	1
+  1265  05F7  0234               	subwf	_PWMpwl2,w
+  1266  05F8                     u1125:	
+  1267  05F8  1C03               	skipc
+  1268  05F9  0008               	return
+  1269  05FA  30D0               	movlw	208
+  1270  05FB  0020               	movlb	0	; select bank0
+  1271  05FC  07B4               	addwf	_PWMpwl2,f
+  1272  05FD  30FF               	movlw	255
+  1273  05FE  3DB5               	addwfc	_PWMpwl2+1,f
+  1274                           
+  1275                           ;main.c: 148: }
+  1276                           ;main.c: 149: }
+  1277  05FF  0008               	return
+  1278  0600                     l1345:	
+  1279                           
+  1280                           ;main.c: 151: else{
+  1281                           ;main.c: 152: if(pwmpwl>0){
+  1282  0600  083B               	movf	_pwmpwl+1,w
+  1283  0601  3A80               	xorlw	128
+  1284  0602  00F4               	movwf	??_rotation
+  1285  0603  3080               	movlw	128
+  1286  0604  0274               	subwf	??_rotation,w
+  1287  0605  1D03               	skipz
+  1288  0606  2E09               	goto	u1135
+  1289  0607  3001               	movlw	1
+  1290  0608  023A               	subwf	_pwmpwl,w
+  1291  0609                     u1135:	
+  1292  0609  1C03               	skipc
+  1293  060A  0008               	return
+  1294                           
+  1295                           ;main.c: 153: pwmpwl-=48;
+  1296  060B  30D0               	movlw	208
+  1297  060C  0020               	movlb	0	; select bank0
+  1298  060D  07BA               	addwf	_pwmpwl,f
+  1299  060E  30FF               	movlw	255
+  1300  060F  3DBB               	addwfc	_pwmpwl+1,f
+  1301                           
+  1302                           ;main.c: 154: SetPWM3(pwmpwl);
+  1303  0610  083B               	movf	_pwmpwl+1,w
+  1304  0611  01F1               	clrf	SetPWM3@dutycycle+1
+  1305  0612  07F1               	addwf	SetPWM3@dutycycle+1,f
+  1306  0613  083A               	movf	_pwmpwl,w
+  1307  0614  01F0               	clrf	SetPWM3@dutycycle
+  1308  0615  07F0               	addwf	SetPWM3@dutycycle,f
+  1309  0616  3183  2329         	fcall	_SetPWM3
+  1310  0618  0008               	return
+  1311  0619                     __end_of_rotation:	
+  1312                           
+  1313                           	psect	text3
+  1314  0705                     __ptext3:	
+  1315 ;; *************** function _movetire2 *****************
+  1316 ;; Defined at:
+  1317 ;;		line 258 in file "C:\pic program\1827_gourobo\main.c"
+  1318 ;; Parameters:    Size  Location     Type
+  1319 ;;		None
+  1320 ;; Auto vars:     Size  Location     Type
+  1321 ;;		None
+  1322 ;; Return value:  Size  Location     Type
+  1323 ;;		None               void
+  1324 ;; Registers used:
+  1325 ;;		wreg, status,2, status,0, pclath, cstack
+  1326 ;; Tracked objects:
+  1327 ;;		On entry : 0/0
+  1328 ;;		On exit  : 0/0
+  1329 ;;		Unchanged: 0/0
+  1330 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  1331 ;;      Params:         0       0       0       0       0       0
+  1332 ;;      Locals:         0       0       0       0       0       0
+  1333 ;;      Temps:          1       0       0       0       0       0
+  1334 ;;      Totals:         1       0       0       0       0       0
+  1335 ;;Total ram usage:        1 bytes
+  1336 ;; Hardware stack levels used:    1
+  1337 ;; Hardware stack levels required when called:    1
+  1338 ;; This function calls:
+  1339 ;;		_SetPWM2
+  1340 ;; This function is called by:
+  1341 ;;		_main
+  1342 ;; This function uses a non-reentrant model
+  1343 ;;
+  1344                           
+  1345                           
+  1346                           ;psect for function _movetire2
+  1347  0705                     _movetire2:	
+  1348                           
+  1349                           ;main.c: 260: if(data[2] < 0x77 && data[2] > 0x0A && data[3] == 0x00){
+  1350                           
+  1351                           ;incstack = 0
+  1352                           ; Regs used in _movetire2: [wreg+status,2+status,0+pclath+cstack]
+  1353  0705  3077               	movlw	119
+  1354  0706  0020               	movlb	0	; select bank0
+  1355  0707  0222               	subwf	_data+2,w
+  1356  0708  1803               	skipnc
+  1357  0709  2F6F               	goto	l1509
+  1358  070A  300B               	movlw	11
+  1359  070B  0222               	subwf	_data+2,w
+  1360  070C  1C03               	skipc
+  1361  070D  2F6F               	goto	l1509
+  1362  070E  08A3               	movf	_data+3,f
+  1363  070F  1D03               	skipz
+  1364  0710  2F6F               	goto	l1509
+  1365                           
+  1366                           ;main.c: 261: if(pwml==PWML1){
+  1367  0711  0827               	movf	_PWML1+1,w
+  1368  0712  067B               	xorwf	_pwml+1,w
+  1369  0713  1D03               	skipz
+  1370  0714  2F17               	goto	u1495
+  1371  0715  0826               	movf	_PWML1,w
+  1372  0716  067A               	xorwf	_pwml,w
+  1373  0717                     u1495:	
+  1374  0717  1D03               	skipz
+  1375  0718  2F45               	goto	l1499
+  1376                           
+  1377                           ;main.c: 262: if(pwml<1008){
+  1378  0719  087B               	movf	_pwml+1,w
+  1379  071A  3A80               	xorlw	128
+  1380  071B  00F4               	movwf	??_movetire2
+  1381  071C  3083               	movlw	131
+  1382  071D  0274               	subwf	??_movetire2,w
+  1383  071E  1D03               	skipz
+  1384  071F  2F22               	goto	u1505
+  1385  0720  30F0               	movlw	240
+  1386  0721  027A               	subwf	_pwml,w
+  1387  0722                     u1505:	
+  1388  0722  1803               	skipnc
+  1389  0723  2F33               	goto	l1495
+  1390                           
+  1391                           ;main.c: 263: pwml+=48;
+  1392  0724  3030               	movlw	48
+  1393  0725  07FA               	addwf	_pwml,f
+  1394  0726  3000               	movlw	0
+  1395  0727  3DFB               	addwfc	_pwml+1,f
+  1396                           
+  1397                           ;main.c: 264: SetPWM2(pwml);
+  1398  0728  087B               	movf	_pwml+1,w
+  1399  0729  01F1               	clrf	SetPWM2@dutycycle+1
+  1400  072A  07F1               	addwf	SetPWM2@dutycycle+1,f
+  1401  072B  087A               	movf	_pwml,w
+  1402  072C  01F0               	clrf	SetPWM2@dutycycle
+  1403  072D  07F0               	addwf	SetPWM2@dutycycle,f
+  1404  072E  3183  2311  3187   	fcall	_SetPWM2
+  1405                           
+  1406                           ;main.c: 265: LATA0=1;
+  1407  0731  0022               	movlb	2	; select bank2
+  1408  0732  140C               	bsf	12,0	;volatile
+  1409  0733                     l1495:	
+  1410                           
+  1411                           ;main.c: 266: }
+  1412                           ;main.c: 267: if(PWML1<1008) PWML1+=48;
+  1413  0733  0020               	movlb	0	; select bank0
+  1414  0734  0827               	movf	_PWML1+1,w
+  1415  0735  3A80               	xorlw	128
+  1416  0736  00F4               	movwf	??_movetire2
+  1417  0737  3083               	movlw	131
+  1418  0738  0274               	subwf	??_movetire2,w
+  1419  0739  1D03               	skipz
+  1420  073A  2F3D               	goto	u1515
+  1421  073B  30F0               	movlw	240
+  1422  073C  0226               	subwf	_PWML1,w
+  1423  073D                     u1515:	
+  1424  073D  1803               	skipnc
+  1425  073E  0008               	return
+  1426  073F  3030               	movlw	48
+  1427  0740  0020               	movlb	0	; select bank0
+  1428  0741  07A6               	addwf	_PWML1,f
+  1429  0742  3000               	movlw	0
+  1430  0743  3DA7               	addwfc	_PWML1+1,f
+  1431                           
+  1432                           ;main.c: 268: }
+  1433  0744  0008               	return
+  1434  0745                     l1499:	
+  1435                           
+  1436                           ;main.c: 269: else{
+  1437                           ;main.c: 270: if(pwml>0){
+  1438  0745  087B               	movf	_pwml+1,w
+  1439  0746  3A80               	xorlw	128
+  1440  0747  00F4               	movwf	??_movetire2
+  1441  0748  3080               	movlw	128
+  1442  0749  0274               	subwf	??_movetire2,w
+  1443  074A  1D03               	skipz
+  1444  074B  2F4E               	goto	u1525
+  1445  074C  3001               	movlw	1
+  1446  074D  027A               	subwf	_pwml,w
+  1447  074E                     u1525:	
+  1448  074E  1C03               	skipc
+  1449  074F  2F5D               	goto	l1505
+  1450                           
+  1451                           ;main.c: 271: pwml-=48;
+  1452  0750  30D0               	movlw	208
+  1453  0751  07FA               	addwf	_pwml,f
+  1454  0752  30FF               	movlw	255
+  1455  0753  3DFB               	addwfc	_pwml+1,f
+  1456                           
+  1457                           ;main.c: 272: SetPWM2(pwml);
+  1458  0754  087B               	movf	_pwml+1,w
+  1459  0755  01F1               	clrf	SetPWM2@dutycycle+1
+  1460  0756  07F1               	addwf	SetPWM2@dutycycle+1,f
+  1461  0757  087A               	movf	_pwml,w
+  1462  0758  01F0               	clrf	SetPWM2@dutycycle
+  1463  0759  07F0               	addwf	SetPWM2@dutycycle,f
+  1464  075A  3183  2311  3187   	fcall	_SetPWM2
+  1465  075D                     l1505:	
+  1466                           
+  1467                           ;main.c: 273: }
+  1468                           ;main.c: 274: if(PWML1>0) PWML1-=48;
+  1469  075D  0020               	movlb	0	; select bank0
+  1470  075E  0827               	movf	_PWML1+1,w
+  1471  075F  3A80               	xorlw	128
+  1472  0760  00F4               	movwf	??_movetire2
+  1473  0761  3080               	movlw	128
+  1474  0762  0274               	subwf	??_movetire2,w
+  1475  0763  1D03               	skipz
+  1476  0764  2F67               	goto	u1535
+  1477  0765  3001               	movlw	1
+  1478  0766  0226               	subwf	_PWML1,w
+  1479  0767                     u1535:	
+  1480  0767  1C03               	skipc
+  1481  0768  0008               	return
+  1482  0769  30D0               	movlw	208
+  1483  076A  0020               	movlb	0	; select bank0
+  1484  076B  07A6               	addwf	_PWML1,f
+  1485  076C  30FF               	movlw	255
+  1486  076D  3DA7               	addwfc	_PWML1+1,f
+  1487                           
+  1488                           ;main.c: 275: }
+  1489                           ;main.c: 276: }
+  1490  076E  0008               	return
+  1491  076F                     l1509:	
+  1492                           
+  1493                           ;main.c: 278: else if(data[2] <0x77 && data[2] > 0x0A && data[3] == 0x7f){
+  1494  076F  3077               	movlw	119
+  1495  0770  0222               	subwf	_data+2,w
+  1496  0771  1803               	skipnc
+  1497  0772  2FD9               	goto	l1539
+  1498  0773  300B               	movlw	11
+  1499  0774  0222               	subwf	_data+2,w
+  1500  0775  1C03               	skipc
+  1501  0776  2FD9               	goto	l1539
+  1502  0777  0823               	movf	_data+3,w
+  1503  0778  3A7F               	xorlw	127
+  1504  0779  1D03               	skipz
+  1505  077A  2FD9               	goto	l1539
+  1506                           
+  1507                           ;main.c: 279: if(pwml==PWML2){
+  1508  077B  0829               	movf	_PWML2+1,w
+  1509  077C  067B               	xorwf	_pwml+1,w
+  1510  077D  1D03               	skipz
+  1511  077E  2F81               	goto	u1575
+  1512  077F  0828               	movf	_PWML2,w
+  1513  0780  067A               	xorwf	_pwml,w
+  1514  0781                     u1575:	
+  1515  0781  1D03               	skipz
+  1516  0782  2FAF               	goto	l1529
+  1517                           
+  1518                           ;main.c: 280: if(pwml<1008){
+  1519  0783  087B               	movf	_pwml+1,w
+  1520  0784  3A80               	xorlw	128
+  1521  0785  00F4               	movwf	??_movetire2
+  1522  0786  3083               	movlw	131
+  1523  0787  0274               	subwf	??_movetire2,w
+  1524  0788  1D03               	skipz
+  1525  0789  2F8C               	goto	u1585
+  1526  078A  30F0               	movlw	240
+  1527  078B  027A               	subwf	_pwml,w
+  1528  078C                     u1585:	
+  1529  078C  1803               	skipnc
+  1530  078D  2F9D               	goto	l1525
+  1531                           
+  1532                           ;main.c: 281: pwml+=48;
+  1533  078E  3030               	movlw	48
+  1534  078F  07FA               	addwf	_pwml,f
+  1535  0790  3000               	movlw	0
+  1536  0791  3DFB               	addwfc	_pwml+1,f
+  1537                           
+  1538                           ;main.c: 282: SetPWM2(pwml);
+  1539  0792  087B               	movf	_pwml+1,w
+  1540  0793  01F1               	clrf	SetPWM2@dutycycle+1
+  1541  0794  07F1               	addwf	SetPWM2@dutycycle+1,f
+  1542  0795  087A               	movf	_pwml,w
+  1543  0796  01F0               	clrf	SetPWM2@dutycycle
+  1544  0797  07F0               	addwf	SetPWM2@dutycycle,f
+  1545  0798  3183  2311  3187   	fcall	_SetPWM2
+  1546                           
+  1547                           ;main.c: 283: LATA0=0;
+  1548  079B  0022               	movlb	2	; select bank2
+  1549  079C  100C               	bcf	12,0	;volatile
+  1550  079D                     l1525:	
+  1551                           
+  1552                           ;main.c: 284: }
+  1553                           ;main.c: 285: if(PWML2<1008) PWML2+=48;
+  1554  079D  0020               	movlb	0	; select bank0
+  1555  079E  0829               	movf	_PWML2+1,w
+  1556  079F  3A80               	xorlw	128
+  1557  07A0  00F4               	movwf	??_movetire2
+  1558  07A1  3083               	movlw	131
+  1559  07A2  0274               	subwf	??_movetire2,w
+  1560  07A3  1D03               	skipz
+  1561  07A4  2FA7               	goto	u1595
+  1562  07A5  30F0               	movlw	240
+  1563  07A6  0228               	subwf	_PWML2,w
+  1564  07A7                     u1595:	
+  1565  07A7  1803               	skipnc
+  1566  07A8  0008               	return
+  1567  07A9  3030               	movlw	48
+  1568  07AA  0020               	movlb	0	; select bank0
+  1569  07AB  07A8               	addwf	_PWML2,f
+  1570  07AC  3000               	movlw	0
+  1571  07AD  3DA9               	addwfc	_PWML2+1,f
+  1572                           
+  1573                           ;main.c: 286: }
+  1574  07AE  0008               	return
+  1575  07AF                     l1529:	
+  1576                           
+  1577                           ;main.c: 287: else{
+  1578                           ;main.c: 288: if(pwml>0){
+  1579  07AF  087B               	movf	_pwml+1,w
+  1580  07B0  3A80               	xorlw	128
+  1581  07B1  00F4               	movwf	??_movetire2
+  1582  07B2  3080               	movlw	128
+  1583  07B3  0274               	subwf	??_movetire2,w
+  1584  07B4  1D03               	skipz
+  1585  07B5  2FB8               	goto	u1605
+  1586  07B6  3001               	movlw	1
+  1587  07B7  027A               	subwf	_pwml,w
+  1588  07B8                     u1605:	
+  1589  07B8  1C03               	skipc
+  1590  07B9  2FC7               	goto	l1535
+  1591                           
+  1592                           ;main.c: 289: pwml-=48;
+  1593  07BA  30D0               	movlw	208
+  1594  07BB  07FA               	addwf	_pwml,f
+  1595  07BC  30FF               	movlw	255
+  1596  07BD  3DFB               	addwfc	_pwml+1,f
+  1597                           
+  1598                           ;main.c: 290: SetPWM2(pwml);
+  1599  07BE  087B               	movf	_pwml+1,w
+  1600  07BF  01F1               	clrf	SetPWM2@dutycycle+1
+  1601  07C0  07F1               	addwf	SetPWM2@dutycycle+1,f
+  1602  07C1  087A               	movf	_pwml,w
+  1603  07C2  01F0               	clrf	SetPWM2@dutycycle
+  1604  07C3  07F0               	addwf	SetPWM2@dutycycle,f
+  1605  07C4  3183  2311  3187   	fcall	_SetPWM2
+  1606  07C7                     l1535:	
+  1607                           
+  1608                           ;main.c: 291: }
+  1609                           ;main.c: 292: if(PWML2>0) PWML2-=48;
+  1610  07C7  0020               	movlb	0	; select bank0
+  1611  07C8  0829               	movf	_PWML2+1,w
+  1612  07C9  3A80               	xorlw	128
+  1613  07CA  00F4               	movwf	??_movetire2
+  1614  07CB  3080               	movlw	128
+  1615  07CC  0274               	subwf	??_movetire2,w
+  1616  07CD  1D03               	skipz
+  1617  07CE  2FD1               	goto	u1615
+  1618  07CF  3001               	movlw	1
+  1619  07D0  0228               	subwf	_PWML2,w
+  1620  07D1                     u1615:	
+  1621  07D1  1C03               	skipc
+  1622  07D2  0008               	return
+  1623  07D3  30D0               	movlw	208
+  1624  07D4  0020               	movlb	0	; select bank0
+  1625  07D5  07A8               	addwf	_PWML2,f
+  1626  07D6  30FF               	movlw	255
+  1627  07D7  3DA9               	addwfc	_PWML2+1,f
+  1628                           
+  1629                           ;main.c: 293: }
+  1630                           ;main.c: 294: }
+  1631  07D8  0008               	return
+  1632  07D9                     l1539:	
+  1633                           
+  1634                           ;main.c: 296: else{
+  1635                           ;main.c: 297: if(pwml>0){
+  1636  07D9  087B               	movf	_pwml+1,w
+  1637  07DA  3A80               	xorlw	128
+  1638  07DB  00F4               	movwf	??_movetire2
+  1639  07DC  3080               	movlw	128
+  1640  07DD  0274               	subwf	??_movetire2,w
+  1641  07DE  1D03               	skipz
+  1642  07DF  2FE2               	goto	u1625
+  1643  07E0  3001               	movlw	1
+  1644  07E1  027A               	subwf	_pwml,w
+  1645  07E2                     u1625:	
+  1646  07E2  1C03               	skipc
+  1647  07E3  0008               	return
+  1648                           
+  1649                           ;main.c: 298: pwml-=48;
+  1650  07E4  30D0               	movlw	208
+  1651  07E5  07FA               	addwf	_pwml,f
+  1652  07E6  30FF               	movlw	255
+  1653  07E7  3DFB               	addwfc	_pwml+1,f
+  1654                           
+  1655                           ;main.c: 299: SetPWM2(pwml);
+  1656  07E8  087B               	movf	_pwml+1,w
+  1657  07E9  01F1               	clrf	SetPWM2@dutycycle+1
+  1658  07EA  07F1               	addwf	SetPWM2@dutycycle+1,f
+  1659  07EB  087A               	movf	_pwml,w
+  1660  07EC  01F0               	clrf	SetPWM2@dutycycle
+  1661  07ED  07F0               	addwf	SetPWM2@dutycycle,f
+  1662  07EE  3183  2311         	fcall	_SetPWM2
+  1663  07F0  0008               	return
+  1664  07F1                     __end_of_movetire2:	
+  1665                           
+  1666                           	psect	text4
+  1667  0619                     __ptext4:	
+  1668 ;; *************** function _movetire1 *****************
+  1669 ;; Defined at:
+  1670 ;;		line 211 in file "C:\pic program\1827_gourobo\main.c"
+  1671 ;; Parameters:    Size  Location     Type
+  1672 ;;		None
+  1673 ;; Auto vars:     Size  Location     Type
+  1674 ;;		None
+  1675 ;; Return value:  Size  Location     Type
+  1676 ;;		None               void
+  1677 ;; Registers used:
+  1678 ;;		wreg, status,2, status,0, pclath, cstack
+  1679 ;; Tracked objects:
+  1680 ;;		On entry : 0/0
+  1681 ;;		On exit  : 0/0
+  1682 ;;		Unchanged: 0/0
+  1683 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  1684 ;;      Params:         0       0       0       0       0       0
+  1685 ;;      Locals:         0       0       0       0       0       0
+  1686 ;;      Temps:          1       0       0       0       0       0
+  1687 ;;      Totals:         1       0       0       0       0       0
+  1688 ;;Total ram usage:        1 bytes
+  1689 ;; Hardware stack levels used:    1
+  1690 ;; Hardware stack levels required when called:    1
+  1691 ;; This function calls:
+  1692 ;;		_SetPWM1
+  1693 ;; This function is called by:
+  1694 ;;		_main
+  1695 ;; This function uses a non-reentrant model
+  1696 ;;
+  1697                           
+  1698                           
+  1699                           ;psect for function _movetire1
+  1700  0619                     _movetire1:	
+  1701                           
+  1702                           ;main.c: 213: if(data[4] < 0x77 && data[4] > 0x0A && data[5] == 0x00){
+  1703                           
+  1704                           ;incstack = 0
+  1705                           ; Regs used in _movetire1: [wreg+status,2+status,0+pclath+cstack]
+  1706  0619  3077               	movlw	119
+  1707  061A  0020               	movlb	0	; select bank0
+  1708  061B  0224               	subwf	_data+4,w
+  1709  061C  1803               	skipnc
+  1710  061D  2E83               	goto	l1443
+  1711  061E  300B               	movlw	11
+  1712  061F  0224               	subwf	_data+4,w
+  1713  0620  1C03               	skipc
+  1714  0621  2E83               	goto	l1443
+  1715  0622  08A5               	movf	_data+5,f
+  1716  0623  1D03               	skipz
+  1717  0624  2E83               	goto	l1443
+  1718                           
+  1719                           ;main.c: 214: if(pwmr==PWMR1){
+  1720  0625  082B               	movf	_PWMR1+1,w
+  1721  0626  067D               	xorwf	_pwmr+1,w
+  1722  0627  1D03               	skipz
+  1723  0628  2E2B               	goto	u1325
+  1724  0629  082A               	movf	_PWMR1,w
+  1725  062A  067C               	xorwf	_pwmr,w
+  1726  062B                     u1325:	
+  1727  062B  1D03               	skipz
+  1728  062C  2E59               	goto	l1433
+  1729                           
+  1730                           ;main.c: 215: if(pwmr<1008){
+  1731  062D  087D               	movf	_pwmr+1,w
+  1732  062E  3A80               	xorlw	128
+  1733  062F  00F4               	movwf	??_movetire1
+  1734  0630  3083               	movlw	131
+  1735  0631  0274               	subwf	??_movetire1,w
+  1736  0632  1D03               	skipz
+  1737  0633  2E36               	goto	u1335
+  1738  0634  30F0               	movlw	240
+  1739  0635  027C               	subwf	_pwmr,w
+  1740  0636                     u1335:	
+  1741  0636  1803               	skipnc
+  1742  0637  2E47               	goto	l1429
+  1743                           
+  1744                           ;main.c: 216: pwmr+=48;
+  1745  0638  3030               	movlw	48
+  1746  0639  07FC               	addwf	_pwmr,f
+  1747  063A  3000               	movlw	0
+  1748  063B  3DFD               	addwfc	_pwmr+1,f
+  1749                           
+  1750                           ;main.c: 217: SetPWM1(pwmr);
+  1751  063C  087D               	movf	_pwmr+1,w
+  1752  063D  01F1               	clrf	SetPWM1@dutycycle+1
+  1753  063E  07F1               	addwf	SetPWM1@dutycycle+1,f
+  1754  063F  087C               	movf	_pwmr,w
+  1755  0640  01F0               	clrf	SetPWM1@dutycycle
+  1756  0641  07F0               	addwf	SetPWM1@dutycycle,f
+  1757  0642  3182  22F9  3186   	fcall	_SetPWM1
+  1758                           
+  1759                           ;main.c: 218: LATA1=1;
+  1760  0645  0022               	movlb	2	; select bank2
+  1761  0646  148C               	bsf	12,1	;volatile
+  1762  0647                     l1429:	
+  1763                           
+  1764                           ;main.c: 219: }
+  1765                           ;main.c: 220: if(PWMR1<1008) PWMR1+=48;
+  1766  0647  0020               	movlb	0	; select bank0
+  1767  0648  082B               	movf	_PWMR1+1,w
+  1768  0649  3A80               	xorlw	128
+  1769  064A  00F4               	movwf	??_movetire1
+  1770  064B  3083               	movlw	131
+  1771  064C  0274               	subwf	??_movetire1,w
+  1772  064D  1D03               	skipz
+  1773  064E  2E51               	goto	u1345
+  1774  064F  30F0               	movlw	240
+  1775  0650  022A               	subwf	_PWMR1,w
+  1776  0651                     u1345:	
+  1777  0651  1803               	skipnc
+  1778  0652  0008               	return
+  1779  0653  3030               	movlw	48
+  1780  0654  0020               	movlb	0	; select bank0
+  1781  0655  07AA               	addwf	_PWMR1,f
+  1782  0656  3000               	movlw	0
+  1783  0657  3DAB               	addwfc	_PWMR1+1,f
+  1784                           
+  1785                           ;main.c: 221: }
+  1786  0658  0008               	return
+  1787  0659                     l1433:	
+  1788                           
+  1789                           ;main.c: 222: else{
+  1790                           ;main.c: 223: if(pwmr>0){
+  1791  0659  087D               	movf	_pwmr+1,w
+  1792  065A  3A80               	xorlw	128
+  1793  065B  00F4               	movwf	??_movetire1
+  1794  065C  3080               	movlw	128
+  1795  065D  0274               	subwf	??_movetire1,w
+  1796  065E  1D03               	skipz
+  1797  065F  2E62               	goto	u1355
+  1798  0660  3001               	movlw	1
+  1799  0661  027C               	subwf	_pwmr,w
+  1800  0662                     u1355:	
+  1801  0662  1C03               	skipc
+  1802  0663  2E71               	goto	l1439
+  1803                           
+  1804                           ;main.c: 224: pwmr-=48;
+  1805  0664  30D0               	movlw	208
+  1806  0665  07FC               	addwf	_pwmr,f
+  1807  0666  30FF               	movlw	255
+  1808  0667  3DFD               	addwfc	_pwmr+1,f
+  1809                           
+  1810                           ;main.c: 225: SetPWM1(pwmr);
+  1811  0668  087D               	movf	_pwmr+1,w
+  1812  0669  01F1               	clrf	SetPWM1@dutycycle+1
+  1813  066A  07F1               	addwf	SetPWM1@dutycycle+1,f
+  1814  066B  087C               	movf	_pwmr,w
+  1815  066C  01F0               	clrf	SetPWM1@dutycycle
+  1816  066D  07F0               	addwf	SetPWM1@dutycycle,f
+  1817  066E  3182  22F9  3186   	fcall	_SetPWM1
+  1818  0671                     l1439:	
+  1819                           
+  1820                           ;main.c: 226: }
+  1821                           ;main.c: 227: if(PWMR1>0) PWMR1-=48;
+  1822  0671  0020               	movlb	0	; select bank0
+  1823  0672  082B               	movf	_PWMR1+1,w
+  1824  0673  3A80               	xorlw	128
+  1825  0674  00F4               	movwf	??_movetire1
+  1826  0675  3080               	movlw	128
+  1827  0676  0274               	subwf	??_movetire1,w
+  1828  0677  1D03               	skipz
+  1829  0678  2E7B               	goto	u1365
+  1830  0679  3001               	movlw	1
+  1831  067A  022A               	subwf	_PWMR1,w
+  1832  067B                     u1365:	
+  1833  067B  1C03               	skipc
+  1834  067C  0008               	return
+  1835  067D  30D0               	movlw	208
+  1836  067E  0020               	movlb	0	; select bank0
+  1837  067F  07AA               	addwf	_PWMR1,f
+  1838  0680  30FF               	movlw	255
+  1839  0681  3DAB               	addwfc	_PWMR1+1,f
+  1840                           
+  1841                           ;main.c: 228: }
+  1842                           ;main.c: 229: }
+  1843  0682  0008               	return
+  1844  0683                     l1443:	
+  1845                           
+  1846                           ;main.c: 231: else if(data[4] <0x77 && data[4] > 0x0A && data[5] == 0x7f){
+  1847  0683  3077               	movlw	119
+  1848  0684  0224               	subwf	_data+4,w
+  1849  0685  1803               	skipnc
+  1850  0686  2EED               	goto	l1473
+  1851  0687  300B               	movlw	11
+  1852  0688  0224               	subwf	_data+4,w
+  1853  0689  1C03               	skipc
+  1854  068A  2EED               	goto	l1473
+  1855  068B  0825               	movf	_data+5,w
+  1856  068C  3A7F               	xorlw	127
+  1857  068D  1D03               	skipz
+  1858  068E  2EED               	goto	l1473
+  1859                           
+  1860                           ;main.c: 232: if(pwmr==PWMR2){
+  1861  068F  082D               	movf	_PWMR2+1,w
+  1862  0690  067D               	xorwf	_pwmr+1,w
+  1863  0691  1D03               	skipz
+  1864  0692  2E95               	goto	u1405
+  1865  0693  082C               	movf	_PWMR2,w
+  1866  0694  067C               	xorwf	_pwmr,w
+  1867  0695                     u1405:	
+  1868  0695  1D03               	skipz
+  1869  0696  2EC3               	goto	l1463
+  1870                           
+  1871                           ;main.c: 233: if(pwmr<1008){
+  1872  0697  087D               	movf	_pwmr+1,w
+  1873  0698  3A80               	xorlw	128
+  1874  0699  00F4               	movwf	??_movetire1
+  1875  069A  3083               	movlw	131
+  1876  069B  0274               	subwf	??_movetire1,w
+  1877  069C  1D03               	skipz
+  1878  069D  2EA0               	goto	u1415
+  1879  069E  30F0               	movlw	240
+  1880  069F  027C               	subwf	_pwmr,w
+  1881  06A0                     u1415:	
+  1882  06A0  1803               	skipnc
+  1883  06A1  2EB1               	goto	l1459
+  1884                           
+  1885                           ;main.c: 234: pwmr+=48;
+  1886  06A2  3030               	movlw	48
+  1887  06A3  07FC               	addwf	_pwmr,f
+  1888  06A4  3000               	movlw	0
+  1889  06A5  3DFD               	addwfc	_pwmr+1,f
+  1890                           
+  1891                           ;main.c: 235: SetPWM1(pwmr);
+  1892  06A6  087D               	movf	_pwmr+1,w
+  1893  06A7  01F1               	clrf	SetPWM1@dutycycle+1
+  1894  06A8  07F1               	addwf	SetPWM1@dutycycle+1,f
+  1895  06A9  087C               	movf	_pwmr,w
+  1896  06AA  01F0               	clrf	SetPWM1@dutycycle
+  1897  06AB  07F0               	addwf	SetPWM1@dutycycle,f
+  1898  06AC  3182  22F9  3186   	fcall	_SetPWM1
+  1899                           
+  1900                           ;main.c: 236: LATA1=0;
+  1901  06AF  0022               	movlb	2	; select bank2
+  1902  06B0  108C               	bcf	12,1	;volatile
+  1903  06B1                     l1459:	
+  1904                           
+  1905                           ;main.c: 237: }
+  1906                           ;main.c: 238: if(PWMR2<1008) PWMR2+=48;
+  1907  06B1  0020               	movlb	0	; select bank0
+  1908  06B2  082D               	movf	_PWMR2+1,w
+  1909  06B3  3A80               	xorlw	128
+  1910  06B4  00F4               	movwf	??_movetire1
+  1911  06B5  3083               	movlw	131
+  1912  06B6  0274               	subwf	??_movetire1,w
+  1913  06B7  1D03               	skipz
+  1914  06B8  2EBB               	goto	u1425
+  1915  06B9  30F0               	movlw	240
+  1916  06BA  022C               	subwf	_PWMR2,w
+  1917  06BB                     u1425:	
+  1918  06BB  1803               	skipnc
+  1919  06BC  0008               	return
+  1920  06BD  3030               	movlw	48
+  1921  06BE  0020               	movlb	0	; select bank0
+  1922  06BF  07AC               	addwf	_PWMR2,f
+  1923  06C0  3000               	movlw	0
+  1924  06C1  3DAD               	addwfc	_PWMR2+1,f
+  1925                           
+  1926                           ;main.c: 239: }
+  1927  06C2  0008               	return
+  1928  06C3                     l1463:	
+  1929                           
+  1930                           ;main.c: 240: else{
+  1931                           ;main.c: 241: if(pwmr>0){
+  1932  06C3  087D               	movf	_pwmr+1,w
+  1933  06C4  3A80               	xorlw	128
+  1934  06C5  00F4               	movwf	??_movetire1
+  1935  06C6  3080               	movlw	128
+  1936  06C7  0274               	subwf	??_movetire1,w
+  1937  06C8  1D03               	skipz
+  1938  06C9  2ECC               	goto	u1435
+  1939  06CA  3001               	movlw	1
+  1940  06CB  027C               	subwf	_pwmr,w
+  1941  06CC                     u1435:	
+  1942  06CC  1C03               	skipc
+  1943  06CD  2EDB               	goto	l1469
+  1944                           
+  1945                           ;main.c: 242: pwmr-=48;
+  1946  06CE  30D0               	movlw	208
+  1947  06CF  07FC               	addwf	_pwmr,f
+  1948  06D0  30FF               	movlw	255
+  1949  06D1  3DFD               	addwfc	_pwmr+1,f
+  1950                           
+  1951                           ;main.c: 243: SetPWM1(pwmr);
+  1952  06D2  087D               	movf	_pwmr+1,w
+  1953  06D3  01F1               	clrf	SetPWM1@dutycycle+1
+  1954  06D4  07F1               	addwf	SetPWM1@dutycycle+1,f
+  1955  06D5  087C               	movf	_pwmr,w
+  1956  06D6  01F0               	clrf	SetPWM1@dutycycle
+  1957  06D7  07F0               	addwf	SetPWM1@dutycycle,f
+  1958  06D8  3182  22F9  3186   	fcall	_SetPWM1
+  1959  06DB                     l1469:	
+  1960                           
+  1961                           ;main.c: 244: }
+  1962                           ;main.c: 245: if(PWMR2>0) PWMR2-=48;
+  1963  06DB  0020               	movlb	0	; select bank0
+  1964  06DC  082D               	movf	_PWMR2+1,w
+  1965  06DD  3A80               	xorlw	128
+  1966  06DE  00F4               	movwf	??_movetire1
+  1967  06DF  3080               	movlw	128
+  1968  06E0  0274               	subwf	??_movetire1,w
+  1969  06E1  1D03               	skipz
+  1970  06E2  2EE5               	goto	u1445
+  1971  06E3  3001               	movlw	1
+  1972  06E4  022C               	subwf	_PWMR2,w
+  1973  06E5                     u1445:	
+  1974  06E5  1C03               	skipc
+  1975  06E6  0008               	return
+  1976  06E7  30D0               	movlw	208
+  1977  06E8  0020               	movlb	0	; select bank0
+  1978  06E9  07AC               	addwf	_PWMR2,f
+  1979  06EA  30FF               	movlw	255
+  1980  06EB  3DAD               	addwfc	_PWMR2+1,f
+  1981                           
+  1982                           ;main.c: 246: }
+  1983                           ;main.c: 247: }
+  1984  06EC  0008               	return
+  1985  06ED                     l1473:	
+  1986                           
+  1987                           ;main.c: 249: else{
+  1988                           ;main.c: 250: if(pwmr>0){
+  1989  06ED  087D               	movf	_pwmr+1,w
+  1990  06EE  3A80               	xorlw	128
+  1991  06EF  00F4               	movwf	??_movetire1
+  1992  06F0  3080               	movlw	128
+  1993  06F1  0274               	subwf	??_movetire1,w
+  1994  06F2  1D03               	skipz
+  1995  06F3  2EF6               	goto	u1455
+  1996  06F4  3001               	movlw	1
+  1997  06F5  027C               	subwf	_pwmr,w
+  1998  06F6                     u1455:	
+  1999  06F6  1C03               	skipc
+  2000  06F7  0008               	return
+  2001                           
+  2002                           ;main.c: 251: pwmr-=48;
+  2003  06F8  30D0               	movlw	208
+  2004  06F9  07FC               	addwf	_pwmr,f
+  2005  06FA  30FF               	movlw	255
+  2006  06FB  3DFD               	addwfc	_pwmr+1,f
+  2007                           
+  2008                           ;main.c: 252: SetPWM1(pwmr);
+  2009  06FC  087D               	movf	_pwmr+1,w
+  2010  06FD  01F1               	clrf	SetPWM1@dutycycle+1
+  2011  06FE  07F1               	addwf	SetPWM1@dutycycle+1,f
+  2012  06FF  087C               	movf	_pwmr,w
+  2013  0700  01F0               	clrf	SetPWM1@dutycycle
+  2014  0701  07F0               	addwf	SetPWM1@dutycycle,f
+  2015  0702  3182  22F9         	fcall	_SetPWM1
+  2016  0704  0008               	return
+  2017  0705                     __end_of_movetire1:	
+  2018                           
+  2019                           	psect	text5
+  2020  045D                     __ptext5:	
+  2021 ;; *************** function _loading *****************
+  2022 ;; Defined at:
+  2023 ;;		line 160 in file "C:\pic program\1827_gourobo\main.c"
+  2024 ;; Parameters:    Size  Location     Type
+  2025 ;;		None
+  2026 ;; Auto vars:     Size  Location     Type
+  2027 ;;		None
+  2028 ;; Return value:  Size  Location     Type
+  2029 ;;		None               void
+  2030 ;; Registers used:
+  2031 ;;		wreg, status,2, status,0, pclath, cstack
+  2032 ;; Tracked objects:
+  2033 ;;		On entry : 0/0
+  2034 ;;		On exit  : 0/0
+  2035 ;;		Unchanged: 0/0
+  2036 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2037 ;;      Params:         0       0       0       0       0       0
+  2038 ;;      Locals:         0       0       0       0       0       0
+  2039 ;;      Temps:          1       0       0       0       0       0
+  2040 ;;      Totals:         1       0       0       0       0       0
+  2041 ;;Total ram usage:        1 bytes
+  2042 ;; Hardware stack levels used:    1
+  2043 ;; Hardware stack levels required when called:    1
+  2044 ;; This function calls:
+  2045 ;;		_SetPWM4
+  2046 ;; This function is called by:
+  2047 ;;		_main
+  2048 ;; This function uses a non-reentrant model
+  2049 ;;
+  2050                           
+  2051                           
+  2052                           ;psect for function _loading
+  2053  045D                     _loading:	
+  2054                           
+  2055                           ;main.c: 161: if((data[0]&0x02)!=0){
+  2056                           
+  2057                           ;incstack = 0
+  2058                           ; Regs used in _loading: [wreg+status,2+status,0+pclath+cstack]
+  2059  045D  0020               	movlb	0	; select bank0
+  2060  045E  1CA0               	btfss	_data,1
+  2061  045F  2CC0               	goto	l232
+  2062                           
+  2063                           ;main.c: 162: if(pwmload==PWMload1){
+  2064  0460  082F               	movf	_PWMload1+1,w
+  2065  0461  0639               	xorwf	_pwmload+1,w
+  2066  0462  1D03               	skipz
+  2067  0463  2C66               	goto	u1155
+  2068  0464  082E               	movf	_PWMload1,w
+  2069  0465  0638               	xorwf	_pwmload,w
+  2070  0466                     u1155:	
+  2071  0466  1D03               	skipz
+  2072  0467  2C95               	goto	l1367
+  2073                           
+  2074                           ;main.c: 163: if(pwmload<960){
+  2075  0468  0839               	movf	_pwmload+1,w
+  2076  0469  3A80               	xorlw	128
+  2077  046A  00F4               	movwf	??_loading
+  2078  046B  3083               	movlw	131
+  2079  046C  0274               	subwf	??_loading,w
+  2080  046D  1D03               	skipz
+  2081  046E  2C71               	goto	u1165
+  2082  046F  30C0               	movlw	192
+  2083  0470  0238               	subwf	_pwmload,w
+  2084  0471                     u1165:	
+  2085  0471  1803               	skipnc
+  2086  0472  2C83               	goto	l1363
+  2087                           
+  2088                           ;main.c: 164: pwmload+=48;
+  2089  0473  3030               	movlw	48
+  2090  0474  0020               	movlb	0	; select bank0
+  2091  0475  07B8               	addwf	_pwmload,f
+  2092  0476  3000               	movlw	0
+  2093  0477  3DB9               	addwfc	_pwmload+1,f
+  2094                           
+  2095                           ;main.c: 165: SetPWM4(pwmload);
+  2096  0478  0839               	movf	_pwmload+1,w
+  2097  0479  01F1               	clrf	SetPWM4@dutycycle+1
+  2098  047A  07F1               	addwf	SetPWM4@dutycycle+1,f
+  2099  047B  0838               	movf	_pwmload,w
+  2100  047C  01F0               	clrf	SetPWM4@dutycycle
+  2101  047D  07F0               	addwf	SetPWM4@dutycycle,f
+  2102  047E  3183  2341  3184   	fcall	_SetPWM4
+  2103                           
+  2104                           ;main.c: 166: LATA6=1;
+  2105  0481  0022               	movlb	2	; select bank2
+  2106  0482  170C               	bsf	12,6	;volatile
+  2107  0483                     l1363:	
+  2108                           
+  2109                           ;main.c: 167: }
+  2110                           ;main.c: 168: if(PWMload1<960) PWMload1+=48;
+  2111  0483  0020               	movlb	0	; select bank0
+  2112  0484  082F               	movf	_PWMload1+1,w
+  2113  0485  3A80               	xorlw	128
+  2114  0486  00F4               	movwf	??_loading
+  2115  0487  3083               	movlw	131
+  2116  0488  0274               	subwf	??_loading,w
+  2117  0489  1D03               	skipz
+  2118  048A  2C8D               	goto	u1175
+  2119  048B  30C0               	movlw	192
+  2120  048C  022E               	subwf	_PWMload1,w
+  2121  048D                     u1175:	
+  2122  048D  1803               	skipnc
+  2123  048E  0008               	return
+  2124  048F  3030               	movlw	48
+  2125  0490  0020               	movlb	0	; select bank0
+  2126  0491  07AE               	addwf	_PWMload1,f
+  2127  0492  3000               	movlw	0
+  2128  0493  3DAF               	addwfc	_PWMload1+1,f
+  2129                           
+  2130                           ;main.c: 169: }
+  2131  0494  0008               	return
+  2132  0495                     l1367:	
+  2133                           
+  2134                           ;main.c: 170: else{
+  2135                           ;main.c: 171: if(pwmload>0){
+  2136  0495  0839               	movf	_pwmload+1,w
+  2137  0496  3A80               	xorlw	128
+  2138  0497  00F4               	movwf	??_loading
+  2139  0498  3080               	movlw	128
+  2140  0499  0274               	subwf	??_loading,w
+  2141  049A  1D03               	skipz
+  2142  049B  2C9E               	goto	u1185
+  2143  049C  3001               	movlw	1
+  2144  049D  0238               	subwf	_pwmload,w
+  2145  049E                     u1185:	
+  2146  049E  1C03               	skipc
+  2147  049F  2CAE               	goto	l1373
+  2148                           
+  2149                           ;main.c: 172: pwmload-=48;
+  2150  04A0  30D0               	movlw	208
+  2151  04A1  0020               	movlb	0	; select bank0
+  2152  04A2  07B8               	addwf	_pwmload,f
+  2153  04A3  30FF               	movlw	255
+  2154  04A4  3DB9               	addwfc	_pwmload+1,f
+  2155                           
+  2156                           ;main.c: 173: SetPWM4(pwmload);
+  2157  04A5  0839               	movf	_pwmload+1,w
+  2158  04A6  01F1               	clrf	SetPWM4@dutycycle+1
+  2159  04A7  07F1               	addwf	SetPWM4@dutycycle+1,f
+  2160  04A8  0838               	movf	_pwmload,w
+  2161  04A9  01F0               	clrf	SetPWM4@dutycycle
+  2162  04AA  07F0               	addwf	SetPWM4@dutycycle,f
+  2163  04AB  3183  2341  3184   	fcall	_SetPWM4
+  2164  04AE                     l1373:	
+  2165                           
+  2166                           ;main.c: 174: }
+  2167                           ;main.c: 175: if(PWMload1>0) PWMload1-=48;
+  2168  04AE  0020               	movlb	0	; select bank0
+  2169  04AF  082F               	movf	_PWMload1+1,w
+  2170  04B0  3A80               	xorlw	128
+  2171  04B1  00F4               	movwf	??_loading
+  2172  04B2  3080               	movlw	128
+  2173  04B3  0274               	subwf	??_loading,w
+  2174  04B4  1D03               	skipz
+  2175  04B5  2CB8               	goto	u1195
+  2176  04B6  3001               	movlw	1
+  2177  04B7  022E               	subwf	_PWMload1,w
+  2178  04B8                     u1195:	
+  2179  04B8  1C03               	skipc
+  2180  04B9  0008               	return
+  2181  04BA  30D0               	movlw	208
+  2182  04BB  0020               	movlb	0	; select bank0
+  2183  04BC  07AE               	addwf	_PWMload1,f
+  2184  04BD  30FF               	movlw	255
+  2185  04BE  3DAF               	addwfc	_PWMload1+1,f
+  2186                           
+  2187                           ;main.c: 176: }
+  2188                           ;main.c: 177: }
+  2189  04BF  0008               	return
+  2190  04C0                     l232:	
+  2191                           
+  2192                           ;main.c: 179: else if((data[0]&0x04)!=0){
+  2193  04C0  1D20               	btfss	_data,2
+  2194  04C1  2D22               	goto	l1401
+  2195                           
+  2196                           ;main.c: 180: if(pwmload==PWMload2){
+  2197  04C2  0831               	movf	_PWMload2+1,w
+  2198  04C3  0639               	xorwf	_pwmload+1,w
+  2199  04C4  1D03               	skipz
+  2200  04C5  2CC8               	goto	u1215
+  2201  04C6  0830               	movf	_PWMload2,w
+  2202  04C7  0638               	xorwf	_pwmload,w
+  2203  04C8                     u1215:	
+  2204  04C8  1D03               	skipz
+  2205  04C9  2CF7               	goto	l1391
+  2206                           
+  2207                           ;main.c: 181: if(pwmload<960){
+  2208  04CA  0839               	movf	_pwmload+1,w
+  2209  04CB  3A80               	xorlw	128
+  2210  04CC  00F4               	movwf	??_loading
+  2211  04CD  3083               	movlw	131
+  2212  04CE  0274               	subwf	??_loading,w
+  2213  04CF  1D03               	skipz
+  2214  04D0  2CD3               	goto	u1225
+  2215  04D1  30C0               	movlw	192
+  2216  04D2  0238               	subwf	_pwmload,w
+  2217  04D3                     u1225:	
+  2218  04D3  1803               	skipnc
+  2219  04D4  2CE5               	goto	l1387
+  2220                           
+  2221                           ;main.c: 182: pwmload+=48;
+  2222  04D5  3030               	movlw	48
+  2223  04D6  0020               	movlb	0	; select bank0
+  2224  04D7  07B8               	addwf	_pwmload,f
+  2225  04D8  3000               	movlw	0
+  2226  04D9  3DB9               	addwfc	_pwmload+1,f
+  2227                           
+  2228                           ;main.c: 183: SetPWM4(pwmload);
+  2229  04DA  0839               	movf	_pwmload+1,w
+  2230  04DB  01F1               	clrf	SetPWM4@dutycycle+1
+  2231  04DC  07F1               	addwf	SetPWM4@dutycycle+1,f
+  2232  04DD  0838               	movf	_pwmload,w
+  2233  04DE  01F0               	clrf	SetPWM4@dutycycle
+  2234  04DF  07F0               	addwf	SetPWM4@dutycycle,f
+  2235  04E0  3183  2341  3184   	fcall	_SetPWM4
+  2236                           
+  2237                           ;main.c: 184: LATA6=0;
+  2238  04E3  0022               	movlb	2	; select bank2
+  2239  04E4  130C               	bcf	12,6	;volatile
+  2240  04E5                     l1387:	
+  2241                           
+  2242                           ;main.c: 185: }
+  2243                           ;main.c: 186: if(PWMload2<960) PWMload2+=48;
+  2244  04E5  0020               	movlb	0	; select bank0
+  2245  04E6  0831               	movf	_PWMload2+1,w
+  2246  04E7  3A80               	xorlw	128
+  2247  04E8  00F4               	movwf	??_loading
+  2248  04E9  3083               	movlw	131
+  2249  04EA  0274               	subwf	??_loading,w
+  2250  04EB  1D03               	skipz
+  2251  04EC  2CEF               	goto	u1235
+  2252  04ED  30C0               	movlw	192
+  2253  04EE  0230               	subwf	_PWMload2,w
+  2254  04EF                     u1235:	
+  2255  04EF  1803               	skipnc
+  2256  04F0  0008               	return
+  2257  04F1  3030               	movlw	48
+  2258  04F2  0020               	movlb	0	; select bank0
+  2259  04F3  07B0               	addwf	_PWMload2,f
+  2260  04F4  3000               	movlw	0
+  2261  04F5  3DB1               	addwfc	_PWMload2+1,f
+  2262                           
+  2263                           ;main.c: 187: }
+  2264  04F6  0008               	return
+  2265  04F7                     l1391:	
+  2266                           
+  2267                           ;main.c: 188: else{
+  2268                           ;main.c: 189: if(pwmload>0){
+  2269  04F7  0839               	movf	_pwmload+1,w
+  2270  04F8  3A80               	xorlw	128
+  2271  04F9  00F4               	movwf	??_loading
+  2272  04FA  3080               	movlw	128
+  2273  04FB  0274               	subwf	??_loading,w
+  2274  04FC  1D03               	skipz
+  2275  04FD  2D00               	goto	u1245
+  2276  04FE  3001               	movlw	1
+  2277  04FF  0238               	subwf	_pwmload,w
+  2278  0500                     u1245:	
+  2279  0500  1C03               	skipc
+  2280  0501  2D10               	goto	l1397
+  2281                           
+  2282                           ;main.c: 190: pwmload-=48;
+  2283  0502  30D0               	movlw	208
+  2284  0503  0020               	movlb	0	; select bank0
+  2285  0504  07B8               	addwf	_pwmload,f
+  2286  0505  30FF               	movlw	255
+  2287  0506  3DB9               	addwfc	_pwmload+1,f
+  2288                           
+  2289                           ;main.c: 191: SetPWM4(pwmload);
+  2290  0507  0839               	movf	_pwmload+1,w
+  2291  0508  01F1               	clrf	SetPWM4@dutycycle+1
+  2292  0509  07F1               	addwf	SetPWM4@dutycycle+1,f
+  2293  050A  0838               	movf	_pwmload,w
+  2294  050B  01F0               	clrf	SetPWM4@dutycycle
+  2295  050C  07F0               	addwf	SetPWM4@dutycycle,f
+  2296  050D  3183  2341  3184   	fcall	_SetPWM4
+  2297  0510                     l1397:	
+  2298                           
+  2299                           ;main.c: 192: }
+  2300                           ;main.c: 193: if(PWMload2>0) PWMload2-=48;
+  2301  0510  0020               	movlb	0	; select bank0
+  2302  0511  0831               	movf	_PWMload2+1,w
+  2303  0512  3A80               	xorlw	128
+  2304  0513  00F4               	movwf	??_loading
+  2305  0514  3080               	movlw	128
+  2306  0515  0274               	subwf	??_loading,w
+  2307  0516  1D03               	skipz
+  2308  0517  2D1A               	goto	u1255
+  2309  0518  3001               	movlw	1
+  2310  0519  0230               	subwf	_PWMload2,w
+  2311  051A                     u1255:	
+  2312  051A  1C03               	skipc
+  2313  051B  0008               	return
+  2314  051C  30D0               	movlw	208
+  2315  051D  0020               	movlb	0	; select bank0
+  2316  051E  07B0               	addwf	_PWMload2,f
+  2317  051F  30FF               	movlw	255
+  2318  0520  3DB1               	addwfc	_PWMload2+1,f
+  2319                           
+  2320                           ;main.c: 194: }
+  2321                           ;main.c: 195: }
+  2322  0521  0008               	return
+  2323  0522                     l1401:	
+  2324                           
+  2325                           ;main.c: 197: else{
+  2326                           ;main.c: 198: if(pwmload>0){
+  2327  0522  0839               	movf	_pwmload+1,w
+  2328  0523  3A80               	xorlw	128
+  2329  0524  00F4               	movwf	??_loading
+  2330  0525  3080               	movlw	128
+  2331  0526  0274               	subwf	??_loading,w
+  2332  0527  1D03               	skipz
+  2333  0528  2D2B               	goto	u1265
+  2334  0529  3001               	movlw	1
+  2335  052A  0238               	subwf	_pwmload,w
+  2336  052B                     u1265:	
+  2337  052B  1C03               	skipc
+  2338  052C  0008               	return
+  2339                           
+  2340                           ;main.c: 199: pwmload-=48;
+  2341  052D  30D0               	movlw	208
+  2342  052E  0020               	movlb	0	; select bank0
+  2343  052F  07B8               	addwf	_pwmload,f
+  2344  0530  30FF               	movlw	255
+  2345  0531  3DB9               	addwfc	_pwmload+1,f
+  2346                           
+  2347                           ;main.c: 200: SetPWM4(pwmload);
+  2348  0532  0839               	movf	_pwmload+1,w
+  2349  0533  01F1               	clrf	SetPWM4@dutycycle+1
+  2350  0534  07F1               	addwf	SetPWM4@dutycycle+1,f
+  2351  0535  0838               	movf	_pwmload,w
+  2352  0536  01F0               	clrf	SetPWM4@dutycycle
+  2353  0537  07F0               	addwf	SetPWM4@dutycycle,f
+  2354  0538  3183  2341         	fcall	_SetPWM4
+  2355  053A  0008               	return
+  2356  053B                     __end_of_loading:	
+  2357                           
+  2358                           	psect	text6
+  2359  0398                     __ptext6:	
+  2360 ;; *************** function _init_pwm *****************
+  2361 ;; Defined at:
+  2362 ;;		line 4 in file "C:\pic program\1827_gourobo\pwm.c"
+  2363 ;; Parameters:    Size  Location     Type
+  2364 ;;		None
+  2365 ;; Auto vars:     Size  Location     Type
+  2366 ;;		None
+  2367 ;; Return value:  Size  Location     Type
+  2368 ;;		None               void
+  2369 ;; Registers used:
+  2370 ;;		wreg, status,2, status,0, pclath, cstack
+  2371 ;; Tracked objects:
+  2372 ;;		On entry : 0/0
+  2373 ;;		On exit  : 0/0
+  2374 ;;		Unchanged: 0/0
+  2375 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2376 ;;      Params:         0       0       0       0       0       0
+  2377 ;;      Locals:         0       0       0       0       0       0
+  2378 ;;      Temps:          0       0       0       0       0       0
+  2379 ;;      Totals:         0       0       0       0       0       0
+  2380 ;;Total ram usage:        0 bytes
+  2381 ;; Hardware stack levels used:    1
+  2382 ;; Hardware stack levels required when called:    1
+  2383 ;; This function calls:
+  2384 ;;		_OpenPWM1
+  2385 ;;		_OpenPWM2
+  2386 ;;		_OpenPWM3
+  2387 ;;		_OpenPWM4
+  2388 ;;		_SetPWM1
+  2389 ;;		_SetPWM2
+  2390 ;;		_SetPWM3
+  2391 ;;		_SetPWM4
+  2392 ;; This function is called by:
+  2393 ;;		_main
+  2394 ;; This function uses a non-reentrant model
+  2395 ;;
+  2396                           
+  2397                           
+  2398                           ;psect for function _init_pwm
+  2399  0398                     _init_pwm:	
+  2400                           
+  2401                           ;pwm.c: 23: T2CON |= 0b00000010;
+  2402                           
+  2403                           ;incstack = 0
+  2404                           ; Regs used in _init_pwm: [wreg+status,2+status,0+pclath+cstack]
+  2405  0398  0020               	movlb	0	; select bank0
+  2406  0399  149C               	bsf	28,1	;volatile
+  2407                           
+  2408                           ;pwm.c: 25: OpenPWM1(0xff);
+  2409  039A  30FF               	movlw	255
+  2410  039B  3182  22AF  3183   	fcall	_OpenPWM1
+  2411                           
+  2412                           ;pwm.c: 26: OpenPWM2(0xff);
+  2413  039E  30FF               	movlw	255
+  2414  039F  3182  22BA  3183   	fcall	_OpenPWM2
+  2415                           
+  2416                           ;pwm.c: 27: OpenPWM3(0xff);
+  2417  03A2  30FF               	movlw	255
+  2418  03A3  3182  22C5  3183   	fcall	_OpenPWM3
+  2419                           
+  2420                           ;pwm.c: 28: OpenPWM4(0xff);
+  2421  03A6  30FF               	movlw	255
+  2422  03A7  3182  22D0  3183   	fcall	_OpenPWM4
+  2423                           
+  2424                           ;pwm.c: 29: SetPWM1(0);
+  2425  03AA  3000               	movlw	0
+  2426  03AB  00F0               	movwf	SetPWM1@dutycycle
+  2427  03AC  3000               	movlw	0
+  2428  03AD  00F1               	movwf	SetPWM1@dutycycle+1
+  2429  03AE  3182  22F9  3183   	fcall	_SetPWM1
+  2430                           
+  2431                           ;pwm.c: 30: SetPWM2(0);
+  2432  03B1  3000               	movlw	0
+  2433  03B2  00F0               	movwf	SetPWM2@dutycycle
+  2434  03B3  3000               	movlw	0
+  2435  03B4  00F1               	movwf	SetPWM2@dutycycle+1
+  2436  03B5  3183  2311  3183   	fcall	_SetPWM2
+  2437                           
+  2438                           ;pwm.c: 31: SetPWM3(0);
+  2439  03B8  3000               	movlw	0
+  2440  03B9  00F0               	movwf	SetPWM3@dutycycle
+  2441  03BA  3000               	movlw	0
+  2442  03BB  00F1               	movwf	SetPWM3@dutycycle+1
+  2443  03BC  3183  2329  3183   	fcall	_SetPWM3
+  2444                           
+  2445                           ;pwm.c: 32: SetPWM4(0);
+  2446  03BF  3000               	movlw	0
+  2447  03C0  00F0               	movwf	SetPWM4@dutycycle
+  2448  03C1  3000               	movlw	0
+  2449  03C2  00F1               	movwf	SetPWM4@dutycycle+1
+  2450  03C3  3183  2341         	fcall	_SetPWM4
+  2451  03C5  0008               	return
+  2452  03C6                     __end_of_init_pwm:	
+  2453                           
+  2454                           	psect	text7
+  2455  02D0                     __ptext7:	
+  2456 ;; *************** function _OpenPWM4 *****************
+  2457 ;; Defined at:
+  2458 ;;		line 53 in file "C:\pic program\1827_gourobo\pwm.c"
+  2459 ;; Parameters:    Size  Location     Type
+  2460 ;;  period          1    wreg     unsigned char 
+  2461 ;; Auto vars:     Size  Location     Type
+  2462 ;;  period          1    1[COMMON] unsigned char 
+  2463 ;; Return value:  Size  Location     Type
+  2464 ;;		None               void
+  2465 ;; Registers used:
+  2466 ;;		wreg, status,2, status,0
+  2467 ;; Tracked objects:
+  2468 ;;		On entry : 0/0
+  2469 ;;		On exit  : 0/0
+  2470 ;;		Unchanged: 0/0
+  2471 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2472 ;;      Params:         0       0       0       0       0       0
+  2473 ;;      Locals:         1       0       0       0       0       0
+  2474 ;;      Temps:          1       0       0       0       0       0
+  2475 ;;      Totals:         2       0       0       0       0       0
+  2476 ;;Total ram usage:        2 bytes
+  2477 ;; Hardware stack levels used:    1
+  2478 ;; This function calls:
+  2479 ;;		Nothing
+  2480 ;; This function is called by:
+  2481 ;;		_init_pwm
+  2482 ;; This function uses a non-reentrant model
+  2483 ;;
+  2484                           
+  2485                           
+  2486                           ;psect for function _OpenPWM4
+  2487  02D0                     _OpenPWM4:	
+  2488                           
+  2489                           ;incstack = 0
+  2490                           ; Regs used in _OpenPWM4: [wreg+status,2+status,0]
+  2491                           ;OpenPWM4@period stored from wreg
+  2492  02D0  00F1               	movwf	OpenPWM4@period
+  2493                           
+  2494                           ;pwm.c: 55: CCP2CON |= 0b00001100;
+  2495  02D1  300C               	movlw	12
+  2496  02D2  00F0               	movwf	??_OpenPWM4
+  2497  02D3  0870               	movf	??_OpenPWM4,w
+  2498  02D4  0025               	movlb	5	; select bank5
+  2499  02D5  049A               	iorwf	26,f	;volatile
+  2500                           
+  2501                           ;pwm.c: 56: PR2 = period;
+  2502  02D6  0871               	movf	OpenPWM4@period,w
+  2503  02D7  0020               	movlb	0	; select bank0
+  2504  02D8  009B               	movwf	27	;volatile
+  2505                           
+  2506                           ;pwm.c: 57: T2CON |= 0b00000100;
+  2507  02D9  151C               	bsf	28,2	;volatile
+  2508  02DA  0008               	return
+  2509  02DB                     __end_of_OpenPWM4:	
+  2510                           
+  2511                           	psect	text8
+  2512  02C5                     __ptext8:	
+  2513 ;; *************** function _OpenPWM3 *****************
+  2514 ;; Defined at:
+  2515 ;;		line 47 in file "C:\pic program\1827_gourobo\pwm.c"
+  2516 ;; Parameters:    Size  Location     Type
+  2517 ;;  period          1    wreg     unsigned char 
+  2518 ;; Auto vars:     Size  Location     Type
+  2519 ;;  period          1    1[COMMON] unsigned char 
+  2520 ;; Return value:  Size  Location     Type
+  2521 ;;		None               void
+  2522 ;; Registers used:
+  2523 ;;		wreg, status,2, status,0
+  2524 ;; Tracked objects:
+  2525 ;;		On entry : 0/0
+  2526 ;;		On exit  : 0/0
+  2527 ;;		Unchanged: 0/0
+  2528 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2529 ;;      Params:         0       0       0       0       0       0
+  2530 ;;      Locals:         1       0       0       0       0       0
+  2531 ;;      Temps:          1       0       0       0       0       0
+  2532 ;;      Totals:         2       0       0       0       0       0
+  2533 ;;Total ram usage:        2 bytes
+  2534 ;; Hardware stack levels used:    1
+  2535 ;; This function calls:
+  2536 ;;		Nothing
+  2537 ;; This function is called by:
+  2538 ;;		_init_pwm
+  2539 ;; This function uses a non-reentrant model
+  2540 ;;
+  2541                           
+  2542                           
+  2543                           ;psect for function _OpenPWM3
+  2544  02C5                     _OpenPWM3:	
+  2545                           
+  2546                           ;incstack = 0
+  2547                           ; Regs used in _OpenPWM3: [wreg+status,2+status,0]
+  2548                           ;OpenPWM3@period stored from wreg
+  2549  02C5  00F1               	movwf	OpenPWM3@period
+  2550                           
+  2551                           ;pwm.c: 49: CCP1CON |= 0b00001100;
+  2552  02C6  300C               	movlw	12
+  2553  02C7  00F0               	movwf	??_OpenPWM3
+  2554  02C8  0870               	movf	??_OpenPWM3,w
+  2555  02C9  0025               	movlb	5	; select bank5
+  2556  02CA  0493               	iorwf	19,f	;volatile
+  2557                           
+  2558                           ;pwm.c: 50: PR2 = period;
+  2559  02CB  0871               	movf	OpenPWM3@period,w
+  2560  02CC  0020               	movlb	0	; select bank0
+  2561  02CD  009B               	movwf	27	;volatile
+  2562                           
+  2563                           ;pwm.c: 51: T2CON |= 0b00000100;
+  2564  02CE  151C               	bsf	28,2	;volatile
+  2565  02CF  0008               	return
+  2566  02D0                     __end_of_OpenPWM3:	
+  2567                           
+  2568                           	psect	text9
+  2569  02BA                     __ptext9:	
+  2570 ;; *************** function _OpenPWM2 *****************
+  2571 ;; Defined at:
+  2572 ;;		line 41 in file "C:\pic program\1827_gourobo\pwm.c"
+  2573 ;; Parameters:    Size  Location     Type
+  2574 ;;  period          1    wreg     unsigned char 
+  2575 ;; Auto vars:     Size  Location     Type
+  2576 ;;  period          1    1[COMMON] unsigned char 
+  2577 ;; Return value:  Size  Location     Type
+  2578 ;;		None               void
+  2579 ;; Registers used:
+  2580 ;;		wreg, status,2, status,0
+  2581 ;; Tracked objects:
+  2582 ;;		On entry : 0/0
+  2583 ;;		On exit  : 0/0
+  2584 ;;		Unchanged: 0/0
+  2585 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2586 ;;      Params:         0       0       0       0       0       0
+  2587 ;;      Locals:         1       0       0       0       0       0
+  2588 ;;      Temps:          1       0       0       0       0       0
+  2589 ;;      Totals:         2       0       0       0       0       0
+  2590 ;;Total ram usage:        2 bytes
+  2591 ;; Hardware stack levels used:    1
+  2592 ;; This function calls:
+  2593 ;;		Nothing
+  2594 ;; This function is called by:
+  2595 ;;		_init_pwm
+  2596 ;; This function uses a non-reentrant model
+  2597 ;;
+  2598                           
+  2599                           
+  2600                           ;psect for function _OpenPWM2
+  2601  02BA                     _OpenPWM2:	
+  2602                           
+  2603                           ;incstack = 0
+  2604                           ; Regs used in _OpenPWM2: [wreg+status,2+status,0]
+  2605                           ;OpenPWM2@period stored from wreg
+  2606  02BA  00F1               	movwf	OpenPWM2@period
+  2607                           
+  2608                           ;pwm.c: 43: CCP4CON |= 0b00001100;
+  2609  02BB  300C               	movlw	12
+  2610  02BC  00F0               	movwf	??_OpenPWM2
+  2611  02BD  0870               	movf	??_OpenPWM2,w
+  2612  02BE  0026               	movlb	6	; select bank6
+  2613  02BF  049A               	iorwf	26,f	;volatile
+  2614                           
+  2615                           ;pwm.c: 44: PR2 = period;
+  2616  02C0  0871               	movf	OpenPWM2@period,w
+  2617  02C1  0020               	movlb	0	; select bank0
+  2618  02C2  009B               	movwf	27	;volatile
+  2619                           
+  2620                           ;pwm.c: 45: T2CON |= 0b00000100;
+  2621  02C3  151C               	bsf	28,2	;volatile
+  2622  02C4  0008               	return
+  2623  02C5                     __end_of_OpenPWM2:	
+  2624                           
+  2625                           	psect	text10
+  2626  02AF                     __ptext10:	
+  2627 ;; *************** function _OpenPWM1 *****************
+  2628 ;; Defined at:
+  2629 ;;		line 35 in file "C:\pic program\1827_gourobo\pwm.c"
+  2630 ;; Parameters:    Size  Location     Type
+  2631 ;;  period          1    wreg     unsigned char 
+  2632 ;; Auto vars:     Size  Location     Type
+  2633 ;;  period          1    1[COMMON] unsigned char 
+  2634 ;; Return value:  Size  Location     Type
+  2635 ;;		None               void
+  2636 ;; Registers used:
+  2637 ;;		wreg, status,2, status,0
+  2638 ;; Tracked objects:
+  2639 ;;		On entry : 0/0
+  2640 ;;		On exit  : 0/0
+  2641 ;;		Unchanged: 0/0
+  2642 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2643 ;;      Params:         0       0       0       0       0       0
+  2644 ;;      Locals:         1       0       0       0       0       0
+  2645 ;;      Temps:          1       0       0       0       0       0
+  2646 ;;      Totals:         2       0       0       0       0       0
+  2647 ;;Total ram usage:        2 bytes
+  2648 ;; Hardware stack levels used:    1
+  2649 ;; This function calls:
+  2650 ;;		Nothing
+  2651 ;; This function is called by:
+  2652 ;;		_init_pwm
+  2653 ;; This function uses a non-reentrant model
+  2654 ;;
+  2655                           
+  2656                           
+  2657                           ;psect for function _OpenPWM1
+  2658  02AF                     _OpenPWM1:	
+  2659                           
+  2660                           ;incstack = 0
+  2661                           ; Regs used in _OpenPWM1: [wreg+status,2+status,0]
+  2662                           ;OpenPWM1@period stored from wreg
+  2663  02AF  00F1               	movwf	OpenPWM1@period
+  2664                           
+  2665                           ;pwm.c: 37: CCP3CON |= 0b00001100;
+  2666  02B0  300C               	movlw	12
+  2667  02B1  00F0               	movwf	??_OpenPWM1
+  2668  02B2  0870               	movf	??_OpenPWM1,w
+  2669  02B3  0026               	movlb	6	; select bank6
+  2670  02B4  0493               	iorwf	19,f	;volatile
+  2671                           
+  2672                           ;pwm.c: 38: PR2 = period;
+  2673  02B5  0871               	movf	OpenPWM1@period,w
+  2674  02B6  0020               	movlb	0	; select bank0
+  2675  02B7  009B               	movwf	27	;volatile
+  2676                           
+  2677                           ;pwm.c: 39: T2CON |= 0b00000100;
+  2678  02B8  151C               	bsf	28,2	;volatile
+  2679  02B9  0008               	return
+  2680  02BA                     __end_of_OpenPWM1:	
+  2681                           
+  2682                           	psect	text11
+  2683  0378                     __ptext11:	
+  2684 ;; *************** function _init *****************
+  2685 ;; Defined at:
+  2686 ;;		line 305 in file "C:\pic program\1827_gourobo\main.c"
+  2687 ;; Parameters:    Size  Location     Type
+  2688 ;;		None
+  2689 ;; Auto vars:     Size  Location     Type
+  2690 ;;		None
+  2691 ;; Return value:  Size  Location     Type
+  2692 ;;		None               void
+  2693 ;; Registers used:
+  2694 ;;		wreg, status,2
+  2695 ;; Tracked objects:
+  2696 ;;		On entry : 0/0
+  2697 ;;		On exit  : 0/0
+  2698 ;;		Unchanged: 0/0
+  2699 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2700 ;;      Params:         0       0       0       0       0       0
+  2701 ;;      Locals:         0       0       0       0       0       0
+  2702 ;;      Temps:          0       0       0       0       0       0
+  2703 ;;      Totals:         0       0       0       0       0       0
+  2704 ;;Total ram usage:        0 bytes
+  2705 ;; Hardware stack levels used:    1
+  2706 ;; This function calls:
+  2707 ;;		Nothing
+  2708 ;; This function is called by:
+  2709 ;;		_main
+  2710 ;; This function uses a non-reentrant model
+  2711 ;;
+  2712                           
+  2713                           
+  2714                           ;psect for function _init
+  2715  0378                     _init:	
+  2716                           
+  2717                           ;main.c: 307: INTCON=0;
+  2718                           
+  2719                           ;incstack = 0
+  2720                           ; Regs used in _init: [wreg+status,2]
+  2721  0378  018B               	clrf	11	;volatile
+  2722                           
+  2723                           ;main.c: 308: TRISB2 = 1; TRISB5 = 1; SPBRG = ((int)(32000000L/(16UL * 115200) -1)); RCS
+      +                          TA = (0|0x90); TXSTA = (0x4|0|0x20);
+  2724  0379  0021               	movlb	1	; select bank1
+  2725  037A  150D               	bsf	13,2	;volatile
+  2726  037B  168D               	bsf	13,5	;volatile
+  2727  037C  3010               	movlw	16
+  2728  037D  0023               	movlb	3	; select bank3
+  2729  037E  009B               	movwf	27	;volatile
+  2730  037F  3090               	movlw	144
+  2731  0380  009D               	movwf	29	;volatile
+  2732  0381  3024               	movlw	36
+  2733  0382  009E               	movwf	30	;volatile
+  2734                           
+  2735                           ;main.c: 309: OSCCON = 0b01110000;
+  2736  0383  3070               	movlw	112
+  2737  0384  0021               	movlb	1	; select bank1
+  2738  0385  0099               	movwf	25	;volatile
+  2739                           
+  2740                           ;main.c: 310: GIE = 0;
+  2741  0386  138B               	bcf	11,7	;volatile
+  2742                           
+  2743                           ;main.c: 311: C1ON = 0;
+  2744  0387  0022               	movlb	2	; select bank2
+  2745  0388  1391               	bcf	17,7	;volatile
+  2746                           
+  2747                           ;main.c: 312: ANSELA = 0b00000000;
+  2748  0389  0023               	movlb	3	; select bank3
+  2749  038A  018C               	clrf	12	;volatile
+  2750                           
+  2751                           ;main.c: 313: TRISA = 0b00000000;
+  2752  038B  0021               	movlb	1	; select bank1
+  2753  038C  018C               	clrf	12	;volatile
+  2754                           
+  2755                           ;main.c: 314: ANSELB = 0b00000000;
+  2756  038D  0023               	movlb	3	; select bank3
+  2757  038E  018D               	clrf	13	;volatile
+  2758                           
+  2759                           ;main.c: 315: TRISB = 0b00000010;
+  2760  038F  3002               	movlw	2
+  2761  0390  0021               	movlb	1	; select bank1
+  2762  0391  008D               	movwf	13	;volatile
+  2763                           
+  2764                           ;main.c: 316: TXCKSEL = 1;
+  2765  0392  0022               	movlb	2	; select bank2
+  2766  0393  141E               	bsf	30,0	;volatile
+  2767                           
+  2768                           ;main.c: 317: RXDTSEL = 1;
+  2769  0394  179D               	bsf	29,7	;volatile
+  2770                           
+  2771                           ;main.c: 319: T2CON |= 0b00000001;
+  2772  0395  0020               	movlb	0	; select bank0
+  2773  0396  141C               	bsf	28,0	;volatile
+  2774  0397  0008               	return
+  2775  0398                     __end_of_init:	
+  2776                           
+  2777                           	psect	text12
+  2778  0424                     __ptext12:	
+  2779 ;; *************** function _get_usart *****************
+  2780 ;; Defined at:
+  2781 ;;		line 394 in file "C:\pic program\1827_gourobo\main.c"
+  2782 ;; Parameters:    Size  Location     Type
+  2783 ;;		None
+  2784 ;; Auto vars:     Size  Location     Type
+  2785 ;;  i               2    6[COMMON] unsigned int 
+  2786 ;; Return value:  Size  Location     Type
+  2787 ;;                  1    wreg      unsigned char 
+  2788 ;; Registers used:
+  2789 ;;		wreg, fsr1l, fsr1h, status,2, status,0, pclath, cstack
+  2790 ;; Tracked objects:
+  2791 ;;		On entry : 0/0
+  2792 ;;		On exit  : 0/0
+  2793 ;;		Unchanged: 0/0
+  2794 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2795 ;;      Params:         0       0       0       0       0       0
+  2796 ;;      Locals:         2       0       0       0       0       0
+  2797 ;;      Temps:          1       0       0       0       0       0
+  2798 ;;      Totals:         3       0       0       0       0       0
+  2799 ;;Total ram usage:        3 bytes
+  2800 ;; Hardware stack levels used:    1
+  2801 ;; Hardware stack levels required when called:    1
+  2802 ;; This function calls:
+  2803 ;;		_getch
+  2804 ;;		_inRxData
+  2805 ;; This function is called by:
+  2806 ;;		_main
+  2807 ;; This function uses a non-reentrant model
+  2808 ;;
+  2809                           
+  2810                           
+  2811                           ;psect for function _get_usart
+  2812  0424                     _get_usart:	
+  2813                           
+  2814                           ;main.c: 415: unsigned int i=0;
+  2815                           
+  2816                           ;incstack = 0
+  2817                           ; Regs used in _get_usart: [wreg+fsr1l+fsr1h+status,2+status,0+pclath+cstack]
+  2818  0424  01F6               	clrf	get_usart@i
+  2819  0425  01F7               	clrf	get_usart@i+1
+  2820                           
+  2821                           ;main.c: 417: if(inRxData(0x80)==0x01)
+  2822  0426  3080               	movlw	128
+  2823  0427  3183  23C6  3184   	fcall	_inRxData
+  2824  042A  3A01               	xorlw	1
+  2825  042B  1D03               	skipz
+  2826  042C  2C5B               	goto	l1287
+  2827                           
+  2828                           ;main.c: 418: {
+  2829                           ;main.c: 420: for(i=0;i<6;i++)
+  2830  042D  01F6               	clrf	get_usart@i
+  2831  042E  01F7               	clrf	get_usart@i+1
+  2832  042F  3000               	movlw	0
+  2833  0430  0277               	subwf	get_usart@i+1,w
+  2834  0431  3006               	movlw	6
+  2835  0432  1903               	skipnz
+  2836  0433  0276               	subwf	get_usart@i,w
+  2837  0434  1803               	btfsc	3,0
+  2838  0435  2C4B               	goto	l1281
+  2839  0436                     l1275:	
+  2840                           
+  2841                           ;main.c: 421: {
+  2842                           ;main.c: 422: data[i] = getch();
+  2843  0436  3182  22E6  3184   	fcall	_getch
+  2844  0439  00F5               	movwf	??_get_usart
+  2845  043A  0876               	movf	get_usart@i,w
+  2846  043B  3E20               	addlw	_data& (0+255)
+  2847  043C  0086               	movwf	6
+  2848  043D  0187               	clrf	7
+  2849  043E  0875               	movf	??_get_usart,w
+  2850  043F  0081               	movwf	1
+  2851  0440  3001               	movlw	1
+  2852  0441  07F6               	addwf	get_usart@i,f
+  2853  0442  3000               	movlw	0
+  2854  0443  3DF7               	addwfc	get_usart@i+1,f
+  2855  0444  3000               	movlw	0
+  2856  0445  0277               	subwf	get_usart@i+1,w
+  2857  0446  3006               	movlw	6
+  2858  0447  1903               	skipnz
+  2859  0448  0276               	subwf	get_usart@i,w
+  2860  0449  1C03               	skipc
+  2861  044A  2C36               	goto	l1275
+  2862  044B                     l1281:	
+  2863                           
+  2864                           ;main.c: 423: }
+  2865                           ;main.c: 424: if(inRxData((data[0]+data[1]+data[2]+data[3]+data[4]+data[5])&0x7f)==0x01)
+  2866  044B  0020               	movlb	0	; select bank0
+  2867  044C  0821               	movf	_data+1,w
+  2868  044D  0722               	addwf	_data+2,w
+  2869  044E  0723               	addwf	_data+3,w
+  2870  044F  0724               	addwf	_data+4,w
+  2871  0450  0725               	addwf	_data+5,w
+  2872  0451  0720               	addwf	_data,w
+  2873  0452  397F               	andlw	127
+  2874  0453  3183  23C6  3184   	fcall	_inRxData
+  2875  0456  3A01               	xorlw	1
+  2876  0457  1D03               	skipz
+  2877  0458  2C5B               	goto	l1287
+  2878                           
+  2879                           ;main.c: 425: {
+  2880                           ;main.c: 426: return 0x01;
+  2881  0459  3001               	movlw	1
+  2882  045A  0008               	return
+  2883  045B                     l1287:	
+  2884                           ;main.c: 430: else
+  2885                           ;main.c: 431: {
+  2886                           
+  2887                           ;main.c: 427: }
+  2888                           ;main.c: 428: }
+  2889                           
+  2890                           
+  2891                           ;main.c: 433: }
+  2892                           ;main.c: 434: return 0x00;
+  2893  045B  3000               	movlw	0
+  2894  045C  0008               	return
+  2895  045D                     __end_of_get_usart:	
+  2896                           
+  2897                           	psect	text13
+  2898  03C6                     __ptext13:	
+  2899 ;; *************** function _inRxData *****************
+  2900 ;; Defined at:
+  2901 ;;		line 364 in file "C:\pic program\1827_gourobo\main.c"
+  2902 ;; Parameters:    Size  Location     Type
+  2903 ;;  rxData          1    wreg     unsigned char 
+  2904 ;; Auto vars:     Size  Location     Type
+  2905 ;;  rxData          1    0[COMMON] unsigned char 
+  2906 ;;  cnt2            2    3[COMMON] unsigned int 
+  2907 ;;  cnt1            2    1[COMMON] unsigned int 
+  2908 ;; Return value:  Size  Location     Type
+  2909 ;;                  1    wreg      unsigned char 
+  2910 ;; Registers used:
+  2911 ;;		wreg, status,2
+  2912 ;; Tracked objects:
+  2913 ;;		On entry : 0/0
+  2914 ;;		On exit  : 0/0
+  2915 ;;		Unchanged: 0/0
+  2916 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  2917 ;;      Params:         0       0       0       0       0       0
+  2918 ;;      Locals:         5       0       0       0       0       0
+  2919 ;;      Temps:          0       0       0       0       0       0
+  2920 ;;      Totals:         5       0       0       0       0       0
+  2921 ;;Total ram usage:        5 bytes
+  2922 ;; Hardware stack levels used:    1
+  2923 ;; This function calls:
+  2924 ;;		Nothing
+  2925 ;; This function is called by:
+  2926 ;;		_get_usart
+  2927 ;; This function uses a non-reentrant model
+  2928 ;;
+  2929                           
+  2930                           
+  2931                           ;psect for function _inRxData
+  2932  03C6                     _inRxData:	
+  2933                           
+  2934                           ;incstack = 0
+  2935                           ; Regs used in _inRxData: [wreg+status,2]
+  2936                           ;inRxData@rxData stored from wreg
+  2937  03C6  00F0               	movwf	inRxData@rxData
+  2938                           
+  2939                           ;main.c: 366: unsigned int cnt1=0;
+  2940  03C7  01F1               	clrf	inRxData@cnt1
+  2941  03C8  01F2               	clrf	inRxData@cnt1+1
+  2942                           
+  2943                           ;main.c: 367: unsigned int cnt2=0;
+  2944  03C9  01F3               	clrf	inRxData@cnt2
+  2945  03CA  01F4               	clrf	inRxData@cnt2+1
+  2946  03CB                     l1239:	
+  2947                           ;main.c: 368: while(1)
+  2948                           
+  2949                           
+  2950                           ;main.c: 369: {
+  2951                           ;main.c: 370: if(OERR )
+  2952  03CB  0023               	movlb	3	; select bank3
+  2953  03CC  189D               	btfsc	29,1	;volatile
+  2954                           
+  2955                           ;main.c: 371: CREN=0;
+  2956  03CD  121D               	bcf	29,4	;volatile
+  2957                           
+  2958                           ;main.c: 372: CREN=1;
+  2959  03CE  161D               	bsf	29,4	;volatile
+  2960  03CF                     l320:	
+  2961                           ;main.c: 373: while(!RCIF)
+  2962                           
+  2963  03CF  0020               	movlb	0	; select bank0
+  2964  03D0  1A91               	btfsc	17,5	;volatile
+  2965  03D1  2BDF               	goto	l1247
+  2966                           
+  2967                           ;main.c: 374: {
+  2968                           ;main.c: 375: cnt1++;
+  2969  03D2  3001               	movlw	1
+  2970  03D3  07F1               	addwf	inRxData@cnt1,f
+  2971  03D4  3000               	movlw	0
+  2972  03D5  3DF2               	addwfc	inRxData@cnt1+1,f
+  2973                           
+  2974                           ;main.c: 376: if(cnt1>=100)
+  2975  03D6  3000               	movlw	0
+  2976  03D7  0272               	subwf	inRxData@cnt1+1,w
+  2977  03D8  3064               	movlw	100
+  2978  03D9  1903               	skipnz
+  2979  03DA  0271               	subwf	inRxData@cnt1,w
+  2980  03DB  1C03               	skipc
+  2981  03DC  2BCF               	goto	l320
+  2982                           
+  2983                           ;main.c: 377: {
+  2984                           ;main.c: 378: cnt1=0;
+  2985  03DD  01F1               	clrf	inRxData@cnt1
+  2986  03DE  01F2               	clrf	inRxData@cnt1+1
+  2987  03DF                     l1247:	
+  2988                           ;main.c: 379: break;
+  2989                           
+  2990                           
+  2991                           ;main.c: 380: }
+  2992                           ;main.c: 381: }
+  2993                           ;main.c: 382: if(RCREG==rxData)
+  2994  03DF  0023               	movlb	3	; select bank3
+  2995  03E0  0819               	movf	25,w	;volatile
+  2996  03E1  0670               	xorwf	inRxData@rxData,w
+  2997  03E2  1D03               	skipz
+  2998  03E3  2BE6               	goto	l1253
+  2999                           
+  3000                           ;main.c: 383: return 0x01;
+  3001  03E4  3001               	movlw	1
+  3002  03E5  0008               	return
+  3003  03E6                     l1253:	
+  3004                           
+  3005                           ;main.c: 384: cnt2++;
+  3006  03E6  3001               	movlw	1
+  3007  03E7  07F3               	addwf	inRxData@cnt2,f
+  3008  03E8  3000               	movlw	0
+  3009  03E9  3DF4               	addwfc	inRxData@cnt2+1,f
+  3010                           
+  3011                           ;main.c: 385: if(cnt2>=10)
+  3012  03EA  3000               	movlw	0
+  3013  03EB  0274               	subwf	inRxData@cnt2+1,w
+  3014  03EC  300A               	movlw	10
+  3015  03ED  1903               	skipnz
+  3016  03EE  0273               	subwf	inRxData@cnt2,w
+  3017  03EF  1C03               	skipc
+  3018  03F0  2BCB               	goto	l1239
+  3019                           
+  3020                           ;main.c: 386: {
+  3021                           ;main.c: 387: cnt2=0;
+  3022  03F1  01F3               	clrf	inRxData@cnt2
+  3023  03F2  01F4               	clrf	inRxData@cnt2+1
+  3024                           
+  3025                           ;main.c: 388: return 0x00;
+  3026  03F3  3000               	movlw	0
+  3027  03F4  0008               	return
+  3028  03F5                     __end_of_inRxData:	
+  3029                           
+  3030                           	psect	text14
+  3031  02E6                     __ptext14:	
+  3032 ;; *************** function _getch *****************
+  3033 ;; Defined at:
+  3034 ;;		line 342 in file "C:\pic program\1827_gourobo\main.c"
+  3035 ;; Parameters:    Size  Location     Type
+  3036 ;;		None
+  3037 ;; Auto vars:     Size  Location     Type
+  3038 ;;  cnt             2    0[COMMON] unsigned int 
+  3039 ;; Return value:  Size  Location     Type
+  3040 ;;                  1    wreg      unsigned char 
+  3041 ;; Registers used:
+  3042 ;;		wreg, status,2
+  3043 ;; Tracked objects:
+  3044 ;;		On entry : 0/0
+  3045 ;;		On exit  : 0/0
+  3046 ;;		Unchanged: 0/0
+  3047 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  3048 ;;      Params:         0       0       0       0       0       0
+  3049 ;;      Locals:         2       0       0       0       0       0
+  3050 ;;      Temps:          0       0       0       0       0       0
+  3051 ;;      Totals:         2       0       0       0       0       0
+  3052 ;;Total ram usage:        2 bytes
+  3053 ;; Hardware stack levels used:    1
+  3054 ;; This function calls:
+  3055 ;;		Nothing
+  3056 ;; This function is called by:
+  3057 ;;		_get_usart
+  3058 ;;		_getche
+  3059 ;; This function uses a non-reentrant model
+  3060 ;;
+  3061                           
+  3062                           
+  3063                           ;psect for function _getch
+  3064  02E6                     _getch:	
+  3065                           
+  3066                           ;main.c: 343: unsigned int cnt=0;
+  3067                           
+  3068                           ;incstack = 0
+  3069                           ; Regs used in _getch: [wreg+status,2]
+  3070  02E6  01F0               	clrf	getch@cnt
+  3071  02E7  01F1               	clrf	getch@cnt+1
+  3072  02E8                     l308:	
+  3073                           ;main.c: 344: while(!RCIF)
+  3074                           
+  3075  02E8  0020               	movlb	0	; select bank0
+  3076  02E9  1A91               	btfsc	17,5	;volatile
+  3077  02EA  2AF6               	goto	l1233
+  3078                           
+  3079                           ;main.c: 345: {
+  3080                           ;main.c: 346: cnt++;
+  3081  02EB  3001               	movlw	1
+  3082  02EC  07F0               	addwf	getch@cnt,f
+  3083  02ED  3000               	movlw	0
+  3084  02EE  3DF1               	addwfc	getch@cnt+1,f
+  3085                           
+  3086                           ;main.c: 347: if(cnt>=1000)
+  3087  02EF  3003               	movlw	3
+  3088  02F0  0271               	subwf	getch@cnt+1,w
+  3089  02F1  30E8               	movlw	232
+  3090  02F2  1903               	skipnz
+  3091  02F3  0270               	subwf	getch@cnt,w
+  3092  02F4  1C03               	skipc
+  3093  02F5  2AE8               	goto	l308
+  3094  02F6                     l1233:	
+  3095                           ;main.c: 348: {
+  3096                           ;main.c: 349: break;
+  3097                           
+  3098                           
+  3099                           ;main.c: 350: }
+  3100                           ;main.c: 351: }
+  3101                           ;main.c: 352: return RCREG;
+  3102  02F6  0023               	movlb	3	; select bank3
+  3103  02F7  0819               	movf	25,w	;volatile
+  3104  02F8  0008               	return
+  3105  02F9                     __end_of_getch:	
+  3106                           
+  3107                           	psect	text15
+  3108  0359                     __ptext15:	
+  3109 ;; *************** function _emergency *****************
+  3110 ;; Defined at:
+  3111 ;;		line 105 in file "C:\pic program\1827_gourobo\main.c"
+  3112 ;; Parameters:    Size  Location     Type
+  3113 ;;		None
+  3114 ;; Auto vars:     Size  Location     Type
+  3115 ;;		None
+  3116 ;; Return value:  Size  Location     Type
+  3117 ;;		None               void
+  3118 ;; Registers used:
+  3119 ;;		wreg, status,2, status,0, pclath, cstack
+  3120 ;; Tracked objects:
+  3121 ;;		On entry : 0/0
+  3122 ;;		On exit  : 0/0
+  3123 ;;		Unchanged: 0/0
+  3124 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  3125 ;;      Params:         0       0       0       0       0       0
+  3126 ;;      Locals:         0       0       0       0       0       0
+  3127 ;;      Temps:          0       0       0       0       0       0
+  3128 ;;      Totals:         0       0       0       0       0       0
+  3129 ;;Total ram usage:        0 bytes
+  3130 ;; Hardware stack levels used:    1
+  3131 ;; Hardware stack levels required when called:    1
+  3132 ;; This function calls:
+  3133 ;;		_SetPWM1
+  3134 ;;		_SetPWM2
+  3135 ;;		_SetPWM3
+  3136 ;;		_SetPWM4
+  3137 ;; This function is called by:
+  3138 ;;		_main
+  3139 ;; This function uses a non-reentrant model
+  3140 ;;
+  3141                           
+  3142                           
+  3143                           ;psect for function _emergency
+  3144  0359                     _emergency:	
+  3145                           
+  3146                           ;main.c: 106: if((data[0]&0x01)!=0){
+  3147                           
+  3148                           ;incstack = 0
+  3149                           ; Regs used in _emergency: [wreg+status,2+status,0+pclath+cstack]
+  3150  0359  0020               	movlb	0	; select bank0
+  3151  035A  1C20               	btfss	_data,0
+  3152  035B  0008               	return
+  3153                           
+  3154                           ;main.c: 107: SetPWM1(0);
+  3155  035C  3000               	movlw	0
+  3156  035D  00F0               	movwf	SetPWM1@dutycycle
+  3157  035E  3000               	movlw	0
+  3158  035F  00F1               	movwf	SetPWM1@dutycycle+1
+  3159  0360  3182  22F9  3183   	fcall	_SetPWM1
+  3160                           
+  3161                           ;main.c: 108: SetPWM2(0);
+  3162  0363  3000               	movlw	0
+  3163  0364  00F0               	movwf	SetPWM2@dutycycle
+  3164  0365  3000               	movlw	0
+  3165  0366  00F1               	movwf	SetPWM2@dutycycle+1
+  3166  0367  3183  2311  3183   	fcall	_SetPWM2
+  3167                           
+  3168                           ;main.c: 109: SetPWM3(0);
+  3169  036A  3000               	movlw	0
+  3170  036B  00F0               	movwf	SetPWM3@dutycycle
+  3171  036C  3000               	movlw	0
+  3172  036D  00F1               	movwf	SetPWM3@dutycycle+1
+  3173  036E  3183  2329  3183   	fcall	_SetPWM3
+  3174                           
+  3175                           ;main.c: 110: SetPWM4(0);
+  3176  0371  3000               	movlw	0
+  3177  0372  00F0               	movwf	SetPWM4@dutycycle
+  3178  0373  3000               	movlw	0
+  3179  0374  00F1               	movwf	SetPWM4@dutycycle+1
+  3180  0375  3183  2341         	fcall	_SetPWM4
+  3181  0377  0008               	return
+  3182  0378                     __end_of_emergency:	
+  3183                           
+  3184                           	psect	text16
+  3185  0341                     __ptext16:	
+  3186 ;; *************** function _SetPWM4 *****************
+  3187 ;; Defined at:
+  3188 ;;		line 80 in file "C:\pic program\1827_gourobo\pwm.c"
+  3189 ;; Parameters:    Size  Location     Type
+  3190 ;;  dutycycle       2    0[COMMON] unsigned int 
+  3191 ;; Auto vars:     Size  Location     Type
+  3192 ;;		None
+  3193 ;; Return value:  Size  Location     Type
+  3194 ;;		None               void
+  3195 ;; Registers used:
+  3196 ;;		wreg, status,2, status,0
+  3197 ;; Tracked objects:
+  3198 ;;		On entry : 0/0
+  3199 ;;		On exit  : 0/0
+  3200 ;;		Unchanged: 0/0
+  3201 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  3202 ;;      Params:         2       0       0       0       0       0
+  3203 ;;      Locals:         0       0       0       0       0       0
+  3204 ;;      Temps:          2       0       0       0       0       0
+  3205 ;;      Totals:         4       0       0       0       0       0
+  3206 ;;Total ram usage:        4 bytes
+  3207 ;; Hardware stack levels used:    1
+  3208 ;; This function calls:
+  3209 ;;		Nothing
+  3210 ;; This function is called by:
+  3211 ;;		_init_pwm
+  3212 ;;		_emergency
+  3213 ;;		_loading
+  3214 ;; This function uses a non-reentrant model
+  3215 ;;
+  3216                           
+  3217                           
+  3218                           ;psect for function _SetPWM4
+  3219  0341                     _SetPWM4:	
+  3220                           
+  3221                           ;pwm.c: 83: CCPR2L = dutycycle >> 2;
+  3222                           
+  3223                           ;incstack = 0
+  3224                           ; Regs used in _SetPWM4: [wreg+status,2+status,0]
+  3225  0341  0871               	movf	SetPWM4@dutycycle+1,w
+  3226  0342  00F3               	movwf	??_SetPWM4+1
+  3227  0343  0870               	movf	SetPWM4@dutycycle,w
+  3228  0344  00F2               	movwf	??_SetPWM4
+  3229  0345  36F3               	lsrf	??_SetPWM4+1,f
+  3230  0346  0CF2               	rrf	??_SetPWM4,f
+  3231  0347  36F3               	lsrf	??_SetPWM4+1,f
+  3232  0348  0CF2               	rrf	??_SetPWM4,f
+  3233  0349  0872               	movf	??_SetPWM4,w
+  3234  034A  0025               	movlb	5	; select bank5
+  3235  034B  0098               	movwf	24	;volatile
+  3236                           
+  3237                           ;pwm.c: 85: CCP2CON |= (dutycycle & 0x0003) << 4;
+  3238  034C  0870               	movf	SetPWM4@dutycycle,w
+  3239  034D  3903               	andlw	3
+  3240  034E  00F2               	movwf	??_SetPWM4
+  3241  034F  3003               	movlw	3
+  3242  0350                     u885:	
+  3243  0350  35F2               	lslf	??_SetPWM4,f
+  3244  0351  3EFF               	addlw	-1
+  3245  0352  1D03               	skipz
+  3246  0353  2B50               	goto	u885
+  3247  0354  3572               	lslf	??_SetPWM4,w
+  3248  0355  00F3               	movwf	??_SetPWM4+1
+  3249  0356  0873               	movf	??_SetPWM4+1,w
+  3250  0357  049A               	iorwf	26,f	;volatile
+  3251  0358  0008               	return
+  3252  0359                     __end_of_SetPWM4:	
+  3253                           
+  3254                           	psect	text17
+  3255  0329                     __ptext17:	
+  3256 ;; *************** function _SetPWM3 *****************
+  3257 ;; Defined at:
+  3258 ;;		line 73 in file "C:\pic program\1827_gourobo\pwm.c"
+  3259 ;; Parameters:    Size  Location     Type
+  3260 ;;  dutycycle       2    0[COMMON] unsigned int 
+  3261 ;; Auto vars:     Size  Location     Type
+  3262 ;;		None
+  3263 ;; Return value:  Size  Location     Type
+  3264 ;;		None               void
+  3265 ;; Registers used:
+  3266 ;;		wreg, status,2, status,0
+  3267 ;; Tracked objects:
+  3268 ;;		On entry : 0/0
+  3269 ;;		On exit  : 0/0
+  3270 ;;		Unchanged: 0/0
+  3271 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  3272 ;;      Params:         2       0       0       0       0       0
+  3273 ;;      Locals:         0       0       0       0       0       0
+  3274 ;;      Temps:          2       0       0       0       0       0
+  3275 ;;      Totals:         4       0       0       0       0       0
+  3276 ;;Total ram usage:        4 bytes
+  3277 ;; Hardware stack levels used:    1
+  3278 ;; This function calls:
+  3279 ;;		Nothing
+  3280 ;; This function is called by:
+  3281 ;;		_init_pwm
+  3282 ;;		_emergency
+  3283 ;;		_rotation
+  3284 ;; This function uses a non-reentrant model
+  3285 ;;
+  3286                           
+  3287                           
+  3288                           ;psect for function _SetPWM3
+  3289  0329                     _SetPWM3:	
+  3290                           
+  3291                           ;pwm.c: 76: CCPR1L = dutycycle >> 2;
+  3292                           
+  3293                           ;incstack = 0
+  3294                           ; Regs used in _SetPWM3: [wreg+status,2+status,0]
+  3295  0329  0871               	movf	SetPWM3@dutycycle+1,w
+  3296  032A  00F3               	movwf	??_SetPWM3+1
+  3297  032B  0870               	movf	SetPWM3@dutycycle,w
+  3298  032C  00F2               	movwf	??_SetPWM3
+  3299  032D  36F3               	lsrf	??_SetPWM3+1,f
+  3300  032E  0CF2               	rrf	??_SetPWM3,f
+  3301  032F  36F3               	lsrf	??_SetPWM3+1,f
+  3302  0330  0CF2               	rrf	??_SetPWM3,f
+  3303  0331  0872               	movf	??_SetPWM3,w
+  3304  0332  0025               	movlb	5	; select bank5
+  3305  0333  0091               	movwf	17	;volatile
+  3306                           
+  3307                           ;pwm.c: 78: CCP1CON |= (dutycycle & 0x0003) << 4;
+  3308  0334  0870               	movf	SetPWM3@dutycycle,w
+  3309  0335  3903               	andlw	3
+  3310  0336  00F2               	movwf	??_SetPWM3
+  3311  0337  3003               	movlw	3
+  3312  0338                     u875:	
+  3313  0338  35F2               	lslf	??_SetPWM3,f
+  3314  0339  3EFF               	addlw	-1
+  3315  033A  1D03               	skipz
+  3316  033B  2B38               	goto	u875
+  3317  033C  3572               	lslf	??_SetPWM3,w
+  3318  033D  00F3               	movwf	??_SetPWM3+1
+  3319  033E  0873               	movf	??_SetPWM3+1,w
+  3320  033F  0493               	iorwf	19,f	;volatile
+  3321  0340  0008               	return
+  3322  0341                     __end_of_SetPWM3:	
+  3323                           
+  3324                           	psect	text18
+  3325  0311                     __ptext18:	
+  3326 ;; *************** function _SetPWM2 *****************
+  3327 ;; Defined at:
+  3328 ;;		line 66 in file "C:\pic program\1827_gourobo\pwm.c"
+  3329 ;; Parameters:    Size  Location     Type
+  3330 ;;  dutycycle       2    0[COMMON] unsigned int 
+  3331 ;; Auto vars:     Size  Location     Type
+  3332 ;;		None
+  3333 ;; Return value:  Size  Location     Type
+  3334 ;;		None               void
+  3335 ;; Registers used:
+  3336 ;;		wreg, status,2, status,0
+  3337 ;; Tracked objects:
+  3338 ;;		On entry : 0/0
+  3339 ;;		On exit  : 0/0
+  3340 ;;		Unchanged: 0/0
+  3341 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  3342 ;;      Params:         2       0       0       0       0       0
+  3343 ;;      Locals:         0       0       0       0       0       0
+  3344 ;;      Temps:          2       0       0       0       0       0
+  3345 ;;      Totals:         4       0       0       0       0       0
+  3346 ;;Total ram usage:        4 bytes
+  3347 ;; Hardware stack levels used:    1
+  3348 ;; This function calls:
+  3349 ;;		Nothing
+  3350 ;; This function is called by:
+  3351 ;;		_init_pwm
+  3352 ;;		_emergency
+  3353 ;;		_movetire2
+  3354 ;; This function uses a non-reentrant model
+  3355 ;;
+  3356                           
+  3357                           
+  3358                           ;psect for function _SetPWM2
+  3359  0311                     _SetPWM2:	
+  3360                           
+  3361                           ;pwm.c: 69: CCPR4L = dutycycle >> 2;
+  3362                           
+  3363                           ;incstack = 0
+  3364                           ; Regs used in _SetPWM2: [wreg+status,2+status,0]
+  3365  0311  0871               	movf	SetPWM2@dutycycle+1,w
+  3366  0312  00F3               	movwf	??_SetPWM2+1
+  3367  0313  0870               	movf	SetPWM2@dutycycle,w
+  3368  0314  00F2               	movwf	??_SetPWM2
+  3369  0315  36F3               	lsrf	??_SetPWM2+1,f
+  3370  0316  0CF2               	rrf	??_SetPWM2,f
+  3371  0317  36F3               	lsrf	??_SetPWM2+1,f
+  3372  0318  0CF2               	rrf	??_SetPWM2,f
+  3373  0319  0872               	movf	??_SetPWM2,w
+  3374  031A  0026               	movlb	6	; select bank6
+  3375  031B  0098               	movwf	24	;volatile
+  3376                           
+  3377                           ;pwm.c: 71: CCP4CON |= (dutycycle & 0x0003) << 4;
+  3378  031C  0870               	movf	SetPWM2@dutycycle,w
+  3379  031D  3903               	andlw	3
+  3380  031E  00F2               	movwf	??_SetPWM2
+  3381  031F  3003               	movlw	3
+  3382  0320                     u865:	
+  3383  0320  35F2               	lslf	??_SetPWM2,f
+  3384  0321  3EFF               	addlw	-1
+  3385  0322  1D03               	skipz
+  3386  0323  2B20               	goto	u865
+  3387  0324  3572               	lslf	??_SetPWM2,w
+  3388  0325  00F3               	movwf	??_SetPWM2+1
+  3389  0326  0873               	movf	??_SetPWM2+1,w
+  3390  0327  049A               	iorwf	26,f	;volatile
+  3391  0328  0008               	return
+  3392  0329                     __end_of_SetPWM2:	
+  3393                           
+  3394                           	psect	text19
+  3395  02F9                     __ptext19:	
+  3396 ;; *************** function _SetPWM1 *****************
+  3397 ;; Defined at:
+  3398 ;;		line 59 in file "C:\pic program\1827_gourobo\pwm.c"
+  3399 ;; Parameters:    Size  Location     Type
+  3400 ;;  dutycycle       2    0[COMMON] unsigned int 
+  3401 ;; Auto vars:     Size  Location     Type
+  3402 ;;		None
+  3403 ;; Return value:  Size  Location     Type
+  3404 ;;		None               void
+  3405 ;; Registers used:
+  3406 ;;		wreg, status,2, status,0
+  3407 ;; Tracked objects:
+  3408 ;;		On entry : 0/0
+  3409 ;;		On exit  : 0/0
+  3410 ;;		Unchanged: 0/0
+  3411 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  3412 ;;      Params:         2       0       0       0       0       0
+  3413 ;;      Locals:         0       0       0       0       0       0
+  3414 ;;      Temps:          2       0       0       0       0       0
+  3415 ;;      Totals:         4       0       0       0       0       0
+  3416 ;;Total ram usage:        4 bytes
+  3417 ;; Hardware stack levels used:    1
+  3418 ;; This function calls:
+  3419 ;;		Nothing
+  3420 ;; This function is called by:
+  3421 ;;		_init_pwm
+  3422 ;;		_emergency
+  3423 ;;		_movetire1
+  3424 ;; This function uses a non-reentrant model
+  3425 ;;
+  3426                           
+  3427                           
+  3428                           ;psect for function _SetPWM1
+  3429  02F9                     _SetPWM1:	
+  3430                           
+  3431                           ;pwm.c: 62: CCPR3L = dutycycle >> 2;
+  3432                           
+  3433                           ;incstack = 0
+  3434                           ; Regs used in _SetPWM1: [wreg+status,2+status,0]
+  3435  02F9  0871               	movf	SetPWM1@dutycycle+1,w
+  3436  02FA  00F3               	movwf	??_SetPWM1+1
+  3437  02FB  0870               	movf	SetPWM1@dutycycle,w
+  3438  02FC  00F2               	movwf	??_SetPWM1
+  3439  02FD  36F3               	lsrf	??_SetPWM1+1,f
+  3440  02FE  0CF2               	rrf	??_SetPWM1,f
+  3441  02FF  36F3               	lsrf	??_SetPWM1+1,f
+  3442  0300  0CF2               	rrf	??_SetPWM1,f
+  3443  0301  0872               	movf	??_SetPWM1,w
+  3444  0302  0026               	movlb	6	; select bank6
+  3445  0303  0091               	movwf	17	;volatile
+  3446                           
+  3447                           ;pwm.c: 64: CCP3CON |= (dutycycle & 0x0003) << 4;
+  3448  0304  0870               	movf	SetPWM1@dutycycle,w
+  3449  0305  3903               	andlw	3
+  3450  0306  00F2               	movwf	??_SetPWM1
+  3451  0307  3003               	movlw	3
+  3452  0308                     u855:	
+  3453  0308  35F2               	lslf	??_SetPWM1,f
+  3454  0309  3EFF               	addlw	-1
+  3455  030A  1D03               	skipz
+  3456  030B  2B08               	goto	u855
+  3457  030C  3572               	lslf	??_SetPWM1,w
+  3458  030D  00F3               	movwf	??_SetPWM1+1
+  3459  030E  0873               	movf	??_SetPWM1+1,w
+  3460  030F  0493               	iorwf	19,f	;volatile
+  3461  0310  0008               	return
+  3462  0311                     __end_of_SetPWM1:	
+  3463  007E                     btemp	set	126	;btemp
+  3464  007E                     pic14e$flags	set	126
+  3465  007E                     wtemp	set	126
+  3466  007E                     wtemp0	set	126
+  3467  0080                     wtemp1	set	128
+  3468  0082                     wtemp2	set	130
+  3469  0084                     wtemp3	set	132
+  3470  0086                     wtemp4	set	134
+  3471  0088                     wtemp5	set	136
+  3472  007F                     wtemp6	set	127
+  3473  007E                     ttemp	set	126
+  3474  007E                     ttemp0	set	126
+  3475  0081                     ttemp1	set	129
+  3476  0084                     ttemp2	set	132
+  3477  0087                     ttemp3	set	135
+  3478  007F                     ttemp4	set	127
+  3479  007E                     ltemp	set	126
+  3480  007E                     ltemp0	set	126
+  3481  0082                     ltemp1	set	130
+  3482  0086                     ltemp2	set	134
+  3483  0080                     ltemp3	set	128
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         33
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14     10      14
+    BANK0            80      0      29
+    BANK1            80      0       0
+    BANK2            80      0       0
+    BANK3            80      0       0
+    BANK4            48      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    _main->_get_usart
+    _rotation->_SetPWM3
+    _movetire2->_SetPWM2
+    _movetire1->_SetPWM1
+    _loading->_SetPWM4
+    _init_pwm->_SetPWM1
+    _init_pwm->_SetPWM2
+    _init_pwm->_SetPWM3
+    _init_pwm->_SetPWM4
+    _get_usart->_inRxData
+    _emergency->_SetPWM1
+    _emergency->_SetPWM2
+    _emergency->_SetPWM3
+    _emergency->_SetPWM4
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 2     2      0    5231
+                                              8 COMMON     2     2      0
+                          _emergency
+                          _get_usart
+                               _init
+                           _init_pwm
+                            _loading
+                          _movetire1
+                          _movetire2
+                           _rotation
+                           _shooting
+ ---------------------------------------------------------------------------------
+ (1) _shooting                                             0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _rotation                                             1     1      0     415
+                                              4 COMMON     1     1      0
+                            _SetPWM3
+ ---------------------------------------------------------------------------------
+ (1) _movetire2                                            1     1      0     415
+                                              4 COMMON     1     1      0
+                            _SetPWM2
+ ---------------------------------------------------------------------------------
+ (1) _movetire1                                            1     1      0     415
+                                              4 COMMON     1     1      0
+                            _SetPWM1
+ ---------------------------------------------------------------------------------
+ (1) _loading                                              1     1      0     415
+                                              4 COMMON     1     1      0
+                            _SetPWM4
+ ---------------------------------------------------------------------------------
+ (1) _init_pwm                                             0     0      0    1720
+                           _OpenPWM1
+                           _OpenPWM2
+                           _OpenPWM3
+                           _OpenPWM4
+                            _SetPWM1
+                            _SetPWM2
+                            _SetPWM3
+                            _SetPWM4
+ ---------------------------------------------------------------------------------
+ (2) _OpenPWM4                                             2     2      0      15
+                                              0 COMMON     2     2      0
+ ---------------------------------------------------------------------------------
+ (2) _OpenPWM3                                             2     2      0      15
+                                              0 COMMON     2     2      0
+ ---------------------------------------------------------------------------------
+ (2) _OpenPWM2                                             2     2      0      15
+                                              0 COMMON     2     2      0
+ ---------------------------------------------------------------------------------
+ (2) _OpenPWM1                                             2     2      0      15
+                                              0 COMMON     2     2      0
+ ---------------------------------------------------------------------------------
+ (1) _init                                                 0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _get_usart                                            3     3      0     165
+                                              5 COMMON     3     3      0
+                              _getch
+                           _inRxData
+ ---------------------------------------------------------------------------------
+ (2) _inRxData                                             5     5      0      72
+                                              0 COMMON     5     5      0
+ ---------------------------------------------------------------------------------
+ (2) _getch                                                2     2      0      24
+                                              0 COMMON     2     2      0
+ ---------------------------------------------------------------------------------
+ (1) _emergency                                            0     0      0    1660
+                            _SetPWM1
+                            _SetPWM2
+                            _SetPWM3
+                            _SetPWM4
+ ---------------------------------------------------------------------------------
+ (2) _SetPWM4                                              4     2      2     415
+                                              0 COMMON     4     2      2
+ ---------------------------------------------------------------------------------
+ (2) _SetPWM3                                              4     2      2     415
+                                              0 COMMON     4     2      2
+ ---------------------------------------------------------------------------------
+ (2) _SetPWM2                                              4     2      2     415
+                                              0 COMMON     4     2      2
+ ---------------------------------------------------------------------------------
+ (2) _SetPWM1                                              4     2      2     415
+                                              0 COMMON     4     2      2
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _emergency
+     _SetPWM1
+     _SetPWM2
+     _SetPWM3
+     _SetPWM4
+   _get_usart
+     _getch
+     _inRxData
+   _init
+   _init_pwm
+     _OpenPWM1
+     _OpenPWM2
+     _OpenPWM3
+     _OpenPWM4
+     _SetPWM1
+     _SetPWM2
+     _SetPWM3
+     _SetPWM4
+   _loading
+     _SetPWM4
+   _movetire1
+     _SetPWM1
+   _movetire2
+     _SetPWM2
+   _rotation
+     _SetPWM3
+   _shooting
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BIGRAM             170      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+BITCOMMON            E      0       0       1        0.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+COMMON               E      A       E       2      100.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+BITSFR2              0      0       0       3        0.0%
+SFR2                 0      0       0       3        0.0%
+STACK                0      0       0       3        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+ABS                  0      0      2B       4        0.0%
+BITBANK0            50      0       0       5        0.0%
+BITSFR4              0      0       0       5        0.0%
+SFR4                 0      0       0       5        0.0%
+BANK0               50      0      1D       6       36.3%
+BITSFR5              0      0       0       6        0.0%
+SFR5                 0      0       0       6        0.0%
+BITBANK1            50      0       0       7        0.0%
+BITSFR6              0      0       0       7        0.0%
+SFR6                 0      0       0       7        0.0%
+BANK1               50      0       0       8        0.0%
+BITSFR7              0      0       0       8        0.0%
+SFR7                 0      0       0       8        0.0%
+BITBANK2            50      0       0       9        0.0%
+BITSFR8              0      0       0       9        0.0%
+SFR8                 0      0       0       9        0.0%
+BANK2               50      0       0      10        0.0%
+BITSFR9              0      0       0      10        0.0%
+SFR9                 0      0       0      10        0.0%
+BITBANK3            50      0       0      11        0.0%
+BITSFR10             0      0       0      11        0.0%
+SFR10                0      0       0      11        0.0%
+BANK3               50      0       0      12        0.0%
+BITSFR11             0      0       0      12        0.0%
+SFR11                0      0       0      12        0.0%
+BITBANK4            30      0       0      13        0.0%
+BITSFR12             0      0       0      13        0.0%
+SFR12                0      0       0      13        0.0%
+BANK4               30      0       0      14        0.0%
+BITSFR13             0      0       0      14        0.0%
+SFR13                0      0       0      14        0.0%
+BITSFR14             0      0       0      15        0.0%
+SFR14                0      0       0      15        0.0%
+DATA                 0      0      2B      15        0.0%
+BITSFR15             0      0       0      16        0.0%
+SFR15                0      0       0      16        0.0%
+BITSFR16             0      0       0      17        0.0%
+SFR16                0      0       0      17        0.0%
+BITSFR17             0      0       0      18        0.0%
+SFR17                0      0       0      18        0.0%
+BITSFR18             0      0       0      19        0.0%
+SFR18                0      0       0      19        0.0%
+BITSFR19             0      0       0      20        0.0%
+SFR19                0      0       0      20        0.0%
+BITSFR20             0      0       0      21        0.0%
+SFR20                0      0       0      21        0.0%
+BITSFR21             0      0       0      22        0.0%
+SFR21                0      0       0      22        0.0%
+BITSFR22             0      0       0      23        0.0%
+SFR22                0      0       0      23        0.0%
+BITSFR23             0      0       0      24        0.0%
+SFR23                0      0       0      24        0.0%
+BITSFR24             0      0       0      25        0.0%
+SFR24                0      0       0      25        0.0%
+BITSFR25             0      0       0      26        0.0%
+SFR25                0      0       0      26        0.0%
+BITSFR26             0      0       0      27        0.0%
+SFR26                0      0       0      27        0.0%
+BITSFR27             0      0       0      28        0.0%
+SFR27                0      0       0      28        0.0%
+BITSFR28             0      0       0      29        0.0%
+SFR28                0      0       0      29        0.0%
+BITSFR29             0      0       0      30        0.0%
+SFR29                0      0       0      30        0.0%
+BITSFR30             0      0       0      31        0.0%
+SFR30                0      0       0      31        0.0%
+BITSFR31             0      0       0      32        0.0%
+SFR31                0      0       0      32        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.33 build 59893 
+Symbol Table                                                                                   Sat Mar 12 16:51:34 2016
+
+                    l212 059E                      l320 03CF                      l232 04C0  
+                    l308 02E8                      l252 02E0                      _GIE 005F  
+                    _PR2 001B                      u855 0308                      u865 0320  
+                    u875 0338                      u885 0350             __CFG_BORV$HI 0000  
+                    wreg 0009             __CFG_LVP$OFF 0000                     l1311 0573  
+                   l1233 02F6                     l1401 0522                     l1331 05C3  
+                   l1307 0561                     l1253 03E6                     l1341 05EE  
+                   l1317 058C                     l1247 03DF                     l1239 03CB  
+                   l1335 05D5                     l1281 044B                     l1433 0659  
+                   l1505 075D                     l1345 0600                     l1275 0436  
+                   l1363 0483                     l1443 0683                     l1373 04AE  
+                   l1429 0647                     l1525 079D                     l1509 076F  
+                   l1287 045B                     l1391 04F7                     l1367 0495  
+                   l1463 06C3                     l1439 0671                     l1535 07C7  
+                   _C1ON 088F                     l1473 06ED                     l1529 07AF  
+                   l1387 04E5                     l1459 06B1                     l1539 07D9  
+                   l1555 0410                     l1397 0510                     l1469 06DB  
+                   l1573 0421                     l1557 03FC                     l1495 0733  
+                   l1499 0745                     _ADGO 04E9                     _ADON 04E8  
+                   _CREN 0CEC                     u1105 05CD                     u1025 0544  
+                   u1115 05DE                     u1035 054F                     u1125 05F8  
+                   u1045 056B                     u1215 04C8                     u1135 0609  
+                   u1055 057C                     u1225 04D3                     u1065 0596  
+                   u1235 04EF                     u1155 0466                     u1245 0500  
+                   u1165 0471                     u1405 0695                     u1325 062B  
+                   u1085 05A6                     u1255 051A                     u1175 048D  
+                   u1415 06A0                     u1335 0636                     u1095 05B1  
+                   u1265 052B                     u1185 049E                     u1425 06BB  
+                   u1345 0651                     u1505 0722                     u1195 04B8  
+                   u1435 06CC                     u1355 0662                     u1515 073D  
+                   u1445 06E5                     u1365 067B                     u1605 07B8  
+                   u1525 074E                     u1455 06F6                     u1615 07D1  
+                   u1535 0767                     u1625 07E2                     u1575 0781  
+                   u1495 0717                     u1585 078C                     u1595 07A7  
+                   _RCIF 008D                     _OERR 0CE9                     _TXIF 008C  
+                   _data 0020                     _main 03F5                     _init 0378  
+                   fsr0h 0005                     fsr1h 0007                     fsr0l 0004  
+                   indf0 0000                     indf1 0001                     fsr1l 0006  
+                   _pwml 007A                     _pwmr 007C                     btemp 007E  
+                   ltemp 007E                     start 0002                     ttemp 007E  
+                   wtemp 007E            __CFG_IESO$OFF 0000          __end_of_SetPWM1 0311  
+        __end_of_SetPWM2 0329          __end_of_SetPWM3 0341          __end_of_SetPWM4 0359  
+           main@cntError 0078                    ?_main 0070                    ?_init 0070  
+          __CFG_WDTE$OFF 0000                    _T2CON 001C                    _LATA0 0860  
+                  _LATA1 0861                    _LATA6 0866                    _LATA7 0867  
+                  _LATB7 086F                    _RCREG 0199                    _RCSTA 019D  
+                  _SPBRG 019B                    _PWML1 0026                    _PWML2 0028  
+                  _PWMR1 002A                    _PWMR2 002C                    _TRISA 008C  
+                  _TRISB 008D                    _TXREG 019A                    _TXSTA 019E  
+          __CFG_PWRTE$ON 0000           __CFG_FCMEN$OFF 0000                    _getch 02E6  
+        __end_of_loading 053B                    ltemp0 007E                    ltemp1 0082  
+                  ltemp2 0086                    ltemp3 0080                    ttemp0 007E  
+                  ttemp1 0081                    ttemp2 0084                    ttemp3 0087  
+                  ttemp4 007F                    wtemp0 007E                    wtemp1 0080  
+                  wtemp2 0082                    wtemp3 0084                    wtemp4 0086  
+                  wtemp5 0088                    wtemp6 007F           __CFG_MCLRE$OFF 0000  
+        __initialization 07F1             __end_of_main 0424             __end_of_init 0398  
+       __end_of_OpenPWM1 02BA         __end_of_OpenPWM2 02C5         __end_of_OpenPWM3 02D0  
+       __end_of_OpenPWM4 02DB                   ??_main 0078                   ??_init 0070  
+                 ?_getch 0070                   _ADCON0 009D                   _ADCON1 009E  
+                 _ADRESH 009C                   _ADRESL 009B                   _CCPR1L 0291  
+                 _CCPR2L 0298                   _CCPR3L 0311                   _CCPR4L 0318  
+                 _ANSELA 018C                   _ANSELB 018D                   _INTCON 000B  
+                 _OSCCON 0099                   _TRISB2 046A                   _TRISB5 046D  
+              ??_SetPWM1 0072                ??_SetPWM2 0072                ??_SetPWM3 0072  
+              ??_SetPWM4 0072         __end_of_inRxData 03F5                   _addata 0036  
+       __end_of_init_pwm 03C6                   _pwmpwl 003A                ??_loading 0074  
+       __end_of_shooting 02E6         __end_of_rotation 0619  __end_of__initialization 07FC  
+         __pcstackCOMMON 0070            __end_of_getch 02F9       __size_of_emergency 001F  
+                ??_getch 0070       __size_of_get_usart 0039               __pbssBANK0 0020  
+              ?_OpenPWM1 0070                ?_OpenPWM2 0070                ?_OpenPWM3 0070  
+              ?_OpenPWM4 0070               __pmaintext 03F5                  _CCP1CON 0293  
+                _CCP2CON 029A                  _CCP3CON 0313                  _CCP4CON 031A  
+     __size_of_movetire1 00EC       __size_of_movetire2 00EC                ?_inRxData 0070  
+                _RXDTSEL 08EF                  _TXCKSEL 08F0                  _PWMpwl1 0032  
+                _PWMpwl2 0034                ?_init_pwm 0070               ??_OpenPWM1 0070  
+             ??_OpenPWM2 0070               ??_OpenPWM3 0070               ??_OpenPWM4 0070  
+                _SetPWM1 02F9                  _SetPWM2 0311                  _SetPWM3 0329  
+                _SetPWM4 0341        __end_of_emergency 0378                ?_shooting 0070  
+      __end_of_get_usart 045D                ?_rotation 0070                  __ptext0 0000  
+                __ptext1 02DB                  __ptext2 053B                  __ptext3 0705  
+                __ptext4 0619                  __ptext5 045D                  __ptext6 0398  
+                __ptext7 02D0                  __ptext8 02C5                  __ptext9 02BA  
+                _contORE 003C                  _loading 045D               ??_inRxData 0070  
+                _pwmload 0038                  clrloop0 02AA     end_of_initialization 07FC  
+             ??_init_pwm 0074        __end_of_movetire1 0705        __end_of_movetire2 07F1  
+             ??_shooting 0070               ??_rotation 0074         __CFG_FOSC$INTOSC 0000  
+             get_usart@i 0076      start_initialization 07F1        __size_of_OpenPWM1 000B  
+      __size_of_OpenPWM2 000B        __size_of_OpenPWM3 000B        __size_of_OpenPWM4 000B  
+            __pbssCOMMON 007A                ___latbits 0001        __size_of_inRxData 002F  
+               ?_SetPWM1 0070                 ?_SetPWM2 0070                 ?_SetPWM3 0070  
+               ?_SetPWM4 0070         SetPWM1@dutycycle 0070        __size_of_init_pwm 002E  
+       SetPWM2@dutycycle 0070        __size_of_shooting 000B                _emergency 0359  
+      __size_of_rotation 00DE                _get_usart 0424                 ?_loading 0070  
+       SetPWM3@dutycycle 0070           __size_of_getch 0013         SetPWM4@dutycycle 0070  
+              clear_ram0 02A9                _movetire1 0619                _movetire2 0705  
+             ?_emergency 0070               ?_get_usart 0070                 _PWMload1 002E  
+               _PWMload2 0030                 _OpenPWM1 02AF                 _OpenPWM2 02BA  
+               _OpenPWM3 02C5                 _OpenPWM4 02D0         __size_of_SetPWM1 0018  
+       __size_of_SetPWM2 0018         __size_of_SetPWM3 0018         __size_of_SetPWM4 0018  
+         inRxData@rxData 0070               ?_movetire1 0070               ?_movetire2 0070  
+         OpenPWM1@period 0071           OpenPWM2@period 0071         __size_of_loading 00DE  
+         OpenPWM3@period 0071           OpenPWM4@period 0071                 __ptext10 02AF  
+               __ptext11 0378                 __ptext12 0424                 __ptext13 03C6  
+               __ptext14 02E6                 __ptext15 0359                 __ptext16 0341  
+               __ptext17 0329                 __ptext18 0311                 __ptext19 02F9  
+               _inRxData 03C6            __size_of_main 002F            __size_of_init 0020  
+               _init_pwm 0398                 _shooting 02DB                 getch@cnt 0070  
+               _rotation 053B              ??_emergency 0074              ??_get_usart 0075  
+            pic14e$flags 007E              ??_movetire1 0074              ??_movetire2 0074  
+           inRxData@cnt1 0071             inRxData@cnt2 0073  

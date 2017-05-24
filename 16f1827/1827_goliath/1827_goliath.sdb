@@ -1,0 +1,191 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"51 C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_goliath\main.c
+[v _main main `(v  1 e 1 0 ]
+"78
+[v _forward forward `(v  1 e 1 0 ]
+"90
+[v _back back `(v  1 e 1 0 ]
+"102
+[v _Rturn Rturn `(v  1 e 1 0 ]
+"109
+[v _Lturn Lturn `(v  1 e 1 0 ]
+"116
+[v _init init `(v  1 e 1 0 ]
+"134
+[v _putch putch `(v  1 e 1 0 ]
+"153
+[v _getch getch `(uc  1 e 1 0 ]
+"173
+[v _inRxData inRxData `(uc  1 e 1 0 ]
+"201
+[v _get_usart get_usart `(uc  1 e 1 0 ]
+"31 C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_goliath\pwm.c
+[v _OpenPWM1 OpenPWM1 `(v  1 e 1 0 ]
+"37
+[v _OpenPWM2 OpenPWM2 `(v  1 e 1 0 ]
+"43
+[v _SetPWM1 SetPWM1 `(v  1 e 1 0 ]
+"50
+[v _SetPWM2 SetPWM2 `(v  1 e 1 0 ]
+"337 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic16f1827.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"933
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"952
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1120
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1181
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1664
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1802
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1821
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1840
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+"1919
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2797
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2848
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3098
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3117
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3147
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"3232
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"3293
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"5463
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5501
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"5570
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"5608
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+"6644
+[v _ADGO ADGO `VEb  1 e 0 @1257 ]
+"6652
+[v _ADON ADON `VEb  1 e 0 @1256 ]
+"6722
+[v _C1ON C1ON `VEb  1 e 0 @2191 ]
+"6900
+[v _CREN CREN `VEb  1 e 0 @3308 ]
+"6962
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7040
+[v _LATA0 LATA0 `VEb  1 e 0 @2144 ]
+"7042
+[v _LATA1 LATA1 `VEb  1 e 0 @2145 ]
+"7050
+[v _LATA6 LATA6 `VEb  1 e 0 @2150 ]
+"7052
+[v _LATA7 LATA7 `VEb  1 e 0 @2151 ]
+"7130
+[v _OERR OERR `VEb  1 e 0 @3305 ]
+"7248
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"7256
+[v _RXDTSEL RXDTSEL `VEb  1 e 0 @2287 ]
+"7474
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1129 ]
+"7476
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1130 ]
+"7510
+[v _TXCKSEL TXCKSEL `VEb  1 e 0 @2288 ]
+"7516
+[v _TXIF TXIF `VEb  1 e 0 @140 ]
+"6 C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_goliath\adc.c
+[v _addata addata `i  1 e 2 0 ]
+"38 C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_goliath\main.c
+[v _data data `[6]uc  1 s 6 data ]
+"51
+[v _main main `(v  1 e 1 0 ]
+{
+"54
+[v main@cntError cntError `ui  1 a 2 8 ]
+"76
+} 0
+"116
+[v _init init `(v  1 e 1 0 ]
+{
+"131
+} 0
+"201
+[v _get_usart get_usart `(uc  1 e 1 0 ]
+{
+"222
+[v get_usart@i i `ui  1 a 2 6 ]
+"242
+} 0
+"173
+[v _inRxData inRxData `(uc  1 e 1 0 ]
+{
+[v inRxData@rxData rxData `uc  1 a 1 wreg ]
+"176
+[v inRxData@cnt2 cnt2 `ui  1 a 2 3 ]
+"175
+[v inRxData@cnt1 cnt1 `ui  1 a 2 1 ]
+"173
+[v inRxData@rxData rxData `uc  1 a 1 wreg ]
+"175
+[v inRxData@rxData rxData `uc  1 a 1 0 ]
+"200
+} 0
+"153
+[v _getch getch `(uc  1 e 1 0 ]
+{
+"154
+[v getch@cnt cnt `ui  1 a 2 0 ]
+"164
+} 0
+"78
+[v _forward forward `(v  1 e 1 0 ]
+{
+"88
+} 0
+"90
+[v _back back `(v  1 e 1 0 ]
+{
+"100
+} 0
+"102
+[v _Rturn Rturn `(v  1 e 1 0 ]
+{
+"107
+} 0
+"109
+[v _Lturn Lturn `(v  1 e 1 0 ]
+{
+"114
+} 0
+"50 C:\Users\yuya\Desktop\ROBOCON\pic program\PIC_16F1827\1827_goliath\pwm.c
+[v _SetPWM2 SetPWM2 `(v  1 e 1 0 ]
+{
+[v SetPWM2@dutycycle dutycycle `ui  1 p 2 0 ]
+"56
+} 0
+"43
+[v _SetPWM1 SetPWM1 `(v  1 e 1 0 ]
+{
+[v SetPWM1@dutycycle dutycycle `ui  1 p 2 0 ]
+"49
+} 0

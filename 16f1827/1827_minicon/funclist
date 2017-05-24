@@ -1,0 +1,11 @@
+_init: CODE, 1337 0 32
+_SetPWM1: CODE, 1259 0 25
+_inRxData: CODE, 1369 0 67
+_main: CODE, 1508 0 540
+_getch: CODE, 1309 0 28
+_OpenPWM1: CODE, 1208 0 11
+_OpenPWM2: CODE, 1197 0 11
+_init_pwm: CODE, 1284 0 25
+_SetPWM2: CODE, 1234 0 25
+_get_usart: CODE, 1436 0 72
+Total: 836

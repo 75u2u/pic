@@ -1,0 +1,22 @@
+_init: CODE, 888 0 32
+_loading: CODE, 1117 0 222
+_SetPWM1: CODE, 761 0 24
+_SetPWM4: CODE, 833 0 24
+_inRxData: CODE, 966 0 47
+_main: CODE, 1013 0 47
+_rotation: CODE, 1339 0 222
+__initialization: CODE, 2033 0 11
+_SetPWM3: CODE, 809 0 24
+_shooting: CODE, 731 0 11
+_getch: CODE, 742 0 19
+_emergency: CODE, 857 0 31
+_OpenPWM1: CODE, 687 0 11
+_OpenPWM2: CODE, 698 0 11
+_OpenPWM3: CODE, 709 0 11
+_OpenPWM4: CODE, 720 0 11
+_init_pwm: CODE, 920 0 46
+_SetPWM2: CODE, 785 0 24
+_movetire1: CODE, 1561 0 236
+_movetire2: CODE, 1797 0 236
+_get_usart: CODE, 1060 0 57
+Total: 1357

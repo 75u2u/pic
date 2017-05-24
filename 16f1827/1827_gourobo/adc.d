@@ -1,0 +1,1 @@
+ adc.d  adc.p1:  C:/pic\ program/1827_gourobo/adc.c C:/pic\ program/1827_gourobo/adc.h

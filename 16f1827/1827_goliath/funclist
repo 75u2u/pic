@@ -1,0 +1,6 @@
+_init: CODE, 1739 0 32
+_inRxData: CODE, 1771 0 67
+_main: CODE, 1910 0 138
+_getch: CODE, 1711 0 28
+_get_usart: CODE, 1838 0 72
+Total: 337
