@@ -10314,6 +10314,79 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
+
+# 27 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic.h"
+#pragma intrinsic(__nop)
+extern void __nop(void);
+
+# 186
+extern unsigned char __resetbits;
+extern __bit __powerdown;
+extern __bit __timeout;
+
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\__size_t.h"
+typedef unsigned size_t;
+
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\stdarg.h"
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\stdio.h"
+struct __prbuf
+{
+char * ptr;
+void (* func)(char);
+};
+
+# 29 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\errno.h"
+extern int errno;
+
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\conio.h"
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+# 23
+extern char * cgets(char *);
+extern void cputs(const char *);
+
+# 88 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\stdio.h"
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+
+
+# 180
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\stdint.h"
 typedef signed char int8_t;
 
@@ -10404,138 +10477,168 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 12 "7seg.h"
-void print_7seg(uint8_t col, char c);
+# 44 "main.c"
+void init(void);
+void display(void);
+void time_adjust(void);
 
-# 43 "main.c"
-void dinamic(void) {
-static uint8_t dinamic_counter = 1;
-static uint8_t sec, min, hou, wkd;
-switch (dinamic_counter) {
-case 1:
-print_7seg(4, '0' + (min & 0x0F));
-TMR1L += 0xF0;
-break;
-case 2:
-print_7seg(3, '0' + (min >> 4));
-TMR1L += 0xF0;
-break;
-case 3:
-print_7seg(2, '0' + (hou & 0x0F));
-TMR1L += 0xF0;
-break;
-case 4:
-if (hou & 0xF0) print_7seg(1, '0' + (hou >> 4));
-else print_7seg(1, ' ');
-TMR1L += 0xF0;
-break;
-case 5:
-print_7seg(5, RTCCFGbits.HALFSEC ? ' ' : ':');
-TMR1L += 0xF0;
-break;
-default:
-print_7seg(-1, ' ');
-RTCCFGbits.RTCPTR0 = 1;
-RTCCFGbits.RTCPTR1 = 0;
-while (RTCCFGbits.RTCSYNC);
-hou = RTCVALL;
-wkd = RTCVALH;
-sec = RTCVALL;
-min = RTCVALH;
-dinamic_counter = 0;
-break;
-}
-dinamic_counter++;
-}
 
-void interrupt ISR(void) {
-if (INTCONbits.INT0IE && INTCONbits.INT0IF) {
-INTCONbits.INT0IF = 0;
-INTCONbits.GIE = 0;
-print_7seg(-1, ':');
-DSCONHbits.DSEN = 1;
-asm(" sleep");
-}
-if (INTCON3bits.INT1IE && INTCON3bits.INT1IF) {
-INTCON3bits.INT1IF = 0;
-if (PORTAbits.RA5 == 0) {
-print_7seg(-1, ' ');
-RTCCFGbits.RTCPTR0 = 0;
-RTCCFGbits.RTCPTR1 = 0;
-while (RTCCFGbits.RTCSYNC);
-uint8_t val = RTCVALH;
-val = ((val >> 4)*10 + (val & 0x0F) + 1) % 60;
-RTCCFGbits.RTCPTR0 = 0;
-RTCCFGbits.RTCPTR1 = 0;
-RTCVALH = ((val / 10) << 4) + ((val % 10)&0x0F);
-RTCVALL = 0;
-}
-}
-if (INTCON3bits.INT2IE && INTCON3bits.INT2IF) {
-INTCON3bits.INT2IF = 0;
-if (PORTCbits.RC2 == 0) {
-print_7seg(-1, ' ');
-RTCCFGbits.RTCPTR0 = 1;
-RTCCFGbits.RTCPTR1 = 0;
-while (RTCCFGbits.RTCSYNC);
-uint8_t val = RTCVALL;
-val = ((val >> 4)*10 + (val & 0x0F) + 1) % 24;
-RTCCFGbits.RTCPTR0 = 1;
-RTCCFGbits.RTCPTR1 = 0;
-RTCVALL = ((val / 10) << 4) + ((val % 10)&0x0F);
-}
-}
-if (PIE1bits.TMR1IE && PIR1bits.TMR1IF) {
-PIR1bits.TMR1IF = 0;
-TMR1H = 0xFF;
-dinamic();
+
+unsigned long timer_count=0;
+unsigned char hour=0;
+unsigned char min=0;
+unsigned char sec=0;
+
+void main(void) {
+while(1) {
+display();
+time_adjust();
 }
 }
 
-int main(void) {
-OSCCONbits.SCS = 0;
-DSCONLbits.RELEASE = 0;
-TRISA = 0b01110001;
-TRISB = 0b00000001;
-TRISC = 0b00111110;
-ANCON0 = 0b11111111;
-ANCON1 = 0b00011111;
+void display() {
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+
+PORTB = (0xF0 & PORTB) | (0x0F & (hour/10));
+RB4=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (hour%10));
+RA4=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (min/10));
+RA3=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (min%10));
+RA2=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (sec/10));
+RA1=0;
+DelayMs(1);
 
 
-T1CON = 0b10001101;
-PIE1bits.TMR1IE = 1;
-
-
-EECON2 = 0x55;
-EECON2 = 0xAA;
-RTCCFGbits.RTCWREN = 1;
-RTCCFG = 0b10100000;
-RTCCAL = 0x00;
-
-
-INTCON2bits.INTEDG0 = 0;
-INTCONbits.INT0IF = 0;
-INTCONbits.INT0IE = 1;
-
-
-RPINR1 = 2;
-INTCON2bits.INTEDG1 = 0;
-INTCON3bits.INT1IF = 0;
-INTCON3bits.INT1IE = 1;
-
-
-RPINR2 = 13;
-INTCON2bits.INTEDG2 = 0;
-INTCON3bits.INT2IF = 0;
-INTCON3bits.INT2IE = 1;
-
-
-INTCONbits.PEIE = 1;
-INTCONbits.GIE = 1;
-
-while (1) {
-asm(" sleep");
-__nop();
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (sec%10));
+RA0=0;
+DelayMs(1);
 }
-return 0;
+
+
+}
+void time_adjust() {
+
+if(RC0){
+DelayMs(30);
+if(RC0){
+hour++;
+if(hour >=24){
+hour = 0;
+}
+}
+while(RC0){
+display();
+}
+DelayMs(50);
+}
+　　
+
+if(RC1){
+DelayMs(30);
+if(RC1){
+min++;
+if(min >= 60){
+min = 0;
+}
+}
+while(RC1){
+display();
+}
+DelayMs(50);
+}
+
+
+if(RC2){
+DelayMs(30);
+if(RC2){
+sec++;
+if(sec >= 60){
+sec = 0;
+}
+}
+while(RC2){
+display();
+}
+DelayMs(50);
+}
+}
+
+
+void init() {
+INTCON=0;
+init_comms();
+OSCCON = 0b01110000;
+PSA=0;
+PS2=1;
+PS1=0;
+PS0=0;
+T0CS=0;
+TMR0=0;
+T0IF=0;
+T0IE=1;
+GIE=1;
+ANSELA = 0b00000000;
+ANSELB = 0b00000000;
+ANSELC = 0b00000000;
+
+
+
+TRISA = 0b00000000;
+TRISB = 0b00000000;
+TRISC = 0b00000111;
+}
+
+interrupt clock_count() {
+if(T0IF){
+T0IF = 0;
+TMR0=131;
+timer_count++;
+if(timer_count == 625){
+timer_count =0;
+sec++;
+if(sec >= 60){
+sec = 0;
+min++;
+if(min >= 60){
+min = 0;
+hour++;
+if(hour >= 24){
+hour = 0;
+}
+}
+}
+}
+}
 }

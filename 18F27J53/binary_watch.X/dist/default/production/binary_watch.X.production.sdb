@@ -339,12 +339,32 @@
 ]
 [u S85 . 1 `S63 1 . 1 0 `S72 1 . 1 0 `S81 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES85  1 e 1 @4082 ]
+"19930
+[v _LATA0 LATA0 `VEb  1 e 0 @31816 ]
 "19932
 [v _LATA1 LATA1 `VEb  1 e 0 @31817 ]
 "19934
 [v _LATA2 LATA2 `VEb  1 e 0 @31818 ]
 "19936
 [v _LATA3 LATA3 `VEb  1 e 0 @31819 ]
+"19938
+[v _LATA5 LATA5 `VEb  1 e 0 @31821 ]
+"19944
+[v _LATB0 LATB0 `VEb  1 e 0 @31824 ]
+"19946
+[v _LATB1 LATB1 `VEb  1 e 0 @31825 ]
+"19948
+[v _LATB2 LATB2 `VEb  1 e 0 @31826 ]
+"19950
+[v _LATB3 LATB3 `VEb  1 e 0 @31827 ]
+"19952
+[v _LATB4 LATB4 `VEb  1 e 0 @31828 ]
+"19954
+[v _LATB5 LATB5 `VEb  1 e 0 @31829 ]
+"19956
+[v _LATB6 LATB6 `VEb  1 e 0 @31830 ]
+"19958
+[v _LATB7 LATB7 `VEb  1 e 0 @31831 ]
 "19966
 [v _LATC6 LATC6 `VEb  1 e 0 @31838 ]
 "19968
@@ -352,13 +372,13 @@
 "127 C:\Users\yuya\Desktop\pic\18F27J53\binary_watch.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"173
+"208
 } 0
 "83
 [v _ISR ISR `II(v  1 e 1 0 ]
 {
 "113
-[v ISR@val_652 val `uc  1 a 1 28 ]
+[v ISR@val_669 val `uc  1 a 1 28 ]
 "98
 [v ISR@val val `uc  1 a 1 27 ]
 "125
@@ -379,7 +399,7 @@
 [v _print_7seg print_7seg `(v  1 e 1 0 ]
 {
 [v print_7seg@col col `uc  1 a 1 wreg ]
-"35
+"47
 [v print_7seg@pat pat `uc  1 a 1 7 ]
 "21
 [v print_7seg@col col `uc  1 a 1 wreg ]
@@ -388,7 +408,7 @@
 [v print_7seg@pattern pattern `[10]uc  1 s 10 pattern ]
 "21
 [v print_7seg@col col `uc  1 a 1 6 ]
-"65
+"77
 } 0
 "17
 [v _print_pattern print_pattern `(v  1 s 1 print_pattern ]

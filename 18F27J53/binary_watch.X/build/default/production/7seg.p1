@@ -8134,124 +8134,124 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v F8479 `uc ~T0 @X0 -> 10 `i s pattern ]
 [i F8479
 :U ..
-"24
--> -> 190 `i `uc
-"25
--> -> 144 `i `uc
-"26
--> -> 236 `i `uc
-"27
--> -> 248 `i `uc
-"28
--> -> 210 `i `uc
-"29
--> -> 122 `i `uc
-"30
--> -> 126 `i `uc
-"31
--> -> 178 `i `uc
-"32
--> -> 254 `i `uc
-"33
--> -> 250 `i `uc
+"36
+-> -> 0 `i `uc
+"37
+-> -> 1 `i `uc
+"38
+-> -> 2 `i `uc
+"39
+-> -> 3 `i `uc
+"40
+-> -> 4 `i `uc
+"41
+-> -> 5 `i `uc
+"42
+-> -> 6 `i `uc
+"43
+-> -> 7 `i `uc
+"44
+-> -> 8 `i `uc
+"45
+-> -> 9 `i `uc
 ..
 ]
-"35
+"47
 [v _pat `uc ~T0 @X0 1 a ]
 [; ;7seg.c: 23: static uint8_t pattern[10] = {
-[; ;7seg.c: 24: 0b10111110,
-[; ;7seg.c: 25: 0b10010000,
-[; ;7seg.c: 26: 0b11101100,
-[; ;7seg.c: 27: 0b11111000,
-[; ;7seg.c: 28: 0b11010010,
-[; ;7seg.c: 29: 0b01111010,
-[; ;7seg.c: 30: 0b01111110,
-[; ;7seg.c: 31: 0b10110010,
-[; ;7seg.c: 32: 0b11111110,
-[; ;7seg.c: 33: 0b11111010,
-[; ;7seg.c: 34: };
-[; ;7seg.c: 35: uint8_t pat;
-[; ;7seg.c: 36: switch (c) {
-"36
+[; ;7seg.c: 36: 0b00000000,
+[; ;7seg.c: 37: 0b00000001,
+[; ;7seg.c: 38: 0b00000010,
+[; ;7seg.c: 39: 0b00000011,
+[; ;7seg.c: 40: 0b00000100,
+[; ;7seg.c: 41: 0b00000101,
+[; ;7seg.c: 42: 0b00000110,
+[; ;7seg.c: 43: 0b00000111,
+[; ;7seg.c: 44: 0b00001000,
+[; ;7seg.c: 45: 0b00001001,
+[; ;7seg.c: 46: };
+[; ;7seg.c: 47: uint8_t pat;
+[; ;7seg.c: 48: switch (c) {
+"48
 [e $U 1213  ]
 {
-[; ;7seg.c: 37: case ' ':
-"37
-[e :U 1214 ]
-[; ;7seg.c: 38: pat = 0b00000000;
-"38
-[e = _pat -> -> 0 `i `uc ]
-[; ;7seg.c: 39: break;
-"39
-[e $U 1212  ]
-[; ;7seg.c: 40: case ':':
-"40
-[e :U 1215 ]
-[; ;7seg.c: 41: pat = 0b10100000;
-"41
-[e = _pat -> -> 160 `i `uc ]
-[; ;7seg.c: 42: break;
-"42
-[e $U 1212  ]
-[; ;7seg.c: 43: case '-':
-"43
-[e :U 1216 ]
-[; ;7seg.c: 44: pat = 0b01000000;
-"44
-[e = _pat -> -> 64 `i `uc ]
-[; ;7seg.c: 45: break;
-"45
-[e $U 1212  ]
-[; ;7seg.c: 46: case '0':
-"46
-[e :U 1217 ]
-"47
-[e :U 1218 ]
-"48
-[e :U 1219 ]
+[; ;7seg.c: 49: case ' ':
 "49
-[e :U 1220 ]
+[e :U 1214 ]
+[; ;7seg.c: 50: pat = 0b00000000;
 "50
-[e :U 1221 ]
+[e = _pat -> -> 0 `i `uc ]
+[; ;7seg.c: 51: break;
 "51
-[e :U 1222 ]
+[e $U 1212  ]
+[; ;7seg.c: 52: case ':':
 "52
-[e :U 1223 ]
+[e :U 1215 ]
+[; ;7seg.c: 53: pat = 0b10100000;
 "53
-[e :U 1224 ]
+[e = _pat -> -> 160 `i `uc ]
+[; ;7seg.c: 54: break;
 "54
-[e :U 1225 ]
+[e $U 1212  ]
+[; ;7seg.c: 55: case '-':
 "55
-[e :U 1226 ]
-[; ;7seg.c: 47: case '1':
-[; ;7seg.c: 48: case '2':
-[; ;7seg.c: 49: case '3':
-[; ;7seg.c: 50: case '4':
-[; ;7seg.c: 51: case '5':
-[; ;7seg.c: 52: case '6':
-[; ;7seg.c: 53: case '7':
-[; ;7seg.c: 54: case '8':
-[; ;7seg.c: 55: case '9':
-[; ;7seg.c: 56: pat = pattern[c - '0'];
+[e :U 1216 ]
+[; ;7seg.c: 56: pat = 0b01000000;
 "56
-[e = _pat *U + &U F8479 * -> - -> _c `ui -> 48 `ui `ux -> -> # *U &U F8479 `ui `ux ]
+[e = _pat -> -> 64 `i `uc ]
 [; ;7seg.c: 57: break;
 "57
 [e $U 1212  ]
-[; ;7seg.c: 58: default:
+[; ;7seg.c: 58: case '0':
 "58
-[e :U 1227 ]
-[; ;7seg.c: 59: pat = 0b00000010;
+[e :U 1217 ]
 "59
-[e = _pat -> -> 2 `i `uc ]
-[; ;7seg.c: 60: break;
+[e :U 1218 ]
 "60
-[e $U 1212  ]
+[e :U 1219 ]
 "61
-}
-[; ;7seg.c: 61: }
+[e :U 1220 ]
+"62
+[e :U 1221 ]
+"63
+[e :U 1222 ]
+"64
+[e :U 1223 ]
+"65
+[e :U 1224 ]
+"66
+[e :U 1225 ]
+"67
+[e :U 1226 ]
+[; ;7seg.c: 59: case '1':
+[; ;7seg.c: 60: case '2':
+[; ;7seg.c: 61: case '3':
+[; ;7seg.c: 62: case '4':
+[; ;7seg.c: 63: case '5':
+[; ;7seg.c: 64: case '6':
+[; ;7seg.c: 65: case '7':
+[; ;7seg.c: 66: case '8':
+[; ;7seg.c: 67: case '9':
+[; ;7seg.c: 68: pat = pattern[c - '0'];
+"68
+[e = _pat *U + &U F8479 * -> - -> _c `ui -> 48 `ui `ux -> -> # *U &U F8479 `ui `ux ]
+[; ;7seg.c: 69: break;
+"69
 [e $U 1212  ]
-"36
+[; ;7seg.c: 70: default:
+"70
+[e :U 1227 ]
+[; ;7seg.c: 71: pat = 0b00000010;
+"71
+[e = _pat -> -> 2 `i `uc ]
+[; ;7seg.c: 72: break;
+"72
+[e $U 1212  ]
+"73
+}
+[; ;7seg.c: 73: }
+[e $U 1212  ]
+"48
 [e :U 1213 ]
 [e [\ _c , $ -> -> 32 `ui `uc 1214
  , $ -> -> 58 `ui `uc 1215
@@ -8267,18 +8267,18 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> -> 56 `ui `uc 1225
  , $ -> -> 57 `ui `uc 1226
  1227 ]
-"61
+"73
 [e :U 1212 ]
-[; ;7seg.c: 62: print_column(0);
-"62
+[; ;7seg.c: 74: print_column(0);
+"74
 [e ( _print_column (1 -> -> 0 `i `uc ]
-[; ;7seg.c: 63: print_pattern(pat);
-"63
+[; ;7seg.c: 75: print_pattern(pat);
+"75
 [e ( _print_pattern (1 _pat ]
-[; ;7seg.c: 64: print_column(col);
-"64
+[; ;7seg.c: 76: print_column(col);
+"76
 [e ( _print_column (1 _col ]
-[; ;7seg.c: 65: }
-"65
+[; ;7seg.c: 77: }
+"77
 [e :UE 1211 ]
 }

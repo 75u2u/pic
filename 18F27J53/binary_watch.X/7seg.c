@@ -1,10 +1,10 @@
 #include "7seg.h"
 
-#define SEG_1   LATA1
-#define SEG_2   LATA2
-#define SEG_3   LATC7
-#define SEG_4   LATC6
-#define SEG_5   LATA3
+#define SEG_1   LATA1   //hour10の桁
+#define SEG_2   LATA2   //hour1の桁
+#define SEG_3   LATC7   //min10の桁
+#define SEG_4   LATC6   //min1の桁
+#define SEG_5   LATA3   //colon
 
 static void print_column(uint8_t col) {
     SEG_1 = (col == 1);
@@ -21,6 +21,7 @@ static void print_pattern(uint8_t pat) {
 void print_7seg(uint8_t col, char c) {
     // BGACDEHF
     static uint8_t pattern[10] = {
+    /*
         0b10111110, //0
         0b10010000, //1
         0b11101100, //2
@@ -31,6 +32,17 @@ void print_7seg(uint8_t col, char c) {
         0b10110010, //7
         0b11111110, //8
         0b11111010, //9
+    */
+        0b00000000, //0
+        0b00000001, //1
+        0b00000010, //2
+        0b00000011, //3
+        0b00000100, //4
+        0b00000101, //5
+        0b00000110, //6
+        0b00000111, //7
+        0b00001000, //8
+        0b00001001, //9
     };
     uint8_t pat;
     switch (c) {

@@ -1,0 +1,1 @@
+ main.d  main.p1:  C:/Users/yuya/Desktop/pic/BinaryWatch/main.c

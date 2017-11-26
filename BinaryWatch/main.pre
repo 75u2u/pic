@@ -1,5 +1,5 @@
 
-# 1 "7seg.c"
+# 1 "C:\Users\yuya\Desktop\pic\BinaryWatch\main.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -10369,66 +10369,170 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 12 "7seg.h"
-void print_7seg(uint8_t col, char c);
+# 6 "C:\Users\yuya\Desktop\pic\BinaryWatch\main.c"
+__config("__CONFIG", "pic18", ");				//CONFIG:CP=OFF,PWRT=ON,WDT=OFF,OSC=HS
 
-# 9 "7seg.c"
-static void print_column(uint8_t col) {
-LATA1 = (col == 1);
-LATA2 = (col == 2);
-LATC7 = (col == 3);
-LATC6 = (col == 4);
-LATA3 = (col == 5);
+void init(void);
+void display(void);
+void time_adjust(void);
+
+
+
+unsigned long timer_count=0;
+unsigned char hour=0;
+unsigned char min=0;
+unsigned char sec=0;
+
+int main(void) {
+while(1) {
+display();
+time_adjust();
+}
 }
 
-static void print_pattern(uint8_t pat) {
-LATB = ~pat;
+void display() {
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+
+PORTB = (0xF0 & PORTB) | (0x0F & (hour/10));
+RB4=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (hour%10));
+RA4=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (min/10));
+RA3=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (min%10));
+RA2=0;
+DelayMs(1);
+　　
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (sec/10));
+RA1=0;
+DelayMs(1);
+
+
+PORTA=0b00011111;　　　　　　
+RB4=1;
+　　
+PORTB = (0xF0 & PORTB) | (0x0F & (sec%10));
+RA0=0;
+DelayMs(1);
 }
 
-void print_7seg(uint8_t col, char c) {
 
-static uint8_t pattern[10] = {
-
-# 36
-0b00000000,
-0b00000001,
-0b00000010,
-0b00000011,
-0b00000100,
-0b00000101,
-0b00000110,
-0b00000111,
-0b00001000,
-0b00001001,
-};
-uint8_t pat;
-switch (c) {
-case ' ':
-pat = 0b00000000;
-break;
-case ':':
-pat = 0b10100000;
-break;
-case '-':
-pat = 0b01000000;
-break;
-case '0':
-case '1':
-case '2':
-case '3':
-case '4':
-case '5':
-case '6':
-case '7':
-case '8':
-case '9':
-pat = pattern[c - '0'];
-break;
-default:
-pat = 0b00000010;
-break;
 }
-print_column(0);
-print_pattern(pat);
-print_column(col);
+void time_adjust() {
+
+if(RC0){
+DelayMs(30);
+if(RC0){
+hour++;
+if(hour >=24){
+hour = 0;
+}
+}
+while(RC0){
+display();
+}
+DelayMs(50);
+}
+　　
+
+if(RC1){
+DelayMs(30);
+if(RC1){
+min++;
+if(min >= 60){
+min = 0;
+}
+}
+while(RC1){
+display();
+}
+DelayMs(50);
+}
+
+
+if(RC2){
+DelayMs(30);
+if(RC2){
+sec++;
+if(sec >= 60){
+sec = 0;
+}
+}
+while(RC2){
+display();
+}
+DelayMs(50);
+}
+}
+
+
+void init() {
+INTCON=0;
+init_comms();
+OSCCON = 0b01110000;
+PSA=0;
+PS2=1;
+PS1=0;
+PS0=0;
+T0CS=0;
+TMR0=0;
+T0IF=0;
+T0IE=1;
+GIE=1;
+ANSELA = 0b00000000;
+ANSELB = 0b00000000;
+ANSELC = 0b00000000;
+
+
+
+TRISA = 0b00000000;
+TRISB = 0b00000000;
+TRISC = 0b00000111;
+}
+
+interrupt clock_count() {
+if(T0IF){
+T0IF = 0;
+TMR0=131;
+timer_count++;
+if(timer_count == 625){
+timer_count =0;
+sec++;
+if(sec >= 60){
+sec = 0;
+min++;
+if(min >= 60){
+min = 0;
+hour++;
+if(hour >= 24){
+hour = 0;
+}
+}
+}
+}
+}
 }
