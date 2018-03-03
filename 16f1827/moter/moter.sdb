@@ -1,0 +1,302 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"76 C:\Users\yuya\Desktop\pic\16f1827\moter\main.c
+[v _main main `(v  1 e 1 0 ]
+"108
+[v _emergency emergency `(v  1 e 1 0 ]
+"118
+[v _rotation rotation `(v  1 e 1 0 ]
+"163
+[v _loading loading `(v  1 e 1 0 ]
+"208
+[v _shooting shooting `(v  1 e 1 0 ]
+"214
+[v _movetire1 movetire1 `(v  1 e 1 0 ]
+"261
+[v _movetire2 movetire2 `(v  1 e 1 0 ]
+"308
+[v _init init `(v  1 e 1 0 ]
+"326
+[v _putch putch `(v  1 e 1 0 ]
+"345
+[v _getch getch `(uc  1 e 1 0 ]
+"367
+[v _inRxData inRxData `(uc  1 e 1 0 ]
+"397
+[v _get_usart get_usart `(uc  1 e 1 0 ]
+"4 C:\Users\yuya\Desktop\pic\16f1827\moter\pwm.c
+[v _init_pwm init_pwm `(v  1 e 1 0 ]
+"35
+[v _OpenPWM1 OpenPWM1 `(v  1 e 1 0 ]
+"41
+[v _OpenPWM2 OpenPWM2 `(v  1 e 1 0 ]
+"47
+[v _OpenPWM3 OpenPWM3 `(v  1 e 1 0 ]
+"53
+[v _OpenPWM4 OpenPWM4 `(v  1 e 1 0 ]
+"59
+[v _SetPWM1 SetPWM1 `(v  1 e 1 0 ]
+"66
+[v _SetPWM2 SetPWM2 `(v  1 e 1 0 ]
+"73
+[v _SetPWM3 SetPWM3 `(v  1 e 1 0 ]
+"80
+[v _SetPWM4 SetPWM4 `(v  1 e 1 0 ]
+"337 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic16f1827.h
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"933
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"952
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1120
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1181
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1664
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1802
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1821
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1840
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+"1919
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2797
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2848
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3098
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3117
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3147
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"3232
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"3293
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"4494
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4532
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"4892
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @664 ]
+"4930
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @666 ]
+"5463
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5501
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"5570
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"5608
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+"6644
+[v _ADGO ADGO `VEb  1 e 0 @1257 ]
+"6652
+[v _ADON ADON `VEb  1 e 0 @1256 ]
+"6722
+[v _C1ON C1ON `VEb  1 e 0 @2191 ]
+"6900
+[v _CREN CREN `VEb  1 e 0 @3308 ]
+"6962
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7040
+[v _LATA0 LATA0 `VEb  1 e 0 @2144 ]
+"7042
+[v _LATA1 LATA1 `VEb  1 e 0 @2145 ]
+"7050
+[v _LATA6 LATA6 `VEb  1 e 0 @2150 ]
+"7052
+[v _LATA7 LATA7 `VEb  1 e 0 @2151 ]
+"7068
+[v _LATB7 LATB7 `VEb  1 e 0 @2159 ]
+"7130
+[v _OERR OERR `VEb  1 e 0 @3305 ]
+"7248
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"7256
+[v _RXDTSEL RXDTSEL `VEb  1 e 0 @2287 ]
+"7476
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1130 ]
+"7482
+[v _TRISB5 TRISB5 `VEb  1 e 0 @1133 ]
+"7510
+[v _TXCKSEL TXCKSEL `VEb  1 e 0 @2288 ]
+"7516
+[v _TXIF TXIF `VEb  1 e 0 @140 ]
+"6 C:\Users\yuya\Desktop\pic\16f1827\moter\adc.c
+[v _addata addata `i  1 e 2 0 ]
+"54 C:\Users\yuya\Desktop\pic\16f1827\moter\main.c
+[v _pwmr pwmr `i  1 e 2 0 ]
+"55
+[v _pwml pwml `i  1 e 2 0 ]
+"56
+[v _PWMR1 PWMR1 `i  1 e 2 0 ]
+"57
+[v _PWMR2 PWMR2 `i  1 e 2 0 ]
+"58
+[v _PWML1 PWML1 `i  1 e 2 0 ]
+"59
+[v _PWML2 PWML2 `i  1 e 2 0 ]
+"61
+[v _pwmpwl pwmpwl `i  1 e 2 0 ]
+"62
+[v _pwmload pwmload `i  1 e 2 0 ]
+"63
+[v _PWMpwl1 PWMpwl1 `i  1 e 2 0 ]
+"64
+[v _PWMpwl2 PWMpwl2 `i  1 e 2 0 ]
+"65
+[v _PWMload1 PWMload1 `i  1 e 2 0 ]
+"66
+[v _PWMload2 PWMload2 `i  1 e 2 0 ]
+"67
+[v _data data `[6]uc  1 s 6 data ]
+"76
+[v _main main `(v  1 e 1 0 ]
+{
+"80
+[v main@cntError cntError `ui  1 a 2 8 ]
+"105
+} 0
+"208
+[v _shooting shooting `(v  1 e 1 0 ]
+{
+"211
+} 0
+"118
+[v _rotation rotation `(v  1 e 1 0 ]
+{
+"160
+} 0
+"261
+[v _movetire2 movetire2 `(v  1 e 1 0 ]
+{
+"305
+} 0
+"214
+[v _movetire1 movetire1 `(v  1 e 1 0 ]
+{
+"258
+} 0
+"163
+[v _loading loading `(v  1 e 1 0 ]
+{
+"206
+} 0
+"4 C:\Users\yuya\Desktop\pic\16f1827\moter\pwm.c
+[v _init_pwm init_pwm `(v  1 e 1 0 ]
+{
+"33
+} 0
+"53
+[v _OpenPWM4 OpenPWM4 `(v  1 e 1 0 ]
+{
+[v OpenPWM4@period period `uc  1 a 1 wreg ]
+[v OpenPWM4@period period `uc  1 a 1 wreg ]
+"55
+[v OpenPWM4@period period `uc  1 a 1 1 ]
+"58
+} 0
+"47
+[v _OpenPWM3 OpenPWM3 `(v  1 e 1 0 ]
+{
+[v OpenPWM3@period period `uc  1 a 1 wreg ]
+[v OpenPWM3@period period `uc  1 a 1 wreg ]
+"49
+[v OpenPWM3@period period `uc  1 a 1 1 ]
+"52
+} 0
+"41
+[v _OpenPWM2 OpenPWM2 `(v  1 e 1 0 ]
+{
+[v OpenPWM2@period period `uc  1 a 1 wreg ]
+[v OpenPWM2@period period `uc  1 a 1 wreg ]
+"43
+[v OpenPWM2@period period `uc  1 a 1 1 ]
+"46
+} 0
+"35
+[v _OpenPWM1 OpenPWM1 `(v  1 e 1 0 ]
+{
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+"37
+[v OpenPWM1@period period `uc  1 a 1 1 ]
+"40
+} 0
+"308 C:\Users\yuya\Desktop\pic\16f1827\moter\main.c
+[v _init init `(v  1 e 1 0 ]
+{
+"323
+} 0
+"397
+[v _get_usart get_usart `(uc  1 e 1 0 ]
+{
+"418
+[v get_usart@i i `ui  1 a 2 6 ]
+"438
+} 0
+"367
+[v _inRxData inRxData `(uc  1 e 1 0 ]
+{
+[v inRxData@rxData rxData `uc  1 a 1 wreg ]
+"370
+[v inRxData@cnt2 cnt2 `ui  1 a 2 3 ]
+"369
+[v inRxData@cnt1 cnt1 `ui  1 a 2 1 ]
+"367
+[v inRxData@rxData rxData `uc  1 a 1 wreg ]
+"369
+[v inRxData@rxData rxData `uc  1 a 1 0 ]
+"394
+} 0
+"345
+[v _getch getch `(uc  1 e 1 0 ]
+{
+"346
+[v getch@cnt cnt `ui  1 a 2 0 ]
+"356
+} 0
+"108
+[v _emergency emergency `(v  1 e 1 0 ]
+{
+"115
+} 0
+"80 C:\Users\yuya\Desktop\pic\16f1827\moter\pwm.c
+[v _SetPWM4 SetPWM4 `(v  1 e 1 0 ]
+{
+[v SetPWM4@dutycycle dutycycle `ui  1 p 2 0 ]
+"86
+} 0
+"73
+[v _SetPWM3 SetPWM3 `(v  1 e 1 0 ]
+{
+[v SetPWM3@dutycycle dutycycle `ui  1 p 2 0 ]
+"79
+} 0
+"66
+[v _SetPWM2 SetPWM2 `(v  1 e 1 0 ]
+{
+[v SetPWM2@dutycycle dutycycle `ui  1 p 2 0 ]
+"72
+} 0
+"59
+[v _SetPWM1 SetPWM1 `(v  1 e 1 0 ]
+{
+[v SetPWM1@dutycycle dutycycle `ui  1 p 2 0 ]
+"65
+} 0

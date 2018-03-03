@@ -10477,7 +10477,7 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 44 "main.c"
+# 42 "main.c"
 void init(void);
 void display(void);
 void time_adjust(void);

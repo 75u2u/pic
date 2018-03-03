@@ -39,8 +39,6 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define _XTAL_FREQ 4000000
-
 void init(void);
 void display(void);
 void time_adjust(void);

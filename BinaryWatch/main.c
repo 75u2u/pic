@@ -1,6 +1,6 @@
-//#include "pic18f27j53.h"
+#include "pic18f27j53.h"
 #include <xc.h>
-//#include <pic.h>
+#include <pic.h>
 #include <stdint.h>
 
 __CONFIG(0x3FF2);				//CONFIG:CP=OFF,PWRT=ON,WDT=OFF,OSC=HS
@@ -17,13 +17,17 @@ unsigned char min=0;
 unsigned char sec=0;
 
 int main(void) {
+	init();
 	while(1) {
-		display();
-		time_adjust();
+	PORTA = 0b00111111;
+	PORTB = 0b01111111;
+	PORTC = 0b11000000;
+		//display();
+		//time_adjust();
 	}
 }
 
-void display() {
+void display(void) {
 	//hourの10の桁
 	PORTA=0b00011111;　　　　　　
 	RB4=1;				//全列OFF
@@ -75,7 +79,7 @@ void display() {
 
 
 }
-void time_adjust() {
+void time_adjust(void) {
 	//hourのカウントアップ
 	if(RC0){			//hourスイッチを見る
 		DelayMs(30);	//チャタリング待ち
@@ -123,7 +127,7 @@ void time_adjust() {
 }
 
 		
-void init() {
+void init(void) {
 	INTCON=0;
 	init_comms();
 	OSCCON = 0b01110000;// クロック設定、PLL無し、8MHz   
@@ -136,18 +140,21 @@ void init() {
 	T0IF=0;			//T0IFをリセット
 	T0IE=1;			//TMR0割り込み発生を許可
 	GIE=1;
+	
+	PORTA = 0b11000000;
+	PORTB = 0b00000000;
+	PORTC = 0b00000111;
+	
 	ANSELA = 0b00000000;
 	ANSELB = 0b00000000;
 	ANSELC = 0b00000000;
-	//PORTA = 0b00000000;
-	//PORTB = 0b00000000;
-	//PORTC = 0b00000000;		
+			
 	TRISA = 0b00000000;
 	TRISB = 0b00000000;
 	TRISC = 0b00000111;
 }
 
-interrupt clock_count()	{//割り込みルーチン
+interrupt clock_count(void)	{//割り込みルーチン
 	if(T0IF){
 		T0IF = 0;		//割り込みフラグクリア
 		TMR0=131;		//TMRを125カウントに指定：256-125=131
